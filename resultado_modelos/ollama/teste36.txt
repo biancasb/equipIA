@@ -1,0 +1,176 @@
+numero_teste: 36
+provider: ollama
+modelo: llama3.2
+sindrome: tromboembolismo_pulmonar
+especialistas: Clínico Geral, Cardiologista, Pneumologista
+tokens_entrada: 6246
+tokens_saida: 2609
+custo_brl: 0.0000
+tempo_total_s: 69.7
+tempo_processamento_s: 57.4
+tempo_legivel: 57s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+Informações complementares:
+Fez cirurgia nas últimas 4 semanas? nnao
+Informações complementares:
+Sentiu dor no peito que piora ao respirar fundo?  nao, a falta de ar vem piorando a 3 dias
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+**Red flags identificados**
+
+* Presença de febre (indício de infecção)
+* Pressão baixa e frequência cardíaca elevada (instabilidade hemodinâmica)
+* Tose produtiva e falta de ar há 3 dias, com exacerbações frequentes (suspeita de pneumonia ou insuficiência respiratória aguda)
+
+**Síndrome clínica principal**
+
+A síndrome clínica principal é a **insuficiência respiratória aguda**, com sintomas como tosse produtiva, falta de ar e febre. A presença de pressão baixa e frequência cardíaca elevada sugere instabilidade hemodinâmica.
+
+**Diagnóstico diferencial**
+
+1. **Pneumonia**: suspeita baseada na tosse produtiva, falta de ar e febre.
+2. **Insuficiência respiratória aguda**: suspeita baseada na falta de ar e pressão baixa.
+3. **Coração isquêmico**: suspeita baseada na história de DPOC (doença pulmonar obstructiva crônica) e tabagismo, além da dor no peito que piora ao respirar fundo.
+
+**Dados críticos ausentes**
+
+* Valor do oxigênio (SpO2)
+* ECG
+* Troponina
+
+**Exames prioritários**
+
+1. **ECG**: para avaliar a função cardíaca e detectar sinais de isquemia ou infarto.
+2. **Troponina**: para avaliar a atividade cardíaca e detectar sinais de infarto.
+3. **Imagem radiológica do peito**: para avaliar a extensão da pneumonia ou insuficiência respiratória aguda.
+
+**Urgência e disposição**
+
+* Emergência: devido à presença de instabilidade hemodinâmica, falta de ar e febre.
+* Necessidade de avaliação cardíaca urgente para detectar sinais de isquemia ou infarto.
+
+**Especialistas necessários**
+
+1. **Cardiologista**: para avaliar a função cardíaca e detectar sinais de isquemia ou infarto.
+2. **Pneumologista**: para avaliar a pneumonia ou insuficiência respiratória aguda.
+3. **Anestesista**: para administrar oxigênio e outros medicamentos necessários durante a avaliação e tratamento.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente apresenta sintomas de tosse produtiva e falta de ar há 3 dias, com febre, pressão baixa e frequência cardíaca elevada. Além disso, é tabagista e diabético tipo 2, o que aumenta o risco cardiovascular. A história de DPOC (doença pulmonar obstructiva crônica) sugere uma possível relação com a falta de ar.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG ou outros exames cardíacos. No entanto, é importante considerar a possibilidade de arritmias ou infecções pulmonares, que podem estar relacionadas com a falta de ar e febre.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Infecção pulmonar**: A tosse produtiva, falta de ar e febre sugerem uma possível infecção pulmonar.
+2. **Arritmia**: A frequência cardíaca elevada pode ser um sinal de arritmia.
+3. **Insuficiência cardíaca**: A pressão baixa pode indicar insuficiência cardíaca, especialmente considerando a história de DPOC e diabetes tipo 2.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: dado ausente — impossível calcular; solicitar ECG.
+* TIMI Risk Score para NSTEMI/AI: dado ausente — impossível calcular; solicitar ECG.
+* GRACE Score (IAMSST): dado ausente — impossível calcular; solicitar ECG e outros exames cardíacos.
+* HEART Score: dado ausente — impossível calcular; solicitar ECG e outros exames cardíacos.
+
+Estratificação de risco:
+
+Devido à falta de informações sobre o resultado do ECG e outros exames cardíacos, não é possível estratificar o risco com precisão. No entanto, considerando a presença de sintomas respiratórios e febre, é importante monitorar o paciente de perto.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização**: O paciente deve ser monitorado de perto para observar os sintomas e fechar possíveis complicações.
+2. **Antibióticos**: Se a infecção pulmonar for confirmada, o paciente pode receber antibióticos.
+3. **Oxygenoterapia**: A falta de ar pode ser tratada com oxigenoterapia.
+4. **Medicamentos para dor e febre**: O paciente pode receber medicamentos para aliviar a dor e reduzir a febre.
+
+É importante lembrar que essa é uma avaliação inicial e que mais informações são necessárias para um diagnóstico preciso e tratamento adequado.
+
+[Pneumologista]
+**Avaliação Respiratória**
+
+O paciente apresenta sintomas clássicos de DPOC (Doença Pulmonar Obstrutiva Crônica) com tosse produtiva e falta de ar, que estão piorando nos últimos 3 dias. Além disso, a presença de febre, pressão baixa e frequência cardíaca elevada sugere uma possível infecção pulmonar.
+
+**Padrão Fisiopatológico Identificado**
+
+O padrão fisiopatológico mais provável é o restritivo, devido à presença de DPOC com exacerbações frequentes. A obstrução das vias aéreas pelo moco e outros substâncias pode levar a uma redução da capacidade pulmonar e dificuldade para respirar.
+
+**Dados de Oxigenação e Ventilação**
+
+Interpretação dos parâmetros disponíveis:
+
+* SpO₂: não está disponível
+* Relação PaO2/FiO2: não está disponível
+* Sinais de esforço respiratório: uso de musculatura acessória, tiragem, batimento de asa de nariz
+
+Se o SpO2 estiver ausente, solicitaria uma análise de gasometria para determinar a saturação de oxigênio no sangue e avaliar a necessidade de oxigenoterapia.
+
+**Diagnóstico Diferencial Pulmonar**
+
+Cada hipótese com probabilidade (alta/média/baixa), achados a favor e contra:
+
+1. **DPOC exacerbada**: achados a favor: tosse produtiva, falta de ar, febre, pressão baixa e frequência cardíaca elevada; contra: não há informações sobre a presença de infecção bacteriana.
+2. **Pneumonia**: achados a favor: febre, pressão baixa e frequência cardíaca elevada; contra: falta de sintomas clássicos de pneumonia (cough hemoptica, dor no peito).
+3. **Tromboembolismo pulmonar**: achados a favor: pressão baixa e frequência cardíaca elevada; contra: não há informações sobre a presença de trombose ou embolia.
+4. **Pneumotórax**: achados a favor: falta de ar, febre; contra: não há informações sobre a presença de pneumotórax.
+
+**Escores Aplicados**
+
+* Wells para TEP (Tromboembolismo Pulmonar): TVP clínica (+3), FC > 100 (+1,5), imobilização/cirurgia recente (+1,5), TVP/TEP prévio (+1,5), hemoptise (+1), neoplasia (+1), diagnóstico alternativo menos provável que TEP (+3); ≤ 4 baixa probabilidade, > 4 alta probabilidade
+* PESI (Índice de Gravidade do TEP): estima mortalidade em 30 dias
+
+**Risco de Recorrência ou Progressão**
+
+Para pneumotórax: histórico de DPOC com exacerbações frequentes aumenta o risco de recorrência.
+
+**Conduta Pneumológica**
+
+* Oxigenoterapia: fluxo de 4-6 L/min, dispositivo de oxigênio contínuo
+* Broncodilatadores: albuterol ou salmeterol para reduzir a obstrução das vias aéreas
+* Antibióticos: se houver suspeita de pneumonia bacteriana
+* Drenagem pleural: se houver presença de pneumotórax ou hemoptise
+* VNI (Ventilação Não Invasiva) ou IOT (Intervenção Otológica): se necessário para manter a oxigenação e reduzir o esforço respiratório
+
+É importante monitorar o paciente de perto e ajustar a conduta pneumológica conforme necessário.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está utilizando os seguintes medicamentos:
+
+* Albuterol (um broncodilatador) para aliviar a obstrução das vias aéreas
+* Antibióticos (não especificados) para tratar a pneumonia bacteriana
+* Oxigênio contínuo para ajudar na oxigenação
+
+Propostos:
+
+* Ajuste da dose de albuterol para reduzir a obstrução das vias aéreas
+* Administração de antibióticos para tratar a pneumonia bacteriana
+* Monitoramento constante do paciente para ajustar a conduta pneumológica e oxigenoterapia conforme necessário
+
+**Interações e contraindicações identificadas**
+
+* Interferência com os medicamentos:
+	+ Albuterol pode interagir com os antibióticos, reduzindo sua eficácia
+	+ Antibióticos podem aumentar o risco de efeitos colaterais quando utilizados em conjunto com albuterol
+* Contraindicações:
+	+ O paciente não deve utilizar medicamentos que contenham sulfonilamidas, pois pode haver interação com os antibióticos
+
+**Ajustes de dose recomendados**
+
+* Ajuste da dose de albuterol para reduzir a obstrução das vias aéreas
+* Monitoramento constante do paciente para ajustar a conduta pneumológica e oxigenoterapia conforme necessário
+
+**Recomendação final**
+
+O paciente deve ser monitorado de perto e ajustar a conduta pneumológica e oxigenoterapia conforme necessário. É importante verificar regularmente os medicamentos prescritos e ajustá-los conforme necessário para evitar interações adversas ou efeitos colaterais. Além disso, é fundamental realizar exames regulares para monitorar a função pulmonar e detectar possíveis complicações.

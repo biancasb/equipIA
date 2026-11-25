@@ -1,0 +1,351 @@
+"""Requisitos de informação por síndrome clínica.
+
+Chaves por síndrome:
+    escores               nomes dos escores/critérios aplicáveis (lista de str)
+    finalidades           para que serve cada escore (dict escore -> finalidade)
+    perguntas_triagem     perguntas atômicas ao paciente (uma ideia por pergunta)
+    dados_objetivos       dados medidos/anotados pela equipe (não são perguntas)
+    exames_complementares exames que completam o raciocínio
+    referencias           fontes originais (PMID = PubMed)
+"""
+
+REQUISITOS_ESCORES = {
+    "sindrome_coronariana": {
+        "escores": [
+            "HEART Score",
+            "TIMI Risk Score",
+            "GRACE Score",
+        ],
+        "finalidades": {
+            "HEART Score": "estratificação de risco em dor torácica",
+            "TIMI Risk Score": "estratificação de risco em angina instável/IAMSSST",
+            "GRACE Score": "estratificação de risco e prognóstico em SCA",
+        },
+        "perguntas_triagem": [
+            "A dor piora com esforço físico?",
+            "A dor piora ao respirar fundo?",
+            "A dor irradia para o braço, a mandíbula ou as costas?",
+            "Há quanto tempo a dor começou?",
+            "Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent?",
+            "Tem pressão alta?",
+            "Tem diabetes?",
+            "Tem colesterol alto?",
+            "Fuma?",
+            "Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)?",
+            "Usou aspirina nos últimos 7 dias?",
+            "Teve dois ou mais episódios de dor no peito nas últimas 24 horas?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "sexo",
+            "pressão arterial",
+            "frequência cardíaca",
+            "saturação de oxigênio",
+        ],
+        "exames_complementares": [
+            "ECG",
+            "troponina",
+        ],
+        "referencias": [
+            "Six AJ et al. Neth Heart J 2008;16:191 (PMID 18665203)",
+            "Backus BE et al. Int J Cardiol 2013;168:2153 (PMID 23465250)",
+            "Antman EM et al. JAMA 2000;284:835 (PMID 10938172)",
+            "Granger CB et al. Arch Intern Med 2003;163:2345 (PMID 14581255)",
+        ],
+    },
+    "insuficiencia_cardiaca": {
+        "escores": [
+            "NYHA",
+            "Framingham Criteria",
+            "MAGGIC Risk Score",
+        ],
+        "finalidades": {
+            "NYHA": "classificação funcional",
+            "Framingham Criteria": "critérios diagnósticos",
+            "MAGGIC Risk Score": "prognóstico",
+        },
+        "perguntas_triagem": [
+            "Tem falta de ar ao fazer esforços?",
+            "Tem falta de ar mesmo em repouso?",
+            "Precisa usar mais travesseiros para conseguir dormir por causa da falta de ar?",
+            "Acorda durante a noite com sensação de falta de ar?",
+            "Percebeu inchaço nas pernas?",
+            "Percebeu aumento rápido de peso recentemente?",
+            "Já teve diagnóstico de insuficiência cardíaca ou outra doença cardíaca?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "sexo",
+            "pressão arterial",
+            "frequência cardíaca",
+            "saturação de oxigênio",
+            "peso",
+        ],
+        "exames_complementares": [
+            "ECG",
+            "BNP ou NT-proBNP",
+            "ecocardiograma",
+            "radiografia de tórax",
+        ],
+        "referencias": [
+            "McKee PA et al. N Engl J Med 1971;285:1441 (PMID 5122894)",
+            "Pocock SJ et al. Eur Heart J 2013;34:1404 (PMID 23095984)",
+            "McDonagh TA et al. Eur Heart J 2021;42:3599 (PMID 34447992)",
+            "Rohde LEP et al. Diretriz Brasileira de IC Crônica e Aguda. Arq Bras Cardiol 2018;111(3):436-539 (PMID e DOI não confirmados)",
+        ],
+    },
+    "tromboembolismo_pulmonar": {
+        "escores": [
+            "Wells Score",
+            "Revised Geneva Score",
+            "PERC Rule",
+        ],
+        "finalidades": {
+            "Wells Score": "probabilidade pré-teste",
+            "Revised Geneva Score": "probabilidade pré-teste",
+            "PERC Rule": "exclusão em baixa probabilidade pré-teste (só se baixa)",
+        },
+        "perguntas_triagem": [
+            "Está com falta de ar de início súbito?",
+            "Sentiu dor no peito que piora ao respirar fundo?",
+            "Teve tosse com sangue?",
+            "Teve inchaço em uma das pernas recentemente?",
+            "Teve dor em uma das pernas recentemente?",
+            "Fez cirurgia nas últimas 4 semanas?",
+            "Ficou internado ou muito tempo sem se movimentar recentemente?",
+            "Já teve trombose venosa profunda ou embolia pulmonar?",
+            "Usa terapia hormonal ou outro medicamento que aumente o risco de trombose?",
+            "Tem ou teve câncer em tratamento?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "frequência cardíaca",
+            "frequência respiratória",
+            "pressão arterial",
+            "saturação de oxigênio",
+        ],
+        "exames_complementares": [
+            "D-dímero",
+            "angio-TC de tórax",
+            "ultrassonografia Doppler de membros inferiores",
+            "gasometria arterial",
+        ],
+        "referencias": [
+            "Wells PS et al. Thromb Haemost 2000;83:416 (PMID 10744147)",
+            "Le Gal G et al. Ann Intern Med 2006;144:165 (PMID 16461960)",
+            "Kline JA et al. J Thromb Haemost 2004;2:1247 (PMID 15304025)",
+            "Kline JA et al. J Thromb Haemost 2008;6:772 (PMID 18318689)",
+            "Konstantinides SV et al. Eur Heart J 2020;41:543 (PMID 31504429)",
+        ],
+    },
+    "acidente_vascular_cerebral": {
+        "escores": [
+            "NIHSS",
+            "ABCD2 Score",
+            "mRS (Modified Rankin Scale)",
+        ],
+        "finalidades": {
+            "NIHSS": "gravidade do déficit neurológico",
+            "ABCD2 Score": "risco de AVC após AIT",
+            "mRS (Modified Rankin Scale)": "incapacidade funcional (desfecho)",
+        },
+        "perguntas_triagem": [
+            "Apresentou fraqueza súbita em um lado do corpo?",
+            "Apresentou dormência súbita em um lado do corpo?",
+            "Teve dificuldade súbita para falar?",
+            "Teve dificuldade súbita para compreender o que foi dito?",
+            "Percebeu alteração súbita na visão?",
+            "Apresentou perda de equilíbrio ou dificuldade para caminhar de início súbito?",
+            "Os sintomas começaram há quanto tempo?",
+            "Os sintomas duraram menos de 1 hora ou já desapareceram?",
+            "Já teve AVC ou ataque isquêmico transitório anteriormente?",
+            "Tem pressão alta?",
+            "Tem diabetes?",
+            "Faz uso de anticoagulante?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "pressão arterial",
+            "glicemia capilar",
+            "saturação de oxigênio",
+        ],
+        "exames_complementares": [
+            "TC de crânio",
+            "RM de encéfalo",
+            "angio-TC",
+            "glicemia",
+        ],
+        "referencias": [
+            "Brott T et al. Stroke 1989;20:864 (PMID 2749846)",
+            "Johnston SC et al. Lancet 2007;369:283 (PMID 17258668)",
+            "van Swieten JC et al. Stroke 1988;19:604 (PMID 3363593)",
+            "Powers WJ et al. Stroke 2019;50:e344 (PMID 31662037)",
+        ],
+    },
+    "pneumonia": {
+        "escores": [
+            "CURB-65",
+            "Pneumonia Severity Index (PSI)",
+        ],
+        "finalidades": {
+            "CURB-65": "gravidade e local de tratamento",
+            "Pneumonia Severity Index (PSI)": "gravidade e risco de mortalidade",
+        },
+        "perguntas_triagem": [
+            "Está com febre?",
+            "Teve calafrios?",
+            "Está com tosse?",
+            "Está com catarro?",
+            "Tem falta de ar?",
+            "Sentiu dor no peito ao respirar ou tossir?",
+            "Apresentou confusão mental recentemente?",
+            "Possui alguma doença crônica?",
+            "Possui imunossupressão ou usa medicamento que baixa a imunidade?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "pressão arterial",
+            "frequência cardíaca",
+            "frequência respiratória",
+            "temperatura",
+            "saturação de oxigênio",
+        ],
+        "exames_complementares": [
+            "radiografia de tórax",
+            "hemograma",
+            "oximetria de pulso",
+            "PCR",
+            "ureia",
+        ],
+        "referencias": [
+            "Lim WS et al. Thorax 2003;58:377 (PMID 12728155)",
+            "Fine MJ et al. N Engl J Med 1997;336:243 (PMID 8995086)",
+        ],
+    },
+    "sepse": {
+        "escores": [
+            "qSOFA",
+            "SOFA",
+            "NEWS2",
+        ],
+        "finalidades": {
+            "qSOFA": "alerta de risco (não usar como triagem única; ver Surviving Sepsis 2021)",
+            "SOFA": "disfunção orgânica",
+            "NEWS2": "alerta de deterioração clínica (escore de alerta precoce)",
+        },
+        "perguntas_triagem": [
+            "Teve febre?",
+            "Sentiu muito frio ou tremores?",
+            "Está apresentando confusão ou alteração do nível de consciência?",
+            "Está com falta de ar?",
+            "Teve sensação de desmaio?",
+            "Existe alguma infecção conhecida ou suspeita?",
+            "Percebeu redução importante na quantidade de urina?",
+        ],
+        "dados_objetivos": [
+            "temperatura",
+            "pressão arterial",
+            "frequência cardíaca",
+            "frequência respiratória",
+            "saturação de oxigênio",
+            "nível de consciência",
+        ],
+        "exames_complementares": [
+            "hemograma",
+            "lactato",
+            "hemoculturas",
+            "função renal",
+            "bilirrubina",
+            "gasometria",
+        ],
+        "referencias": [
+            "Singer M et al. JAMA 2016;315:801 (PMID 26903338)",
+            "Seymour CW et al. JAMA 2016;315:762 (PMID 26903335)",
+            "Vincent JL et al. Intensive Care Med 1996;22:707 (PMID 8844239)",
+            "Evans L et al. Intensive Care Med 2021;47:1181 (PMID 34599691)",
+            "Royal College of Physicians. National Early Warning Score (NEWS) 2, 2017 (fonte original não consultada)",
+        ],
+    },
+    "hemorragia_digestiva": {
+        "escores": [
+            "Glasgow-Blatchford Score",
+            "Rockall Score",
+        ],
+        "finalidades": {
+            "Glasgow-Blatchford Score": "necessidade de intervenção e alta segura (pré-endoscopia)",
+            "Rockall Score": "risco de ressangramento e mortalidade (usa achados endoscópicos)",
+        },
+        "perguntas_triagem": [
+            "Apresentou vômito com sangue ou com material escuro semelhante a borra de café?",
+            "Percebeu fezes negras?",
+            "Percebeu sangue vivo nas fezes?",
+            "Está sentindo tontura ou fraqueza?",
+            "Teve sensação de desmaio ou desmaiou?",
+            "Já teve sangramento gastrointestinal anteriormente?",
+            "Faz uso de anticoagulantes?",
+            "Faz uso de anti-inflamatórios?",
+            "Possui histórico de doença hepática?",
+            "Possui histórico de úlcera?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "pressão arterial",
+            "frequência cardíaca",
+        ],
+        "exames_complementares": [
+            "hemograma",
+            "ureia e creatinina",
+            "coagulograma",
+            "endoscopia digestiva alta",
+        ],
+        "referencias": [
+            "Blatchford O et al. Lancet 2000;356:1318 (PMID 11073021)",
+            "Rockall TA et al. Gut 1996;38:316 (PMID 8675081)",
+        ],
+    },
+    "fibrilacao_atrial": {
+        "escores": [
+            "CHA₂DS₂-VASc",
+            "HAS-BLED",
+        ],
+        "finalidades": {
+            "CHA₂DS₂-VASc": "risco de AVC/tromboembolismo (indicação de anticoagulação)",
+            "HAS-BLED": "risco de sangramento",
+        },
+        "perguntas_triagem": [
+            "Sente palpitações ou batimentos cardíacos irregulares?",
+            "Apresenta falta de ar?",
+            "Apresenta tontura?",
+            "Apresenta cansaço?",
+            "Já teve fibrilação atrial ou outra arritmia?",
+            "Já teve AVC ou ataque isquêmico transitório?",
+            "Tem pressão alta?",
+            "Tem diabetes?",
+            "Tem insuficiência cardíaca?",
+            "Já teve infarto ou tem doença nas artérias?",
+            "Faz uso de anticoagulante?",
+            "Já teve sangramento importante anteriormente?",
+            "Tem problema nos rins ou no fígado?",
+            "Consome bebida alcoólica com frequência?",
+            "Faz uso de anti-inflamatórios?",
+        ],
+        "dados_objetivos": [
+            "idade",
+            "sexo",
+            "frequência cardíaca",
+            "pressão arterial",
+        ],
+        "exames_complementares": [
+            "ECG",
+            "Holter",
+            "ecocardiograma",
+            "hemograma",
+            "TSH",
+        ],
+        "referencias": [
+            "Lip GYH et al. Chest 2010;137:263 (PMID 19762550)",
+            "Pisters R et al. Chest 2010;138:1093 (PMID 20299623)",
+            "Van Gelder IC et al. Eur Heart J 2024;45:3314 (PMID 39210723)",
+        ],
+    },
+}

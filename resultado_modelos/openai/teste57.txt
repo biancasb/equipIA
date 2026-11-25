@@ -1,0 +1,151 @@
+numero_teste: 57
+provider: openai
+modelo: gpt-4o-mini-2024-07-18
+sindrome: pneumonia
+especialistas: Clínico Geral, Pneumologista
+tokens_entrada: 4462
+tokens_saida: 2094
+custo_brl: 0.0106
+tempo_total_s: 82.2
+tempo_processamento_s: 30.9
+tempo_legivel: 31s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+Informações complementares:
+Está com febre? Sim. Temperatura de 38,5 °C.
+Está com tosse? Sim. Tosse produtiva, com catarro
+Informações complementares:
+Teve calafrios? nao informado
+Tem falta de ar? Sim. Falta de ar há 3 dias, piorando junto com a tosse produtiva
+Sentiu dor no peito ao respirar ou tossir?  nao informado
+Apresentou confusão mental recentemente?  nao informado
+Possui alguma doença crônica? Sim. DPOC com exacerbações frequentes (sem internação prévia em UTI) e diabetes tipo 2. É tabagista atual
+Possui imunossupressão ou usa medicamento que baixa a imunidade? Não informado. Os únicos medicamentos em uso são tiotrópio inalatório e insulina glargina, ambos diários
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+**Red flags identificados**  
+- **Presentes:** Febre (38,5 °C), tosse produtiva, falta de ar, pressão baixa (hipotensão), frequência cardíaca elevada (taquicardia).  
+- **Ausentes:** Instabilidade hemodinâmica severa (choque), comprometimento de via aérea ou respiração (SpO2 não informada), dor torácica com características de síndrome coronariana aguda, rigidez de nuca, sangramento ativo significativo.
+
+**Síndrome clínica principal**  
+Síndrome febril com provável pneumonia ou exacerbação de DPOC. A presença de febre, tosse produtiva e falta de ar, associada ao histórico de DPOC e diabetes, sugere uma infecção respiratória, possivelmente pneumonia, que pode estar exacerbando a condição do paciente.
+
+**Diagnóstico diferencial**  
+1. **Pneumonia (alta probabilidade)**  
+   - **Evidências a favor:** Febre, tosse produtiva, falta de ar, histórico de DPOC.  
+   - **Evidências contra:** Nenhuma informação sobre hemoptise ou dor torácica significativa.  
+
+2. **Exacerbação de DPOC (alta probabilidade)**  
+   - **Evidências a favor:** Histórico de DPOC, tosse produtiva, falta de ar.  
+   - **Evidências contra:** Febre pode indicar infecção, que pode ser a causa da exacerbação.  
+
+3. **Infecção respiratória (média probabilidade)**  
+   - **Evidências a favor:** Sintomas respiratórios e febre.  
+   - **Evidências contra:** Sem sinais claros de infecção além da febre e tosse.  
+
+4. **Embolia pulmonar (baixa probabilidade)**  
+   - **Evidências a favor:** Falta de ar e taquicardia.  
+   - **Evidências contra:** Sem relato de dor torácica, hemoptise ou fatores de risco significativos além do tabagismo.  
+
+**Dados críticos ausentes**  
+- Saturação de oxigênio (SpO2) para avaliar comprometimento respiratório.  
+- Exame físico completo, incluindo ausculta pulmonar.  
+- Exames laboratoriais (hemograma, gasometria arterial, cultura de escarro).  
+- Radiografia de tórax para confirmar pneumonia ou outras patologias pulmonares.
+
+**Exames prioritários**  
+1. **Radiografia de tórax** - Para avaliar a presença de pneumonia ou outras anormalidades pulmonares.  
+2. **Gasometria arterial** - Para avaliar a oxigenação e a ventilação do paciente.  
+3. **Hemograma completo** - Para verificar sinais de infecção (leucocitose) e avaliar a gravidade.  
+4. **Cultura de escarro** - Para identificar o agente infeccioso, se pneumonia for confirmada.
+
+**Urgência e disposição**  
+Emergência. O paciente apresenta sinais de infecção respiratória com comprometimento hemodinâmico (hipotensão e taquicardia), o que requer avaliação e intervenção imediata.
+
+**Especialistas necessários**  
+1. **Pneumologista** - Para manejo da exacerbação de DPOC e pneumonia.  
+2. **Clínico geral ou intensivista** - Para avaliação e manejo inicial, considerando a instabilidade hemodinâmica.  
+3. **Infectologista** (se pneumonia for confirmada) - Para direcionar o tratamento antimicrobiano adequado.
+
+[Pneumologista]
+### Avaliação respiratória
+**Padrão fisiopatológico identificado:** Obstrutivo, devido à história de DPOC com exacerbações frequentes e à presença de tosse produtiva e falta de ar. A DPOC é caracterizada por obstrução crônica das vias aéreas, que pode ser exacerbada por infecções respiratórias, como pneumonia, especialmente em pacientes tabagistas.
+
+### Dados de oxigenação e ventilação
+**Interpretação dos parâmetros disponíveis:** 
+- O paciente apresenta febre, tosse produtiva e falta de ar, o que sugere uma possível infecção respiratória (pneumonia). 
+- Para uma avaliação mais precisa da oxigenação e ventilação, seria importante solicitar uma gasometria arterial e a oximetria de pulso (SpO₂). A gasometria ajudaria a avaliar a presença de hipoxemia e hipercapnia, enquanto a SpO₂ indicaria a saturação de oxigênio do paciente. 
+
+### Diagnóstico diferencial pulmonar
+1. **Pneumonia (alta probabilidade)**
+   - **Achados a favor:** Febre, tosse produtiva, falta de ar, DPOC pré-existente.
+   - **Achados contra:** Nenhum relato de dor torácica ou hemoptise, mas a presença de febre e tosse sugere infecção.
+
+2. **Exacerbação de DPOC (alta probabilidade)**
+   - **Achados a favor:** História de DPOC, tosse produtiva, falta de ar.
+   - **Achados contra:** Febre e sintomas agudos podem indicar pneumonia.
+
+3. **Tromboembolismo pulmonar (média probabilidade)**
+   - **Achados a favor:** Taquicardia, febre, falta de ar.
+   - **Achados contra:** Sem relato de imobilização recente ou história de TEP.
+
+4. **Asma (baixa probabilidade)**
+   - **Achados a favor:** Falta de ar.
+   - **Achados contra:** História de DPOC e não há relato de episódios anteriores de asma.
+
+### Escores aplicados
+- **CURB-65:** 
+  - Confusão: 0
+  - Ureia > 7 mmol/L: não disponível
+  - FR ≥ 30: não disponível
+  - PA ≤ 90/60: pressão baixa (considerar 1 ponto)
+  - Idade ≥ 65: 0
+  - **Total:** 1 ponto (considerar tratamento ambulatorial, mas com necessidade de internação para monitoramento devido à DPOC e febre).
+
+- **Escore de Wells para TEP:** 
+  - TVP clínica: 0
+  - FC > 100: 1,5
+  - Imobilização/cirurgia recente: 0
+  - TVP/TEP prévio: 0
+  - Hemoptise: 0
+  - Neoplasia: 0
+  - Diagnóstico alternativo menos provável que TEP: 0
+  - **Total:** 1,5 (baixa probabilidade).
+
+### Risco de recorrência ou progressão
+- O paciente tem DPOC com exacerbações frequentes, o que aumenta o risco de novas exacerbações e complicações, como pneumonia. O histórico de tabagismo e diabetes tipo 2 também contribui para um pior prognóstico.
+
+### Conduta pneumológica
+1. **Oxigenoterapia:** 
+   - Iniciar oxigenoterapia para manter SpO₂ entre 94-98%. Se a gasometria mostrar hipoxemia, ajustar o fluxo conforme necessário.
+
+2. **Broncodilatadores:** 
+   - Iniciar broncodilatadores de ação rápida (como salbutamol) para alívio da obstrução das vias aéreas.
+
+3. **Antibióticos:** 
+   - Considerar a administração de antibióticos, dado o quadro de pneumonia (ex: amoxicilina-clavulanato ou uma fluoroquinolona, dependendo da gravidade e resistência local).
+
+4. **Monitoramento:** 
+   - Internação para monitoramento, especialmente devido à DPOC e à febre, para avaliar a resposta ao tratamento e a necessidade de suporte ventilatório.
+
+5. **Avaliação adicional:** 
+   - Solicitar gasometria arterial e hemograma para avaliar a gravidade da infecção e a necessidade de intervenções adicionais.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos:**
+- **Em uso:** Tiotrópio (broncodilatador de longa ação) e insulina glargina (para diabetes tipo 2).
+- **Propostos:** Antibióticos (ex: amoxicilina-clavulanato ou fluoroquinolona), broncodilatadores de ação rápida (ex: salbutamol), oxigenoterapia.
+
+**Interações e contraindicações identificadas:**
+- **Tiotrópio:** Não há interações significativas com antibióticos propostos, mas deve-se monitorar a função pulmonar.
+- **Insulina glargina:** Não há interações diretas com os antibióticos, mas a hiperglicemia pode ser exacerbada por infecções, exigindo monitoramento da glicemia e possível ajuste na dose de insulina.
+
+**Ajustes de dose recomendados:**
+- **Insulina glargina:** Monitorar a glicemia e ajustar a dose conforme necessário, especialmente em caso de estresse agudo devido à infecção.
+- **Antibióticos:** A dose deve ser ajustada conforme a função renal, especialmente se houver comprometimento renal (não informado, mas importante considerar).
+
+**Recomendação final:**
+Devido à apresentação clínica sugestiva de pneumonia e exacerbação de DPOC, recomenda-se a internação para monitoramento, início de antibióticos e oxigenoterapia, além de ajustes na terapia para diabetes conforme necessário.

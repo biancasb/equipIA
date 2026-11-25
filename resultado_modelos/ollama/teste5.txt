@@ -1,0 +1,121 @@
+numero_teste: 5
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4835
+tokens_saida: 1783
+custo_brl: 0.0000
+tempo_total_s: 59.5
+tempo_processamento_s: 40.3
+tempo_legivel: 40s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? sim
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? sym
+Fuma? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? 1 dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa, piorando ao respirar fundo.
+- Sintomas de angina (dor no peito durante esforço).
+- Antecedentes de doença cardíaca pré-existente (infarto, cateterismo ou stent).
+- Fatores de risco para doença cardíaca (hipertensão, diabetes, tabagismo).
+
+Síndrome clínica principal:
+A dor torácica central intensa e a história de antecedentes de doença cardíaca pré-existente levam a suspeitar de síndrome coronariana aguda.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda**: Dor no peito durante esforço, dor piorando ao respirar fundo, antecedentes de doença cardíaca pré-existente e fatores de risco para doença cardíaca.
+2. **Infarto do Miocárdio**: Dor no peito duradoura, dor piorando ao respirar fundo, antecedentes de doença cardíaca pré-existente e fatores de risco para doença cardíaca.
+3. **Angina Inestável**: Dor no peito durante esforço, dor piorando ao respirar fundo, antecedentes de doença cardíaca pré-existente e fatores de risco para doença cardíaca.
+
+Dados críticos ausentes:
+
+- Nível de troponina (um biomarcador importante para diagnóstico de infarto do miocárdio).
+- ECG (electrocardiograma) para avaliar a estabilidade da conduta cardíaca.
+- Pressão arterial e frequência cardíaca para avaliar a hemodinâmica.
+
+Exames prioritários:
+
+1. **ECG**: Para avaliar a estabilidade da conduta cardíaca e identificar sinais de infarto do miocárdio.
+2. **Troponina**: Para confirmar o diagnóstico de infarto do miocárdio ou rejeitar a hipótese.
+3. **Pressão arterial e frequência cardíaca**: Para avaliar a hemodinâmica e identificar sinais de choque.
+
+Urgência e disposição:
+**Emergência**. A dor torácica central intensa e a história de antecedentes de doença cardíaca pré-existente levam a considerar uma condição médica grave que requer atenção imediata.
+
+Especialistas necessários:
+
+1. **Cardiologista**: Para avaliar a estabilidade da conduta cardíaca e gerenciar o tratamento.
+2. **Anestesista**: Para administrar medicamentos e procedimentos anestésicos, se necessário.
+3. **Radiologista**: Para realizar exames de imagem complementares, como angiografia coronária, se necessário.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem história de infarto ou doença nas artérias do coração, como angina, cateterismo ou stent, pressão alta, diabetes, colesterol alto e fuma.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG. No entanto, é importante considerar a presença de sinais de angina incompatível (como dor torácica central intensa associada a náusea e sudorese) que podem indicar uma condição cardíaca grave.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Síndrome coronariana aguda** (STEMI): A dor torácica central intensa, associada à náusea e sudorese, pode ser um sinal de infarto do miocárdio.
+2. **Inferior miocardite**: A dor torácica central intensa pode ser indicativa de infecção ou inflamação da parede inferior do coração.
+3. **Arritmia cardíaca**: A dor torácica central intensa pode ser um sinal de arritmia cardíaca, como a fibrilação ventricular.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* HEART Score: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* CRUSADE Score: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+
+Estratificação de risco:
+
+O paciente apresenta sintomas graves e antecedentes de doença cardíaca, o que sugere um alto risco de complicações.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização intensiva**: O paciente deve ser monitorado em uma unidade de terapia intensiva para avaliar a gravidade da condição e realizar procedimentos de apoio.
+2. **Medicamentos anti-arrítmicos**: O paciente pode receber medicamentos anti-arrítmicos, como beta-bloqueadores e anti-arrítmicos, para controlar a frequência cardíaca e reduzir o risco de complicações.
+3. **Aspirina**: O paciente deve ser tratado com aspirina para prevenir coagulação e reduzir o risco de infarto.
+4. **Evaluação cardiológica**: O paciente deve ser avaliado por um cardiologista especializado para determinar a causa subjacente da dor torácica central intensa e desenvolver um plano de tratamento personalizado.
+
+É importante notar que a conduta proposta é baseada em informações incompletas e pode variar dependendo do resultado do ECG e exames cardíacos adicionais.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está sendo tratado com aspirina, que é um medicamento anti-arrítmico e anti-coagulante. Além disso, o cardiologista sugere a administração de beta-bloqueadores e anti-arrítmicos para controlar a frequência cardíaca e reduzir o risco de complicações.
+
+**Interações e contraindicações identificadas**
+
+* A aspirina pode interagir com outros medicamentos, como anti-coagulantes e anti-arrítmicos.
+* O beta-bloqueador pode causar hipotensão e bradicardia em pacientes com doença cardíaca grave.
+
+**Ajustes de dose recomendados**
+
+* A dose de aspirina deve ser ajustada para evitar a coagulação excessiva.
+* A dose de beta-bloqueadores e anti-arrítmicos deve ser ajustada para controlar a frequência cardíaca e reduzir o risco de complicações.
+
+**Recomendação final**
+
+O paciente deve ser monitorado em uma unidade de terapia intensiva para avaliar a gravidade da condição e realizar procedimentos de apoio. Além disso, é importante ajustar a dose dos medicamentos anti-arrítmicos e anti-coagulantes para evitar interações e contraindicações.

@@ -1,0 +1,417 @@
+numero_teste: 34
+provider: ollama
+modelo: llama3.2
+sindrome: tromboembolismo_pulmonar
+especialistas: Clínico Geral, Cardiologista, Pneumologista
+tokens_entrada: 6467
+tokens_saida: 8450
+custo_brl: 0.0000
+tempo_total_s: 189.6
+tempo_processamento_s: 175.6
+tempo_legivel: 2min56s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+Informações complementares:
+Fez cirurgia nas últimas 4 semanas? naoo
+Informações complementares:
+Está com falta de ar de início súbito? Não. A falta de ar vem piorando há 3 dias, junto com a tosse produtiva.
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+**Red flags identificados**
+
+* Presença de febre (indica infecção ou inflamação)
+* Baixa pressão arterial (indicativa de instabilidade hemodinâmica)
+* Frequência cardíaca elevada (pode indicar resposta a estresse ou doença cardíaca)
+* Tose produtiva e falta de ar que pioraram nos últimos 3 dias (sinais de possível pneumonia ou infecção pulmonar)
+
+**Síndrome clínica principal**
+
+A síndrome clínica principal é a **pneumonia**, considerando a tosse produtiva, falta de ar e febre. A presença de DPOC (doença pulmonar obstructiva crônica) e histórico de tabagismo aumenta o risco de pneumonia.
+
+**Diagnóstico diferencial**
+
+1. **Pneumonia**: Evidências a favor - tosse produtiva, falta de ar, febre; Contra - ausência de sintomas específicos de pneumonia aguda.
+2. **Infecção pulmonar secundária**: Evidências a favor - tosse produtiva, falta de ar, febre; Contra - ausência de sintomas específicos de infecção pulmonar secundária.
+3. **Doença cardíaca coronariana aguda**: Evidências a favor - frequência cardíaca elevada; Contra - ausência de sintomas específicos de doença cardíaca coronariana aguda.
+
+**Dados críticos ausentes**
+
+* Níveis de oxigênio (SpO2)
+* Troponina
+* ECG
+
+**Exames prioritários**
+
+1. **ECG**: para avaliar a função cardíaca e detectar possíveis alterações elétricas.
+2. **Troponina**: para avaliar a atividade cardíaca e detectar possíveis danos ao músculo cardíaco.
+3. **Imagem de tomografia computadorizada (CT) do peito**: para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Urgência e disposição**
+
+* Emergência: devido à presença de sintomas graves, como falta de ar e febre.
+* Urgência: devido à necessidade de exames adicionais e avaliação cardíaca.
+
+**Especialistas necessários**
+
+1. **Cardiologista**: para avaliar a função cardíaca e detectar possíveis alterações elétricas.
+2. **Pneumologista**: para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado.
+
+É importante lembrar que a classificação como emergência, urgência ou eletivo depende da gravidade dos sintomas e da necessidade de exames adicionais. Nesse caso, a presença de sintomas graves e a necessidade de avaliação cardíaca justificam a classificação como emergência.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente apresenta sintomas respiratórios (tosse produtiva e falta de ar) que se agravaram nos últimos 3 dias, acompanhados por febre, pressão baixa e frequência cardíaca elevada. Além disso, o paciente tem uma história de DPOC com exacerbações frequentes e é tabagista e diabético tipo 2.
+
+Interpretação do ECG e exames cardíacos:
+
+A ausência de informações sobre o resultado do ECG não permite uma interpretação objetiva. No entanto, considerando a presença de sintomas respiratórios e cardíacos, é possível que o paciente tenha uma condição pulmonar aguda, como pneumonia ou insuficiência cardíaca.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Insuficiência Cardíaca**: A falta de ar e a pressão baixa podem ser indicativos de insuficiência cardíaca, especialmente considerando a história de DPOC com exacerbações frequentes.
+2. **Pneumonia**: A tosse produtiva e a falta de ar são sintomas comuns em pneumonia.
+3. **Arritmia Cardiaca**: A frequência cardíaca elevada pode ser indicativa de arritmia cardiaca, especialmente considerando a história de DPOC.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: dado ausente — impossível calcular; solicitar ECG.
+* HEART Score (dor torácica não diagnóstica): dado ausente — impossível calcular; solicitar ECG e exames cardíacos adicionais.
+* CRUSADE Score (risco de sangramento em SCA): dado ausente — impossível calcular; solicitar exames cardíacos adicionais.
+
+Estratificação de risco:
+
+* Baixo: não é possível avaliar o risco com base nos dados disponíveis.
+* Intermediário: a presença de sintomas respiratórios e cardíacos, além da história de DPOC, sugere um risco intermediário.
+* Alto: a falta de ar e a pressão baixa podem ser indicativos de insuficiência cardíaca ou pneumonia, o que aumenta o risco.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização**: O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas.
+2. **Exames cardíacos adicionais**: É necessário realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+3. **Medicamentos**: O paciente pode receber medicamentos para aliviar os sintomas respiratórios e cardíacos, como broncodilatadores e anti-inflamatórios não esteroides (AINEs).
+4. **Internação**: Devido à gravidade dos sintomas e a necessidade de monitorização, o paciente deve ser internado em uma unidade de cuidados intensivos.
+
+**Recomendação**: O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado.
+
+[Pneumologista]
+**Avaliação respiratória**
+
+O paciente apresenta sintomas respiratórios graves, incluindo tosse produtiva e falta de ar que está piorando há 3 dias. Além disso, tem febre, pressão baixa e frequência cardíaca elevada, o que sugere uma condição grave.
+
+**Padrão fisiopatológico identificado**
+
+O padrão fisiopatológico mais provável é um **DPOC (Doença Pulmonar Obstrutiva Crônica) exacerbado**, considerando a história de DPOC com exacerbações frequentes, tosse produtiva e falta de ar que está piorando.
+
+**Dados de oxigenação e ventilação**
+
+Não há dados disponíveis sobre SpO₂ ou gasometria. Se solicitarmos esses parâmetros, é importante para avaliar a gravidade da condição e determinar a necessidade de oxigenoterapia.
+
+**Diagnóstico diferencial pulmonar**
+
+Considerando os sintomas e história do paciente, o diagnóstico diferencial inclui:
+
+*   **DPOC exacerbado**: achados a favor - tosse produtiva, falta de ar piorando; contra - ausência de sinais de infecção aguda.
+*   **Pneumonia**: achados a favor - febre, pressão baixa e frequência cardíaca elevada; contra - ausência de sinais de infecção aguda.
+*   **Tromboembolismo pulmonar**: achados a favor - falta de ar súbita não presente; contra - ausência de outros sintomas típicos.
+
+**Escores aplicados**
+
+*   **Wells para TEP (Tromboembolismo Pulmonar)**: TVP clínica (+3), FC > 100 (+1,5), imobilização/cirurgia recente não presente (+0), TVP/TEP prévio não presente (+0), hemoptise não presente (+0), neoplasia não presente (+0), diagnóstico alternativo menos provável que TEP não presente (+0); ≤ 4 baixa probabilidade, > 4 alta probabilidade.
+*   **CURB-65**: confusão (1) + ureia > 7 mmol/L (1) + FR ≥ 30 (1) + PA ≤ 90/60 (1) + idade ≥ 65 (1); 0-1 ambulatorial, 2 internação, ≥ 3 considerar UTI.
+
+**Risco de recorrência ou progressão**
+
+O paciente tem um histórico de DPOC com exacerbações frequentes e é tabagista, o que aumenta o risco de recorrência. Além disso, a falta de ar piorando há 3 dias sugere uma condição grave que pode requerer atenção médica imediata.
+
+**Conduta pneumológica**
+
+*   **Oxigenoterapia**: é importante avaliar a necessidade de oxigenoterapia com base nos dados disponíveis sobre SpO₂ ou gasometria.
+*   **Broncodilatadores**: podem ser considerados para aliviar os sintomas respiratórios, mas devem ser usados com cautela em pacientes com DPOC.
+*   **Antibióticos**: se houver suspeita de pneumonia, antibióticos podem ser prescritos, mas é importante realizar exames de laboratório e imagem para confirmar a diagnóstico.
+*   **Drenagem pleural**: não há sinais de infecção aguda ou pneumotórax, o que sugere que essa opção não é necessária no momento.
+*   **VNI (Ventilação Inversa do Nível de Oxigênio) ou IOT (Inalação de Oxigênio Tópico)**: podem ser considerados para aliviar os sintomas respiratórios, mas devem ser usados com cautela em pacientes com DPOC.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está utilizando medicamentos para controlar a tosse produtiva e a falta de ar, como broncodilatadores e anti-inflamatórios não esteroides (AINEs). Além disso, o paciente pode estar utilizando medicamentos para controlar a pressão arterial e a frequência cardíaca.
+
+**Interações e contraindicações identificadas**
+
+*   **Interferência com os medicamentos**: O uso de broncodilatadores e AINEs pode interferir com a eficácia dos medicamentos prescritos para o paciente.
+*   **Contraindicação**: O uso de certos medicamentos pode ser contraindicado em pacientes com DPOC, como broncodilatadores que podem causar hipertensão e frequência cardíaca elevada.
+
+**Ajustes de dose recomendados**
+
+*   **Dose de broncodilatadores**: A dose de broncodilatadores pode precisar ser ajustada para evitar a hipertensão e a frequência cardíaca elevada.
+*   **Dose de AINEs**: A dose de AINEs pode precisar ser ajustada para evitar a interação com os medicamentos prescritos para o paciente.
+
+**Recomendação final**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doença pulmonar ou cardíaca e desenvolver um plano de tratamento personalizado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um pneumologista especializado para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado. Além disso, é importante realizar exames respiratórios adicionais, como imagem de tomografia computadorizada (CT) do peito, para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Recomendação**
+
+O paciente deve ser monitorado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas e ajustar a terapia conforme necessário. Além disso, é importante realizar exames cardíacos adicionais, como ECG e exame de imagem cardíaca, para avaliar a extensão da doença pulmonar ou cardíaca.
+
+**Recomendação**
+
+O paciente deve ser avaliado por um cardiologista especializado para avaliar a extensão da doen

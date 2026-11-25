@@ -1,0 +1,192 @@
+numero_teste: 39
+provider: ollama
+modelo: llama3.2
+sindrome: tromboembolismo_pulmonar
+especialistas: Clínico Geral, Cardiologista, Pneumologista
+tokens_entrada: 6367
+tokens_saida: 2832
+custo_brl: 0.0000
+tempo_total_s: 69.7
+tempo_processamento_s: 61.5
+tempo_legivel: 1min02s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+Informações complementares:
+Fez cirurgia nas últimas 4 semanas? nnaoo
+Informações complementares:
+Está com falta de ar de início súbito? nao, a falta de ar vem piorando a 3 dias
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+**Red flags identificados**
+
+* Presença de febre
+* Pressão baixa (hipotensão)
+* Frequência cardíaca elevada (taquicardia)
+* Falta de ar que vem melhorando ao longo do tempo, o que pode indicar uma condição pulmonar aguda
+
+**Síndrome clínica principal**
+
+A falta de ar que vem melhorando ao longo do tempo e a presença de febre sugerem uma condição pulmonar aguda, possivelmente pneumonia ou insuficiência respiratória.
+
+**Diagnóstico diferencial**
+
+1. **Pneumonia**: evidências a favor - tosse produtiva, falta de ar que vem melhorando ao longo do tempo, febre; contra - não há informações sobre a localização da pneumonia.
+2. **Insuficiência respiratória**: evidências a favor - falta de ar que vem melhorando ao longo do tempo, pressão baixa, frequência cardíaca elevada; contra - não há informações sobre a causa subjacente.
+3. **Síndrome coronariana aguda**: evidências a favor - história de DPOC com exacerbações frequentes, tabagismo e diabetes tipo 2; contra - falta de dor torácica característica.
+
+**Dados críticos ausentes**
+
+* Informações sobre a localização da pneumonia (se é bacteriana ou viral)
+* Níveis de oxigênio
+* Resultados de exames de sangue (como PCR, CBC, química)
+
+**Exames prioritários**
+
+1. **ECG**: para avaliar a frequência cardíaca e pressão arterial.
+2. **Raios-X do tórax**: para avaliar a localização e extensão da pneumonia ou insuficiência respiratória.
+3. **Análise de sangue**: para avaliar a presença de infecção, inflamação e outros sinais de doença.
+
+**Urgência e disposição**
+
+* Emergência: devido à presença de febre, pressão baixa e frequência cardíaca elevada, que podem indicar uma condição grave.
+* Urgência: devido à falta de ar que vem melhorando ao longo do tempo, que pode indicar uma condição pulmonar aguda.
+
+**Especialistas necessários**
+
+1. **Medicina Interna**: para avaliar a condição geral do paciente e decidir sobre o tratamento.
+2. **Pneumologia**: para avaliar a localização e extensão da pneumonia ou insuficiência respiratória.
+3. **Cardiologia**: para avaliar a frequência cardíaca e pressão arterial, e decidir sobre o tratamento de qualquer condição cardíaca subjacente.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente apresenta sintomas respiratórios (tosse produtiva e falta de ar) que podem estar relacionados à sua condição pulmonar crônica (DPOC com exacerbações frequentes). Além disso, ele tem uma história de diabetes tipo 2 e é tabagista, o que aumenta o risco cardiovascular. A febre, pressão baixa e frequência cardíaca elevada sugerem uma resposta inflamatória e potencialmente um processo cardíaco.
+
+Interpretação do ECG e exames cardíacos:
+
+A ausência de informações sobre o resultado do ECG não permite uma interpretação objetiva. No entanto, é importante considerar a possibilidade de arritmias ou infarto agudo, especialmente considerando a falta de ar que vem piorando ao longo dos últimos 3 dias.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Infarto Agudo do Miocárdio (STEMI)**: alta probabilidade, considerando a falta de ar que vem piorando e febre.
+2. **Arritmia Cardíaca**: média probabilidade, considerando a frequência cardíaca elevada e pressão baixa.
+3. **Insuficiência Cardíaca**: baixa probabilidade, considerando os sintomas respiratórios e ausência de sinais clássicos de insuficiência cardíaca.
+
+Escores aplicados:
+
+- TIMI Risk Score para STEMI: impossível calcular (dado ausente — falta de dados sobre tempo até tratamento).
+- HEART Score: impossível calcular (dado ausente — falta de dados sobre dor torácica não diagnóstica e troponina).
+- CRUSADE Score: impossível calcular (dado ausente — falta de dados sobre hematócrito, clearance de creatinina e sinais de ICC).
+
+Estratificação de risco:
+
+Baixo / intermediário / alto / muito alto. Considerando a falta de ar que vem piorando e febre, o paciente está em alto risco.
+
+Conduta cardiológica proposta:
+
+- **Monitorização intensiva**: para avaliar a evolução do paciente e identificar possíveis complicações.
+- **Medicamentos**: anti-inflamatórios não esteroides (AINEs) para aliviar a dor e reduzir a inflamação, além de medicamentos para controlar a frequência cardíaca elevada.
+- **Revisão do ECG**: para avaliar a evolução da arritmia ou infarto agudo.
+- **Internação**: para monitoramento contínuo e possíveis procedimentos cardíacos.
+
+É importante notar que, devido à falta de dados sobre o tempo até tratamento e outros critérios relevantes, os escores TIMI e HEART não podem ser calculados. Além disso, a ausência de informações sobre a dor torácica não diagnóstica e troponina torna impossível calcular o HEART Score.
+
+[Pneumologista]
+**Avaliação respiratória**
+
+O paciente apresenta sintomas respiratórios graves, incluindo tosse produtiva, falta de ar e febre. Além disso, tem uma história de DPOC com exacerbações frequentes, o que sugere uma doença crônica pulmonar. A presença de pressão baixa e frequência cardíaca elevada é preocupante e pode indicar hipoxemia grave.
+
+**Padrão fisiopatológico identificado**
+
+O padrão fisiopatológico mais provável é o **obstrutivo**, devido à presença de tosse produtiva, falta de ar e febre. A história de DPOC com exacerbações frequentes também sugere uma obstrução pulmonar crônica.
+
+**Dados de oxigenação e ventilação**
+
+Interpretação dos parâmetros disponíveis:
+
+* SpO₂: não está disponível
+* Relação PaO2/FiO2: não está disponível
+* Sinais de esforço respiratório: uso de musculatura acessória, tiragem, batimento de asa de nariz
+
+É importante obter os valores de SpO2 e gasometria para avaliar a oxigenação do paciente.
+
+**Diagnóstico diferencial pulmonar**
+
+Cada hipótese com probabilidade (alta/média/baixa), achados a favor e contra:
+
+1. **Pneumonia**: sintomas respiratórios graves, febre, tosse produtiva
+	* Achados a favor: falta de ar, febre, tosse produtiva
+	* Contra: não há sinais de infecção aguda em outras áreas do corpo
+2. **DPOC exacerbada**: sintomas respiratórios graves, história de DPOC com exacerbações frequentes
+	* Achados a favor: falta de ar, febre, tosse produtiva, história de DPOC
+	* Contra: não há sinais de infecção aguda em outras áreas do corpo
+3. **Pneumotórax**: sintomas respiratórios graves, pressão baixa e frequência cardíaca elevada
+	* Achados a favor: falta de ar, febre, pressão baixa e frequência cardíaca elevada
+	* Contra: não há sinais de trauma recente ou história de pneumotórax prévio
+
+**Escores aplicados**
+
+Wells para TEP (Tromboembolismo Pulmonar):
+
+* TVP clínica (+3)
+* FC > 100 (+1,5)
+* Imobilização/cirurgia recente (+1,5)
+* TVP/TEP prévio (+1,5)
+* Hemoptise (+1)
+* Neoplasia (+1)
+* Diagnóstico alternativo menos provável que TEP (+3)
+
+PESI (Índice de Gravidade do TEP):
+
+* Estima mortalidade em 30 dias
+
+CURB-65:
+
+* Confusão (1) + ureia > 7 mmol/L (1) + FR ≥ 30 (1) + PA ≤ 90/60 (1) + idade ≥ 65 (1)
+
+**Risco de recorrência ou progressão**
+
+Para pneumotórax, o risco de recorrência é alto devido à história de DPOC com exacerbações frequentes.
+
+**Conduta pneumológica**
+
+O paciente deve ser avaliado imediatamente em um ambiente hospitalar. A oxigenoterapia (fluxo, dispositivo) e broncodilatadores devem ser iniciados imediatamente. Além disso, é importante:
+
+* Obter os valores de SpO2 e gasometria para avaliar a oxigenação do paciente.
+* Realizar exames complementares, como radiografia pulmonar e ecocardiograma, para avaliar a extensão da doença.
+* Considerar a administração de antibióticos se houver suspeita de pneumonia.
+* Monitorar o paciente de perto para detectar sinais de recorrência ou progressão.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está com tosse produtiva, falta de ar e febre, o que sugere uma condição pulmonar aguda. Além disso, ele tem uma história de DPOC com exacerbações frequentes, diabetes tipo 2 e é tabagista. Os medicamentos em uso incluem:
+
+* Antibióticos (não especificados)
+* Broncodilatadores (não especificados)
+
+As propostas dos especialistas incluem:
+
+* Medicamentos anti-inflamatórios não esteroides (AINEs) para aliviar a dor e reduzir a inflamação.
+* Medicamentos para controlar a frequência cardíaca elevada.
+* Oxigenoterapia (fluxo, dispositivo) e broncodilatadores para avaliar a oxigenação do paciente.
+
+**Interações e contraindicações identificadas**
+
+* A presença de febre, pressão baixa e frequência cardíaca elevada sugere uma condição grave que pode requerer intervenção médica imediata.
+* O uso de antibióticos deve ser monitorado para evitar interações com outros medicamentos ou aumentar o risco de resistência bacteriana.
+* A presença de diabetes tipo 2 e história de DPOC com exacerbações frequentes sugem que o paciente pode ter uma condição crônica pulmonar que requer avaliação e tratamento adequados.
+
+**Ajustes de dose recomendados**
+
+* Devido à função renal ou hepática do paciente, é importante ajustar a dose dos medicamentos para evitar toxicidade.
+* A presença de diabetes tipo 2 e história de DPOC com exacerbações frequentes sugem que o paciente pode ter uma condição crônica pulmonar que requer avaliação e tratamento adequados.
+
+**Recomendação final**
+
+O paciente deve ser avaliado imediatamente em um ambiente hospitalar para avaliar a extensão da doença e decidir sobre o tratamento adequado. É importante monitorar o paciente de perto para detectar sinais de recorrência ou progressão e ajustar a dose dos medicamentos conforme necessário. Além disso, é fundamental considerar a administração de antibióticos se houver suspeita de pneumonia e realizar exames complementares para avaliar a extensão da doença.

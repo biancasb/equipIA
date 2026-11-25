@@ -1,0 +1,139 @@
+numero_teste: 6
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4834
+tokens_saida: 1894
+custo_brl: 0.0000
+tempo_total_s: 73.0
+tempo_processamento_s: 42.4
+tempo_legivel: 42s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? simm
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? sim
+Fuma? nao
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? 3
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? 1dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa associada à náusea e sudorese.
+- Piora da dor ao respirar fundo.
+- Antecedentes de diabetes, hipertensão e tabagismo.
+- Histórico de infarto ou doença nas artérias do coração (angina, cateterismo ou stent).
+- Pressão alta.
+- Colesterol alto.
+- Família com histórico de infarto antes dos 55 anos.
+
+Síndrome clínica principal:
+A dor torácica central intensa associada à náusea e sudorese, especialmente após esforço, sugere uma síndrome coronariana aguda (SCA), também conhecida como angina de peito. A piora da dor ao respirar fundo é um sinal alarmante que pode indicar uma instabilidade hemodinâmica.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda (SCA)**: Dor torácica central intensa associada à náusea e sudorese, especialmente após esforço.
+2. **Infarto do Miocárdio**: Dor torácica central intensa associada à náusea e sudorese, especialmente após esforço, com histórico de infarto ou doença nas artérias do coração.
+3. **Arterite Coronária**: Dor torácica central intensa associada à náusea e sudorese, especialmente após esforço, com histórico de pressão alta e colesterol alto.
+
+Dados críticos ausentes:
+
+- Nível de troponina (um biomarco específico para infarto do miocárdio).
+- ECG (electrocardiograma) para avaliar a estabilidade do ritmo cardíaco.
+- Pressão arterial para avaliar a hemodinâmica.
+
+Exames prioritários:
+
+1. **ECG**: Para avaliar a estabilidade do ritmo cardíaco e detectar sinais de infarto ou doença coronária.
+2. **Troponina**: Para confirmar o diagnóstico de infarto do miocárdio ou rejeitar a hipótese.
+3. **Pressão Arterial**: Para avaliar a hemodinâmica e determinar se há instabilidade hemodinâmica.
+
+Urgência e disposição:
+**Emergência**. A dor torácica central intensa associada à náusea e sudorese, especialmente após esforço, é um sinal alarmante que requer atenção imediata. O histórico de infarto ou doença nas artérias do coração aumenta o risco de complicações graves.
+
+Especialistas necessários:
+
+1. **Cardiologista**: Para avaliar a estabilidade do ritmo cardíaco e determinar o diagnóstico mais provável.
+2. **Respiratologista**: Para avaliar a função pulmonar e detectar sinais de pneumonia ou outras condições respiratórias.
+3. **Neurologista**: Para avaliar a consciência e a função cerebral, caso haja sintomas de confusão ou alteração cognitiva.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos, com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem uma história familiar de infarto precocinho (3 parentes próximos com infarto antes dos 55 anos para homens ou 65 anos para mulheres). Essas informações sugerem um risco elevado de doença cardíaca.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG. No entanto, é importante considerar a possibilidade de STEMI (infarto agudo do miocárdio) ou NSTEMI (doença nas artérias do coração não aguda), especialmente considerando a dor torácica intensa e a história familiar de infarto precocinho.
+
+Diagnóstico diferencial cardiológico:
+
+* STEMI: alta probabilidade, considerando a dor torácica intensa e a história familiar de infarto precocinho.
+* NSTEMI: média probabilidade, considerando a dor torácica intensa, mas sem a presença de ST elevados em ECG.
+* Infarto agudo do miocárdio não estreito (NSTEMI): alta probabilidade, considerando a dor torácica intensa e a história familiar de infarto precocinho.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: impossível calcular, dado ausente — solicitar ECG.
+* TIMI Risk Score para NSTEMI/AI: impossível calcular, dado ausente — solicitar ECG.
+* GRACE Score (IAMSST): impossível calcular, dado ausente — solicitar ECG.
+* HEART Score: impossível calcular, dado ausente — solicitar ECG.
+
+Estratificação de risco:
+
+* Baixo / intermediário / alto / muito alto: alto, considerando a dor torácica intensa e a história familiar de infarto precocinho.
+
+Conduta cardiológica proposta:
+
+* Medicamentos: aspirina, clopidogrel, metoprolol.
+* Monitorização: ECG regularmente, observação da dor torácica.
+* Procedimentos: cateterismo coronário, se necessário.
+* Necessidade de internação: sim, para monitoramento e tratamento.
+
+Observações:
+
+* É importante solicitar o resultado do ECG para calcular os escores e estratificar o risco.
+* A dor torácica intensa e a história familiar de infarto precocinho sugerem um risco elevado de doença cardíaca, portanto, é necessário monitoramento cuidadoso e tratamento agressivo.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está tomando:
+
+* Aspirina (não utilizado nos últimos 7 dias)
+* Clopidogrel
+* Metoprolol
+
+Propostas dos especialistas incluem:
+
+* Continuação da aspirina, clopidogrel e metoprolol
+* Adição de outros medicamentos para reduzir o risco de infarto, como nitratos ou beta-bloqueadores adicionais
+* Monitorização regular do ECG e observação da dor torácica
+
+**Interações e contraindicações identificadas**
+
+* Interferência com a absorção de medicamentos: clopidogrel pode interferir com a absorção de aspirina, portanto, é necessário monitorar os níveis de ambos os medicamentos
+* Contraindicação: metoprolol não é recomendado para pacientes com insuficiência cardíaca grave ou hipotensão severa
+
+**Ajustes de dose recomendados**
+
+* Dose de aspirina: continuar a 100mg/dia, monitorando os níveis de trombina e observando a dor torácica
+* Dose de clopidogrel: continuar a 75mg/dia, monitorando os níveis de trombina e observando a dor torácica
+* Dose de metoprolol: ajustar para 50-100mg/dia, considerando a função cardíaca do paciente
+
+**Recomendação final**
+
+O paciente deve ser monitorado regularmente com ECG e observação da dor torácica, e os medicamentos devem ser ajustados conforme necessário. É importante considerar a possibilidade de cateterismo coronário ou outros procedimentos cardíacos se houver necessidade. A dor torácica intensa e a história familiar de infarto precocinho sugerem um risco elevado de doença cardíaca, portanto, é necessário tratamento agressivo e monitorização cuidadosa.

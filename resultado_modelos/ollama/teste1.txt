@@ -1,0 +1,134 @@
+numero_teste: 1
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4865
+tokens_saida: 2052
+custo_brl: 0.0000
+tempo_total_s: 88.3
+tempo_processamento_s: 47.5
+tempo_legivel: 48s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? sim
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim hipertensao
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? sim
+Fuma? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim 
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? 1 dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa, piorando ao respirar fundo.
+- Sintomas de náusea e sudorese.
+- Antecedentes de diabetes, hipertensão e tabagismo.
+
+Síndrome clínica principal:
+A dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, sugere uma síndrome coronariana aguda (SCA), também conhecida como infarto do miocárdio. A piora da dor ao respirar fundo é um sinal alarmante que indica uma possível obstrução significativa da via aérea.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda (SCA)**: Dor torácica central intensa, piorando ao respirar fundo, náusea e sudorese, antecedentes de diabetes, hipertensão e tabagismo.
+2. **Angina Inestável**: Dor torácica central intensa, piorando ao respirar fundo, náusea e sudorese, antecedentes de diabetes, hipertensão e tabagismo.
+3. **Infarto do Miocárdio**: Dor torácica central intensa, piorando ao respirar fundo, náusea e sudorese, antecedentes de diabetes, hipertensão e tabagismo.
+
+Dados críticos ausentes:
+
+- Valor de trocador arterial (PaO2/DiO2)
+- Nível de troponina
+- ECG
+
+Exames prioritários:
+- ECG para avaliar a estabilidade da via aérea e detectar sinais de infarto.
+- Troca de sangue para verificar o nível de troponina e outros marcadores de inflamação.
+- Exame de imagem (ECG, ultrassonografia cardíaca) para avaliar a estrutura do miocárdio.
+
+Urgência e disposição:
+**Emergência**. A dor torácica central intensa e a piora da dor ao respirar fundo são sinais alarmantes que indicam uma possível obstrução significativa da via aérea, o que requer atenção imediata.
+
+Especialistas necessários:
+- **Cardiologista**: para avaliar a estabilidade da via aérea e decidir sobre a intervenção cardíaca.
+- **Anestesista**: para administrar medicamentos anestésicos e analgésicos, se necessário.
+- **Radiologista**: para realizar exames de imagem (ECG, ultrassonografia cardíaca) e avaliar a estrutura do miocárdio.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem história de infarto ou doença nas artérias do coração, como angina, cateterismo ou stent, hipertensão, diabetes, colesterol alto e fuma.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG. No entanto, é importante considerar a presença de sinais de angina incompatível (dor torácica central intensa associada a náusea e sudorese) e a história de infarto ou doença nas artérias do coração.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Síndrome coronariana aguda** (STEMI): A dor torácica central intensa, associada a náusea e sudorese, pode ser um sinal de infarto do miocárdio.
+2. **Inferior miocardite**: A dor torácica central intensa pode ser relacionada à inflamação da parede inferior do coração.
+3. **Arritmia cardíaca**: A dor torácica central intensa pode ser um sinal de arritmia cardíaca, como a fibrilação ventricular.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular (dado ausente — impossível calcular; solicitar tempo até tratamento).
+* HEART Score: não é possível calcular (dado ausente — impossível calcular; solicitar dor torácica não diagnóstica).
+* CRUSADE Score: não é possível calcular (dado ausente — impossível calcular; solicitar hematócrito, clearance de creatinina, FC e sinais de ICC).
+
+Estratificação de risco:
+
+* Baixo risco: não há informações suficientes para estratificar o risco.
+* Intermediário risco: a dor torácica central intensa e a história de infarto ou doença nas artérias do coração sugerem um risco intermediário.
+* Alto risco: a presença de sinais de angina incompatível e a história de diabetes, hipertensão e tabagismo aumentam o risco.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização**: O paciente deve ser monitorado em uma unidade de emergência ou clínica comum.
+2. **ECG**: Um ECG deve ser realizado imediatamente para avaliar a extensão da dor torácica central intensa e identificar possíveis sinais de infarto do miocárdio.
+3. **Medicamentos**: O paciente pode receber medicamentos anti-angina, como nitroglicerina ou metilhidrualina, para aliviar a dor torácica central intensa.
+4. **Internação**: O paciente deve ser internado em uma unidade de emergência ou clínica comum para monitoramento e tratamento.
+
+É importante notar que a conduta cardiológica proposta é baseada nas informações disponíveis e pode variar dependendo do resultado do ECG e da avaliação mais detalhada do paciente.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está sendo considerado para uma síndrome coronariana aguda (SCA) ou infarto do miocárdio, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Os medicamentos em uso incluem:
+
+* Medicamentos anti-angina, como nitroglicerina ou metilhidrualina
+* Medicamentos para reduzir a pressão arterial, como atenolol ou metoprolol
+
+As propostas incluem:
+
+* Administração de medicamentos anti-angina para aliviar a dor torácica central intensa
+* Uso de nitroglicerina para reduzir a pressão arterial e melhorar a oxigenação do miocárdio
+* Monitorização contínua do paciente em uma unidade de emergência ou clínica comum
+
+**Interações e contraindicações identificadas**
+
+As seguintes interações e contraindicações foram identificadas:
+
+* Interferência com a terapia anti-hipertensiva: o uso de nitroglicerina pode interferir com a terapia anti-hipertensiva, portanto é importante monitorar a pressão arterial regularmente
+* Risco de hipotensão: o uso de nitroglicerina pode causar hipotensão, portanto é importante monitorar a pressão arterial regularmente
+* Contraindicação em pacientes com doença pulmonar grave: o uso de nitroglicerina pode ser contraindicado em pacientes com doença pulmonar grave
+
+**Ajustes de dose recomendados**
+
+Devido à idade avançada do paciente (62 anos), é importante ajustar a dose dos medicamentos para evitar efeitos colaterais.
+
+* Atenolol ou metoprolol: 50-100 mg/dia
+* Nitroglicerina: 0,4-0,8 mg/kg/h
+
+**Recomendação final**
+
+O paciente deve ser monitorado em uma unidade de emergência ou clínica comum e receber medicamentos anti-angina para aliviar a dor torácica central intensa. É importante ajustar a dose dos medicamentos de acordo com a idade avançada do paciente e monitorar a pressão arterial regularmente. Além disso, é importante realizar exames cardíacos adicionais, como ECG e ultrassonografia cardíaca, para avaliar a estrutura do miocárdio e determinar o diagnóstico mais preciso.

@@ -1,0 +1,125 @@
+numero_teste: 7
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4758
+tokens_saida: 1758
+custo_brl: 0.0000
+tempo_total_s: 60.4
+tempo_processamento_s: 40.4
+tempo_legivel: 40s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? sim
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? som
+Fuma? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? 1dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa, associada à náusea e sudorese.
+- Piora da dor ao respirar fundo.
+- Antecedentes de diabetes, hipertensão e tabagismo.
+- Histórico de infarto ou doença nas artérias do coração.
+- Pressão alta.
+- Fuma.
+
+Síndrome clínica principal:
+A dor torácica central intensa, associada à náusea e sudorese, sugere uma síndrome coronariana aguda (SCA), também conhecida como infarto do miocárdio. A piora da dor ao respirar fundo é um sinal alarmante que indica a possibilidade de insuficiência cardíaca.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda (SCA)**: Dor torácica central intensa, náusea e sudorese, piora da dor ao respirar fundo.
+2. **Infarto do Miocárdio**: Dor torácica central intensa, náusea e sudorese, piora da dor ao respirar fundo, histórico de infarto ou doença nas artérias do coração.
+3. **Angina Inestável**: Dor torácica central intensa, náusea e sudorese, piora da dor ao respirar fundo.
+
+Dados críticos ausentes:
+
+- Nível de troponina no sangue (um marcador de danos cardíacos).
+- ECG (electrocardiograma) para avaliar a estabilidade do ritmo cardíaco.
+- Pressão arterial para avaliar a hemodinâmica.
+
+Exames prioritários:
+
+1. **ECG**: Para avaliar a estabilidade do ritmo cardíaco e identificar sinais de infarto do miocárdio.
+2. **Troponina no sangue**: Para avaliar o nível de danos cardíacos.
+3. **Pressão arterial**: Para avaliar a hemodinâmica.
+
+Urgência e disposição:
+**Emergência**. A dor torácica central intensa, associada à náusea e sudorese, sugere uma condição médica grave que requer atenção imediata.
+
+Especialistas necessários:
+
+1. **Cardiologista**: Para avaliar a estabilidade do ritmo cardíaco e identificar sinais de infarto do miocárdio.
+2. **Anestesista**: Para administrar medicamentos para aliviar a dor e controlar a pressão arterial.
+3. **Radiologista**: Para realizar exames de imagem, como o ECG e a troponina no sangue.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem uma história familiar de infarto precocinho (um parente próximo teve infarto antes dos 55 anos). Esses fatores sugerem um risco elevado de doença cardíaca.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG ou outros exames cardíacos. No entanto, é importante considerar a possibilidade de uma condição cardíaca aguda, como um infarto do miocárdio (STEMI) ou uma insuficiência cardíaca.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Infarto do miocárdio (STEMI)**: A dor torácica central intensa e a história familiar de infarto precocinho sugerem essa condição.
+2. **Insuficiência cardíaca**: A dor torácica piorada ao respirar fundo pode ser um sintoma de insuficiência cardíaca.
+3. **Arritmia cardíaca**: A dor torácica e a náusea podem ser sintomas de arritmia cardíaca.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular, pois falta dados sobre o tempo até tratamento e história de diabetes.
+* HEART Score (dor torácica não diagnóstica): não é possível calcular, pois falta informações sobre a história de diabetes e outros fatores de risco.
+
+Estratificação de risco:
+
+* Risco de infarto do miocárdio: alto
+* Risco de insuficiência cardíaca: moderado
+* Risco de arritmia cardíaca: baixo
+
+Conduta cardiológica proposta:
+
+1. **Tratamento agressivo**: O paciente deve ser tratado com medicamentos para alívio da dor, como acetaminofeno ou ibuprofeno, e anti-inflamatórios não esteroides (AINEs).
+2. **Monitorização cardíaca**: O paciente deve ser monitorizado regularmente para avaliar a evolução da condição.
+3. **Evaluação de risco**: O paciente deve ser avaliado para risco de infarto do miocárdio e insuficiência cardíaca, e tratado conforme necessário.
+4. **Recomendações gerais**:
+	* O paciente deve parar fumando e reduzir o consumo de álcool.
+	* Ele deve manter um estilo de vida saudável, com dieta equilibrada e exercícios regulares.
+	* O paciente deve retornar ao serviço para avaliação regular.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está apresentando sintomas de dor torácica central intensa, associada à náusea e sudorese, que pioraram ao respirar fundo. Devido a essa situação, é necessário um tratamento agressivo para aliviar a dor e controlar a pressão arterial.
+
+**Interações e contraindicações identificadas**
+
+* O paciente está tomando aspirina nos últimos 7 dias, o que pode aumentar o risco de sangramento.
+* A presença de diabetes, hipertensão e tabagismo sugere uma condição cardíaca aguda, como infarto do miocárdio.
+
+**Ajustes de dose recomendados**
+
+* Devido à função renal do paciente, é necessário ajustar a dose dos medicamentos para evitar a acumulação de toxinas.
+* A função hepática do paciente também deve ser considerada ao prescrever medicamentos hepatotoxicos.
+
+**Recomendação final**
+
+O paciente deve ser tratado com medicamentos para alívio da dor, como acetaminofeno ou ibuprofeno, e anti-inflamatórios não esteroides (AINEs). Além disso, é necessário monitorizar a pressão arterial regularmente e avaliar o risco de infarto do miocárdio e insuficiência cardíaca. O paciente também deve parar fumando e reduzir o consumo de álcool, e manter um estilo de vida saudável, com dieta equilibrada e exercícios regulares. É importante retornar ao serviço para avaliação regular.

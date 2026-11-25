@@ -1,0 +1,815 @@
+numero_teste: 48
+provider: anthropic
+modelo: claude-haiku-4-5-20251001
+sindrome: pneumonia
+especialistas: Clínico Geral, Pneumologista
+tokens_entrada: 11505
+tokens_saida: 13276
+custo_brl: 0.4298
+tempo_total_s: 160.5
+tempo_processamento_s: 124.7
+tempo_legivel: 2min05s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+Informações complementares:
+Teve calafrios? ao informado 
+Está com catarro? Sim. Tosse produtiva, com catarro, há 3 dias.
+Sentiu dor no peito ao respirar ou tossir? Não informado.
+Apresentou confusão mental recentemente? Não informado.
+Possui imunossupressão ou usa medicamento que baixa a imunidade? Não informado. Os únicos medicamentos em uso são tiotrópio inalatório e insulina glargina, ambos diários
+Informações complementares:
+Possui imunossupressão ou usa medicamento que baixa a imunidade? Não informado. Os únicos medicamentos em uso são tiotrópio inalatório e insulina glargina, ambos diários
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+# ANÁLISE CLÍNICA ESTRUTURADA
+
+## 🚨 RED FLAGS IDENTIFICADOS
+
+**PRESENTES:**
+- ✓ Pressão arterial baixa (hipotensão)
+- ✓ Frequência cardíaca elevada (taquicardia)
+- ✓ Febre
+- ✓ Dispneia progressiva (3 dias)
+- ✓ Tosse produtiva
+- ✓ Paciente com DPOC (fator de risco para descompensação grave)
+
+**AUSENTES (mas críticos — precisam ser confirmados):**
+- ? Alteração cognitiva/confusão mental
+- ? Rigidez de nuca (meningismo)
+- ? Dor pleurítica
+- ? Hemoptise
+- ? Cianose ou SpO2 < 90%
+- ? Sinais de choque (extremidades frias, enchimento capilar lentificado)
+
+**INTERPRETAÇÃO:** Paciente com sinais de **instabilidade hemodinâmica** (hipotensão + taquicardia + febre) — compatível com **síndrome séptica**.
+
+---
+
+## 📋 SÍNDROME CLÍNICA PRINCIPAL
+
+### **SÍNDROME SÉPTICA COM FOCO RESPIRATÓRIO**
+
+**Justificativa:**
+- Tríade clássica: febre + hipotensão + taquicardia
+- Foco aparente: trato respiratório inferior (tosse produtiva, dispneia, DPOC)
+- Contexto: paciente com DPOC (risco aumentado para infecções respiratórias graves)
+- Dinâmica: progressão em 3 dias com deterioração hemodinâmica
+
+**Critérios qSOFA presentes:**
+- FR ≥ 22? (não informada — **DADO CRÍTICO FALTANTE**)
+- Alteração cognitiva? (não informada — **DADO CRÍTICO FALTANTE**)
+- PAS ≤ 100? (SIM — hipotensão presente)
+- **Risco: ≥ 1 ponto confirmado; potencialmente ≥ 2 se FR ou confusão presentes**
+
+---
+
+## 🔍 DIAGNÓSTICO DIFERENCIAL
+
+### **ALTA PROBABILIDADE:**
+
+#### 1. **Pneumonia bacteriana com sepse**
+- **A favor:**
+  - Tosse produtiva com catarro (sugestivo de consolidação)
+  - Febre + hipotensão + taquicardia (sepse)
+  - DPOC é fator de risco para pneumonia grave
+  - Tabagismo (imunidade prejudicada)
+  - Idade 55 anos
+- **Contra:**
+  - Sem menção a dor pleurítica (comum em pneumonia)
+  - Sem hemoptise
+- **Probabilidade: 70-80%**
+
+#### 2. **Exacerbação aguda de DPOC com infecção secundária**
+- **A favor:**
+  - Histórico de exacerbações frequentes
+  - Dispneia e tosse produtiva (sintomas típicos)
+  - Uso de tiotrópio (confirma DPOC moderada-grave)
+- **Contra:**
+  - Hipotensão não é típica de exacerbação pura (sugere infecção grave)
+  - Febre + sinais de sepse apontam para infecção, não apenas exacerbação
+- **Probabilidade: 60-70% (como diagnóstico concomitante)**
+
+### **MÉDIA PROBABILIDADE:**
+
+#### 3. **Bronquite aguda com bacteremia/sepse**
+- **A favor:**
+  - Tosse produtiva
+  - Febre
+- **Contra:**
+  - Hipotensão é rara em bronquite simples
+  - Menos provável em paciente com DPOC (risco maior de pneumonia)
+- **Probabilidade: 20-30%**
+
+#### 4. **Tromboembolismo pulmonar (TEP) com infecção concomitante**
+- **A favor:**
+  - Dispneia aguda
+  - Taquicardia
+- **Contra:**
+  - Tosse produtiva com catarro (não típico de TEP puro)
+  - Sem menção a imobilização recente, cirurgia ou TVP prévia
+  - Febre sugere infecção, não TEP
+- **Probabilidade: 10-15% (baixa, mas não descartável)**
+
+### **BAIXA PROBABILIDADE:**
+
+#### 5. **Meningite bacteriana**
+- **A favor:**
+  - Febre + hipotensão (sepse meningocócica)
+- **Contra:**
+  - Sem rigidez de nuca mencionada
+  - Sem confusão mental relatada
+  - Foco respiratório claro (tosse, catarro)
+- **Probabilidade: 5-10% (descartável se sem meningismo)**
+
+#### 6. **Endocardite infecciosa**
+- **A favor:**
+  - Febre + sepse
+- **Contra:**
+  - Sem sopro cardíaco mencionado
+  - Sem história de valvopatia ou ADVP
+  - Foco respiratório mais evidente
+- **Probabilidade: 5%**
+
+---
+
+## ⚠️ DADOS CRÍTICOS AUSENTES
+
+| Dado | Por quê é crítico | Impacto na decisão |
+|------|-------------------|-------------------|
+| **Frequência respiratória** | Define qSOFA; FR ≥ 22 = risco de sepse | Estratificação de risco |
+| **SpO2 / PaO2** | Avalia gravidade respiratória; SpO2 < 90% = emergência | Necessidade de O2/intubação |
+| **Pressão arterial exata** | Confirma grau de hipotensão; PAS < 90 = choque | Necessidade de vasopressor |
+| **Alteração cognitiva** | Completa qSOFA; confusão = risco muito alto | Urgência de antibióticos |
+| **Ausculta pulmonar** | Consolida diagnóstico de pneumonia | Localização do foco |
+| **Dor pleurítica** | Sugere envolvimento pleural | Gravidade |
+| **Hemoptise** | Sugere tuberculose, TEP, abscesso | Diagnóstico diferencial |
+| **Temperatura exata** | Quantifica febre | Gravidade da infecção |
+| **Glicemia** | Diabético em sepse = risco aumentado | Controle glicêmico urgente |
+| **Tempo de enchimento capilar** | Avalia perfusão periférica | Presença de choque |
+
+---
+
+## 🔬 EXAMES PRIORITÁRIOS
+
+### **IMEDIATOS (< 15 minutos):**
+
+1. **Gasometria arterial ou venosa**
+   - **Por quê:** Avalia SpO2, PaCO2, pH, lactato
+   - **Esperado:** Hipoxemia (PaO2 < 60 mmHg), possível hipercapnia (DPOC), acidose lática (sepse)
+   - **Ação:** Se SpO2 < 90%, iniciar O2; se pH < 7,30 + lactato elevado = choque
+
+2. **ECG de 12 derivações**
+   - **Por quê:** Descarta síndrome coronariana aguda (dor torácica pode estar presente)
+   - **Esperado:** Taquicardia sinusal; possível fibrilação atrial (complicação de sepse)
+
+3. **Radiografia de tórax (PA e perfil)**
+   - **Por quê:** Confirma pneumonia, descarta TEP, avalia edema pulmonar
+   - **Esperado:** Infiltrado alveolar (consolidação), possível derrame pleural
+
+4. **Hemograma completo**
+   - **Por quê:** Avalia leucocitose (infecção), anemia, plaquetas
+   - **Esperado:** Leucocitose > 11.000 (infecção), possível trombocitopenia (sepse grave)
+
+5. **Lactato sérico**
+   - **Por quê:** Marcador de hipoperfusão/choque; lactato > 2 mmol/L = sepse grave
+   - **Esperado:** Elevado (> 2 mmol/L) se choque presente
+
+6. **Troponina de alta sensibilidade**
+   - **Por quê:** Descarta infarto do miocárdio (pode coexistir com sepse)
+   - **Esperado:** Negativa (se positiva, considerar IAM ou miocardite)
+
+### **URGENTES (< 1 hora):**
+
+7. **Hemoculturas (2 frascos antes de antibióticos)**
+   - **Por quê:** Identifica agente etiológico; essencial em sepse
+   - **Esperado:** Positividade em 40-60% dos casos de pneumonia com bacteremia
+
+8. **Procalcitonina**
+   - **Por quê:** Marcador de infecção bacteriana; diferencia de viral
+   - **Esperado:** > 0,5 ng/mL (infecção bacteriana provável)
+
+9. **Bioquímica (ureia, creatinina, eletrólitos, glicemia)**
+   - **Por quê:** Avalia função renal (sepse causa lesão renal), controla glicemia (diabético)
+   - **Esperado:** Possível elevação de ureia/creatinina (lesão renal aguda), hiperglicemia
+
+10. **Coagulograma (TP, TTPA, fibrinogênio)**
+    - **Por quê:** Avalia coagulopatia (complicação de sepse grave)
+    - **Esperado:** Possível prolongamento (coagulopatia consumptiva)
+
+11. **Cultura de escarro**
+    - **Por quê:** Identifica agente etiológico respiratório
+    - **Esperado:** Gram positivo (Streptococcus pneumoniae) ou Gram negativo (Haemophilus, Enterobactérias)
+
+### **SECUNDÁRIOS (se indicado):**
+
+12. **TC de tórax com contraste**
+    - **Indicação:** Se radiografia inconclusiva ou suspeita de TEP
+    - **Esperado:** Consolidação lobar, possível embolia pulmonar
+
+13. **Ecocardiograma**
+    - **Indicação:** Se suspeita de endocardite ou disfunção ventricular
+    - **Esperado:** Possível vegetação (endocardite), disfunção sistólica (sepse)
+
+---
+
+## 🚑 URGÊNCIA E DISPOSIÇÃO
+
+### **CLASSIFICAÇÃO: EMERGÊNCIA (Nível 1-2)**
+
+**Critérios que embasam:**
+- ✓ Hipotensão (PAS baixa)
+- ✓ Taquicardia (FC elevada)
+- ✓ Febre + sinais de sepse
+- ✓ Dispneia progressiva
+- ✓ Potencial para choque séptico
+
+**Tempo de ação:**
+- **Antibióticos:** Iniciar em < 1 hora (meta de sepse)
+- **Fluidos IV:** Iniciar imediatamente (ressuscitação)
+- **Monitorização:** Contínua (PA, FC, SpO2, débito urinário)
+
+---
+
+## 👨‍⚕️ ESPECIALISTAS NECESSÁRIOS
+
+| Especialista | Motivo | Timing |
+|--------------|--------|--------|
+| **Pneumologia** | Exacerbação de DPOC + pneumonia; avalia necessidade de ventilação | Urgente (1-2h) |
+| **Infectologia** | Sepse; orienta antibioticoterapia empírica e dirigida | Urgente (1-2h) |
+| **Terapia Intensiva** | Risco de choque séptico; possível necessidade de UTI | Urgente (se instável) |
+| **Cardiologia** | Descarta síndrome coronariana; avalia complicações cardíacas da sepse | Urgente (se ECG alterado) |
+| **Endocrinologia** | Diabético em sepse; controle glicêmico crítico | Consulta (se necessário) |
+
+---
+
+## 📌 RESUMO EXECUTIVO
+
+**Paciente com sepse de foco respiratório (pneumonia provável) em DPOC, com hipotensão e taquicardia.**
+
+**Ações imediatas:**
+1. Oxigenoterapia (manter SpO2 > 90%)
+2. Acesso IV, coleta de hemoculturas
+3. Antibióticos empíricos em < 1 hora (ex: ceftriaxona 2g IV + azitromicina 500mg IV)
+4. Fluidos IV (ressuscitação com cristaloide)
+5. Monitorização contínua
+6. Exames: gasometria, RX tórax, hemograma, lactato, troponina, hemoculturas
+
+**Prognóstico:** Depende da rapidez do tratamento. Sepse com hipotensão tem mortalidade 20-40% se não tratada rapidamente.
+
+[Pneumologista]
+# AVALIAÇÃO PNEUMOLÓGICA — CASO CLÍNICO
+
+## 1. AVALIAÇÃO RESPIRATÓRIA
+
+**Padrão fisiopatológico identificado: OBSTRUTIVO com sobreposição de processo infeccioso agudo**
+
+**Justificativa:**
+- Paciente com DPOC estabelecido (em uso de tiotrópio, broncodilatador de longa ação)
+- Apresentação aguda com tosse produtiva, dispneia e febre sugestiva de **exacerbação infecciosa de DPOC** (pneumonia adquirida na comunidade sobreposta)
+- Sinais sistêmicos de gravidade: hipotensão, taquicardia, febre — indicam resposta inflamatória/infecciosa significativa
+- Não há relato de dor pleurítica, hemoptise ou imobilização recente (reduz probabilidade de TEP ou pneumotórax neste contexto)
+
+---
+
+## 2. DADOS DE OXIGENAÇÃO E VENTILAÇÃO
+
+### Parâmetros disponíveis:
+- **Febre**: presente (sugestivo de infecção)
+- **Pressão arterial**: baixa (hipotensão — critério de gravidade)
+- **Frequência cardíaca**: elevada (taquicardia — resposta a hipoxemia, infecção ou choque)
+- **Tosse produtiva**: presente (sugestivo de secreção brônquica/pneumonia)
+
+### **Parâmetros CRÍTICOS ausentes — SOLICITAR IMEDIATAMENTE:**
+
+| Parâmetro | Por que é essencial |
+|-----------|-------------------|
+| **SpO₂ (oximetria de pulso)** | Avaliar grau de hipoxemia; guiar oxigenoterapia; alvo em DPOC é 88-92% |
+| **Gasometria arterial (pH, PaCO₂, PaO₂, HCO₃⁻)** | Detectar acidose respiratória (PaCO₂ > 45 mmHg) — critério para VNI; avaliar relação PaO₂/FiO₂ |
+| **Frequência respiratória (FR)** | FR ≥ 30 é critério de gravidade (CURB-65, PESI); indicador de esforço respiratório |
+| **Pressão arterial sistólica/diastólica** | Quantificar hipotensão (PA ≤ 90/60 = 1 ponto CURB-65); avaliar choque séptico |
+| **Ausculta pulmonar** | Presença de crepitações, roncos, diminuição de murmúrio vesicular |
+| **Radiografia de tórax (PA e perfil)** | Infiltrado alveolar (pneumonia), hiperinsuflação (DPOC), derrame pleural, pneumotórax |
+
+---
+
+## 3. DIAGNÓSTICO DIFERENCIAL PULMONAR
+
+### **1. EXACERBAÇÃO INFECCIOSA DE DPOC COM PNEUMONIA ADQUIRIDA NA COMUNIDADE (PAC)**
+- **Probabilidade: ALTA**
+- **Achados a favor:**
+  - DPOC com exacerbações frequentes (fator de risco)
+  - Tosse produtiva há 3 dias (duração típica)
+  - Febre + calafrios (infecção bacteriana)
+  - Hipotensão + taquicardia (resposta sistêmica grave)
+  - Tabagismo (fator de risco para PAC e DPOC)
+  - Diabetes tipo 2 (imunocompromisso relativo)
+  
+- **Achados contra:**
+  - Nenhum significativo neste contexto
+
+- **Agentes esperados:**
+  - *Streptococcus pneumoniae* (mais comum)
+  - *Haemophilus influenzae*
+  - *Moraxella catarrhalis*
+  - Possível *Pseudomonas aeruginosa* se DPOC muito grave ou hospitalizações prévias
+
+---
+
+### **2. TROMBOEMBOLISMO PULMONAR (TEP)**
+- **Probabilidade: BAIXA-MÉDIA**
+- **Achados a favor:**
+  - Dispneia aguda
+  - Taquicardia
+  - Hipotensão (sugestivo de TEP massivo)
+  
+- **Achados contra:**
+  - Sem relato de dor pleurítica ou hemoptise
+  - Sem imobilização recente ou cirurgia
+  - Sem história de TVP
+  - Tosse produtiva com catarro (mais compatível com infecção)
+  - Febre (menos típica de TEP puro)
+
+- **Escore de Wells para TEP:**
+  - Diagnóstico alternativo menos provável que TEP: **0** (PAC é diagnóstico alternativo muito provável)
+  - FC > 100: **+1,5** (presente)
+  - Imobilização/cirurgia recente: **0**
+  - TVP/TEP prévio: **0**
+  - Hemoptise: **0**
+  - Neoplasia: **0**
+  - **Total: 1,5 pontos → Probabilidade BAIXA**
+  
+  ✓ **Conduta:** D-dímero não está indicado neste momento (PAC é diagnóstico mais provável); reavalie se não houver melhora com antibióticos em 48-72h
+
+---
+
+### **3. PNEUMOTÓRAX ESPONTÂNEO**
+- **Probabilidade: MUITO BAIXA**
+- **Achados contra:**
+  - Sem relato de dor pleurítica súbita
+  - Tosse produtiva (não compatível)
+  - Febre (não é achado de pneumotórax)
+  - Ausência de dispneia súbita
+
+- ✓ **Conduta:** Radiografia de tórax excluirá; não é prioridade diagnóstica
+
+---
+
+### **4. INSUFICIÊNCIA CARDÍACA AGUDA / EDEMA PULMONAR**
+- **Probabilidade: BAIXA-MÉDIA**
+- **Achados a favor:**
+  - Dispneia
+  - Hipotensão (possível choque cardiogênico)
+  - Taquicardia
+  
+- **Achados contra:**
+  - Tosse produtiva com catarro (não típico de edema pulmonar puro)
+  - Febre + calafrios (sugestivo de infecção, não IC)
+  - Sem história de IC prévia mencionada
+
+- ✓ **Conduta:** BNP/NT-proBNP e ecocardiograma se não houver melhora com antibióticos; avaliar volume de fluidos com cautela
+
+---
+
+### **5. EXACERBAÇÃO ASMÁTICA GRAVE**
+- **Probabilidade: MUITO BAIXA**
+- **Achados contra:**
+  - Idade 55 anos com DPOC (não asma típica)
+  - Febre (não é achado de asma)
+  - Tosse produtiva com catarro (asma é seca ou com escarro mucóide)
+
+---
+
+## 4. ESCORES APLICADOS
+
+### **CURB-65 (Pneumonia Adquirida na Comunidade)**
+
+| Critério | Presente? | Pontos |
+|----------|-----------|--------|
+| **C** — Confusão mental | Não informado (assumir não) | 0 |
+| **U** — Ureia > 7 mmol/L | Não informado (solicitar) | ? |
+| **R** — Frequência respiratória ≥ 30 | Não informado (solicitar) | ? |
+| **B** — Pressão arterial ≤ 90/60 sistólica | **SIM** | **+1** |
+| **65** — Idade ≥ 65 anos | Não (55 anos) | 0 |
+
+**Escore parcial: ≥ 1 ponto (com hipotensão) → Recomenda-se INTERNAÇÃO**
+
+**Interpretação:**
+- Se FR ≥ 30 (provável neste contexto): escore ≥ 2 → **Considerar UTI**
+- Hipotensão + febre + tosse produtiva = **PAC com risco de sepse**
+
+---
+
+### **PESI (Índice de Gravidade do TEP) — Aplicável se TEP confirmado**
+- Não calculado neste momento (probabilidade baixa)
+- Reavalie se D-dímero positivo ou suspeita aumentar
+
+---
+
+### **Critérios de Anthonisen para Exacerbação de DPOC**
+
+| Critério | Presente? |
+|----------|-----------|
+| Aumento de volume de escarro | **SIM** |
+| Aumento de purulência do escarro | **Provável (febre + catarro)** |
+| Aumento de dispneia | **SIM** |
+
+**Tipo I (3 critérios) ou Tipo II (2 critérios) → Indicação de antibiótico**
+
+---
+
+### **Critérios para Ventilação Não-Invasiva (VNI) em DPOC**
+
+**Solicitar gasometria arterial para avaliar:**
+- pH < 7,35 (acidose respiratória)
+- PaCO₂ > 45 mmHg (retenção de CO₂)
+- FR > 25 (esforço respiratório)
+
+**Se presentes + hipotensão + hipoxemia → VNI indicada (ou IOT se falha de VNI)**
+
+---
+
+## 5. RISCO DE RECORRÊNCIA OU PROGRESSÃO
+
+### **Risco de Recorrência de Exacerbação de DPOC:**
+- **Muito alto** (paciente com exacerbações frequentes)
+- Fatores de risco presentes:
+  - DPOC moderado-grave (em uso de tiotrópio)
+  - Tabagismo ativo
+  - Diabetes tipo 2 (imunocompromisso relativo)
+  - Infecções respiratórias recorrentes
+
+### **Risco de Progressão para Insuficiência Respiratória Aguda:**
+- **Alto** (hipotensão + febre + tosse produtiva)
+- Indicadores de gravidade:
+  - Hipotensão (sugestivo de choque séptico)
+  - Taquicardia (resposta compensatória)
+  - Possível acidose respiratória (se PaCO₂ elevado)
+
+### **Risco de Complicações:**
+- Sepse/choque séptico
+- Insuficiência respiratória aguda (necessidade de VNI/IOT)
+- Falência de múltiplos órgãos (se não tratado rapidamente)
+
+---
+
+## 6. CONDUTA PNEUMOLÓGICA
+
+### **IMEDIATO (Sala de Emergência)**
+
+#### **A. Oxigenoterapia**
+- **Alvo SpO₂: 88-92%** (DPOC — evitar hiperoxemia que reduz estímulo respiratório)
+- **Dispositivo inicial:** Máscara de Venturi 24-28% ou cânula nasal 2-3 L/min
+- **Titulação:** Aumentar conforme SpO₂ e gasometria
+- **Monitorização contínua:** Oximetria de pulso + gasometria seriada
+
+#### **B. Gasometria Arterial (URGENTE)**
+- Avaliar pH, PaCO₂, PaO₂, HCO₃⁻
+- **Se pH < 7,35 + PaCO₂ > 45 → Indicação de VNI**
+
+#### **C. Suporte Ventilatório**
+- **Se SpO₂ < 88% apesar de O₂ ou FR > 30 ou pH < 7,35:**
+  - **VNI (BIPAP/CPAP)** como primeira linha
+  - Modo: IPAP 12-15 cm H₂O, EPAP 4-5 cm H₂O
+  - Monitorização contínua de pH, PaCO₂
+  - **Se falha de VNI (pH não melhora em 1-2h, fadiga, confusão):** IOT + ventilação mecânica
+
+#### **D. Antibioticoterapia (PAC em DPOC)**
+- **Início imediato** (dentro de 1 hora)
+- **Regime recomendado:**
+  - **Primeira linha:** Amoxicilina-clavulanato 875/125 mg VO 8/8h OU
+  - **Alternativa (se alergia a penicilina):** Fluoroquinolona respiratória (levofloxacino 750 mg VO/IV 1x/dia)
+  - **Se suspeita de *Pseudomonas* (DPOC muito grave, hospitalizações prévias):** Ciprofloxacino 500-750 mg VO 12/12h OU piperacilina-tazobactam IV
+  
+- **Duração:** 7-10 dias (PAC em DPOC)
+
+#### **E. Broncodilatadores**
+- **Manutenção:** Continuar tiotrópio (já em uso)
+- **Resgate:** Salbutamol inalado 100 mcg 4-6/6h (ou contínuo se grave)
+- **Considerar:** Brometo de ipratrópio 40 mcg 6/6h (efeito sinérgico)
+
+#### **F. Corticosteroides**
+- **Prednisona 40-50 mg VO 1x/dia por 5-7 dias** (ou equivalente IV se não tolerar VO)
+- Reduz duração da exacerbação e risco de recorrência
+
+#### **G. Suporte Hemodinâmico**
+- **Hipotensão presente → Risco de choque séptico**
+- **Cristaloide IV:** Soro fisiológico 500 mL bolus, reavalie PA
+- **Monitorização:** PA, FC, débito urinário
+- **Se PA não responde:** Considerar vasopressor (noradrenalina) + UTI
+
+#### **H. Investigação Complementar**
+- **Radiografia de tórax (PA e perfil):** Infiltrado alveolar, hiperinsuflação, derrame, pneumotórax
+- **Hemograma:** Leucocitose (infecção)
+- **Bioquímica:** Ureia, creatinina, glicemia (diabetes descompensado?), eletrólitos
+- **Lactato:** Marcador de hipoperfusão/choque
+- **Hemocultura:** Antes de antibiótico (se suspeita de bacteremia)
+- **Eletrocardiograma:** Descartar IAM, arritmias (taquicardia)
+
+---
+
+### **INTERNAÇÃO (Enfermaria ou UTI)**
+
+#### **Critérios para UTI:**
+- ✓ **Hipotensão** (presente)
+- ✓ **Possível acidose respiratória** (se PaCO₂ > 45)
+- ✓ **Necessidade de VNI/IOT**
+- ✓ **Choque séptico** (febre + hipotensão + taquicardia)
+
+#### **Monitorização:**
+- Oximetria contínua
+- Gasometria seriada (6/6h inicialmente)
+- Pressão arterial contínua (se em UTI)
+- Débito urinário
+
+#### **Reavaliação em 48-72h:**
+- Melhora clínica (redução de dispneia, tosse)
+- Melhora de oxigenação (SpO₂ > 90%)
+- Melhora de pH/PaCO₂
+- Redução de febre
+- **Se não houver melhora:** Considerar:
+  - Mudança de antibiótico (resistência, diagnóstico alternativo)
+  - Complicações (empiema, abscesso pulmonar)
+  - Ecocardiograma (IC, TEP)
+  - TC de tórax com angiografia (TEP, pneumonia atípica)
+
+---
+
+### **ALTA E SEGUIMENTO**
+
+#### **Critérios de alta:**
+- SpO₂ ≥ 90% em ar ambiente
+- Tolerância de VO
+- Ausência de febre por 24h
+- Melhora clínica sustentada
+
+#### **Prescrição de alta:**
+- Antibiótico oral (completar 7-10 dias)
+- Broncodilatadores (tiotrópio + salbutamol PRN)
+- Prednisona em desmame (se iniciada)
+- Oxigenoterapia domiciliar (se SpO₂ < 88% em repouso)
+
+#### **Seguimento:**
+- Pneumologia em 2-4 semanas
+- Avaliação de função pulmonar (espirometria)
+- Vacinação (influenza, pneumococo se não vacinado)
+- Cessação de tabagismo (essencial)
+- Otimização de controle glicêmico (diabetes)
+
+---
+
+## RESUMO EXECUTIVO
+
+| Aspecto | Conclusão |
+|--------|-----------|
+| **Diagnóstico principal** | Exacerbação infecciosa de DPOC com PAC |
+| **Padrão fisiopatológico** | Obstrutivo com processo infeccioso agudo |
+| **Gravidade** | **ALTA** (hipotensão, febre, possível choque séptico) |
+| **Ação imediata** | Oxigenoterapia (alvo 88-92%), gasometria, antibiótico, VNI se indicado |
+| **Nível de cuidado** | **Internação em UTI** (hipotensão + possível acidose respiratória) |
+| **Antibiótico** | Amoxicilina-clavulanato ou fluoroquinolona respiratória |
+| **Prognóstico** | Bom se tratado rapidamente; risco de recorrência muito alto |
+
+[Farmacêutico Clínico]
+# REVISÃO FARMACÊUTICA CLÍNICA
+
+## 1. MEDICAMENTOS EM USO E PROPOSTOS
+
+### **Medicamentos em uso (crônico):**
+- **Tiotrópio inalatório** — broncodilatador de longa ação (DPOC)
+- **Insulina glargina** — insulina basal (Diabetes tipo 2)
+
+### **Medicamentos propostos pelos especialistas:**
+
+| Medicamento | Especialista | Indicação | Dose/Via |
+|-------------|--------------|-----------|----------|
+| **Ceftriaxona 2g IV** | Clínico Geral | Pneumonia/sepse | 2g IV (12/12h) |
+| **Azitromicina 500mg IV** | Clínico Geral | Pneumonia atípica | 500mg IV 1x/dia |
+| **Amoxicilina-clavulanato 875/125mg** | Pneumologista | PAC em DPOC | 875/125mg VO 8/8h |
+| **Levofloxacino 750mg** | Pneumologista | PAC (alternativa) | 750mg VO/IV 1x/dia |
+| **Ciprofloxacino 500-750mg** | Pneumologista | Se *Pseudomonas* | 500-750mg VO 12/12h |
+| **Piperacilina-tazobactam IV** | Pneumologista | Se *Pseudomonas* | Dose padrão IV |
+| **Salbutamol inalado 100mcg** | Pneumologista | Broncodilatador resgate | 4-6/6h ou contínuo |
+| **Brometo de ipratrópio 40mcg** | Pneumologista | Broncodilatador | 6/6h |
+| **Prednisona 40-50mg VO** | Pneumologista | Exacerbação DPOC | 1x/dia por 5-7 dias |
+| **Noradrenalina IV** | Clínico Geral | Choque séptico | Conforme PA |
+| **Cristaloide IV** | Clínico Geral | Ressuscitação | 500mL bolus |
+
+---
+
+## 2. INTERAÇÕES E CONTRAINDICAÇÕES IDENTIFICADAS
+
+### **⚠️ INTERAÇÕES RELEVANTES IDENTIFICADAS:**
+
+#### **1. AZITROMICINA + INSULINA GLARGINA**
+- **Tipo:** Farmacodinâmica
+- **Mecanismo:** Azitromicina pode potencializar efeito hipoglicemiante
+- **Risco:** Hipoglicemia
+- **Recomendação:** ✓ **Monitorar glicemia capilar 6/6h durante tratamento com azitromicina**
+
+#### **2. LEVOFLOXACINO + INSULINA GLARGINA**
+- **Tipo:** Farmacodinâmica
+- **Mecanismo:** Fluoroquinolonas podem causar hipo ou hiperglicemia
+- **Risco:** Descontrole glicêmico
+- **Recomendação:** ✓ **Monitorar glicemia capilar 6/6h; possível ajuste de insulina**
+
+#### **3. CIPROFLOXACINO + INSULINA GLARGINA**
+- **Tipo:** Farmacodinâmica
+- **Mecanismo:** Fluoroquinolonas podem potencializar hipoglicemia
+- **Risco:** Hipoglicemia
+- **Recomendação:** ✓ **Monitorar glicemia capilar 6/6h**
+
+#### **4. PREDNISONA + INSULINA GLARGINA**
+- **Tipo:** Farmacodinâmica (antagonismo)
+- **Mecanismo:** Corticosteroides aumentam resistência à insulina e hiperglicemia
+- **Risco:** **ALTO** — Hiperglicemia descompensada em diabético
+- **Recomendação:** ✓ **AUMENTAR dose de insulina glargina em 20-30% durante corticoterapia; monitorar glicemia 4/4h**
+
+#### **5. CEFTRIAXONA + AZITROMICINA (Duplicidade Terapêutica)**
+- **Tipo:** Sobreposição de cobertura
+- **Mecanismo:** Ambas cobrem *Streptococcus pneumoniae* e *Haemophilus influenzae*
+- **Risco:** Redundância, aumento de custo, risco de efeitos adversos
+- **Recomendação:** ⚠️ **EVITAR COMBINAÇÃO — Escolher UM antibiótico:**
+  - **Opção 1 (preferida):** Ceftriaxona 2g IV 12/12h (cobertura ampla para PAC)
+  - **Opção 2:** Amoxicilina-clavulanato 875/125mg VO 8/8h (se tolerância oral)
+  - **Opção 3:** Levofloxacino 750mg IV/VO 1x/dia (se alergia a beta-lactâmicos)
+  - **Azitromicina NÃO é necessária neste caso**
+
+#### **6. MÚLTIPLAS FLUOROQUINOLONAS (Levofloxacino + Ciprofloxacino)**
+- **Tipo:** Duplicidade terapêutica
+- **Risco:** Redundância, toxicidade aumentada (tendinite, prolongamento QT)
+- **Recomendação:** ⚠️ **EVITAR — Escolher UMA fluoroquinolona se necessária**
+
+#### **7. SALBUTAMOL + TIOTRÓPIO (Sinergismo — APROPRIADO)**
+- **Tipo:** Farmacodinâmica (sinergismo benéfico)
+- **Mecanismo:** Ambos são broncodilatadores; tiotrópio é manutenção, salbutamol é resgate
+- **Risco:** Nenhum significativo
+- **Recomendação:** ✓ **Combinação apropriada e recomendada**
+
+#### **8. BROMETO DE IPRATRÓPIO + SALBUTAMOL (Sinergismo — APROPRIADO)**
+- **Tipo:** Farmacodinâmica (sinergismo benéfico)
+- **Mecanismo:** Diferentes mecanismos de broncodilatação (anticolinérgico + beta-2)
+- **Risco:** Nenhum significativo
+- **Recomendação:** ✓ **Combinação apropriada; aumenta eficácia**
+
+#### **9. NORADRENALINA + INSULINA GLARGINA**
+- **Tipo:** Farmacodinâmica
+- **Mecanismo:** Catecolaminas aumentam glicemia (hiperglicemia de estresse)
+- **Risco:** Hiperglicemia descompensada
+- **Recomendação:** ✓ **Monitorar glicemia 2/2h se em uso de vasopressor; possível aumento de insulina**
+
+---
+
+### **⚠️ CONTRAINDICAÇÕES IDENTIFICADAS:**
+
+#### **1. AZITROMICINA — Potencial Prolongamento QT**
+- **Contexto:** Paciente com taquicardia, possível hipoxemia, sepse
+- **Risco:** Arritmias ventriculares (torsades de pointes)
+- **Recomendação:** ⚠️ **EVITAR azitromicina neste paciente; usar ceftriaxona ou fluoroquinolona**
+
+#### **2. FLUOROQUINOLONAS — Risco de Tendinite/Ruptura Tendínea**
+- **Contexto:** Paciente idoso (55 anos), em sepse, possível imobilização
+- **Risco:** Tendinite, ruptura de tendão de Aquiles
+- **Recomendação:** ✓ **Usar com cautela; preferir ceftriaxona se possível**
+
+#### **3. PREDNISONA — Risco em Sepse**
+- **Contexto:** Paciente com sepse, hipotensão, possível choque
+- **Risco:** Corticosteroides podem piorar imunocompromisso em sepse
+- **Recomendação:** ⚠️ **Usar apenas para exacerbação DPOC; evitar em sepse pura; dose mínima (40mg/dia máximo 5-7 dias)**
+
+---
+
+## 3. AJUSTES DE DOSE RECOMENDADOS
+
+### **A. FUNÇÃO RENAL (Dado crítico ausente — SOLICITAR CREATININA/CLEARANCE)**
+
+**Pressupostos para recomendações:**
+- Paciente 55 anos, diabético (risco de nefropatia)
+- Sepse em curso (risco de lesão renal aguda)
+- **Assumir função renal normal a moderadamente reduzida até confirmação**
+
+---
+
+### **AJUSTES DE DOSE POR MEDICAMENTO:**
+
+#### **1. CEFTRIAXONA 2g IV 12/12h**
+- **Função renal normal (ClCr > 50 mL/min):** 2g IV 12/12h ✓
+- **Função renal moderada (ClCr 30-50 mL/min):** 2g IV 12/12h (sem ajuste necessário)
+- **Função renal grave (ClCr < 30 mL/min):** 2g IV 24/24h
+- **Hemodiálise:** 2g IV após cada sessão
+- **Recomendação:** ✓ **Manter 2g IV 12/12h; reavalie se creatinina > 2,0 mg/dL**
+
+#### **2. AZITROMICINA 500mg IV 1x/dia**
+- **Função renal normal:** 500mg IV 1x/dia ✓
+- **Função renal moderada/grave:** Sem ajuste necessário (metabolismo hepático)
+- **Recomendação:** ⚠️ **NÃO RECOMENDADO — Substituir por ceftriaxona (ver duplicidade acima)**
+
+#### **3. AMOXICILINA-CLAVULANATO 875/125mg VO 8/8h**
+- **Função renal normal (ClCr > 30 mL/min):** 875/125mg 8/8h ✓
+- **Função renal moderada (ClCr 10-30 mL/min):** 875/125mg 12/12h
+- **Função renal grave (ClCr < 10 mL/min):** 875/125mg 24/24h
+- **Recomendação:** ✓ **Manter 875/125mg 8/8h se ClCr > 30; ajustar se necessário**
+
+#### **4. LEVOFLOXACINO 750mg VO/IV 1x/dia**
+- **Função renal normal (ClCr > 50 mL/min):** 750mg 1x/dia ✓
+- **Função renal moderada (ClCr 20-50 mL/min):** 750mg 1x/dia (sem ajuste)
+- **Função renal grave (ClCr < 20 mL/min):** 250-500mg 1x/dia
+- **Recomendação:** ✓ **Manter 750mg 1x/dia se ClCr > 20; ajustar se necessário**
+
+#### **5. CIPROFLOXACINO 500-750mg VO 12/12h**
+- **Função renal normal (ClCr > 50 mL/min):** 500-750mg 12/12h ✓
+- **Função renal moderada (ClCr 30-50 mL/min):** 250-500mg 12/12h
+- **Função renal grave (ClCr < 30 mL/min):** 250-500mg 24/24h
+- **Recomendação:** ✓ **Ajustar conforme função renal; preferir levofloxacino se possível**
+
+#### **6. PIPERACILINA-TAZOBACTAM IV**
+- **Função renal normal (ClCr > 40 mL/min):** 4,5g IV 6/6h ✓
+- **Função renal moderada (ClCr 20-40 mL/min):** 4,5g IV 8/8h
+- **Função renal grave (ClCr < 20 mL/min):** 4,5g IV 12/12h
+- **Hemodiálise:** 2,25g IV 12/12h + dose após diálise
+- **Recomendação:** ✓ **Ajustar conforme função renal; solicitar creatinina urgentemente**
+
+#### **7. PREDNISONA 40-50mg VO 1x/dia**
+- **Função renal:** Sem ajuste necessário (metabolismo hepático)
+- **Recomendação:** ✓ **Manter 40-50mg 1x/dia por 5-7 dias; monitorar glicemia**
+
+#### **8. INSULINA GLARGINA**
+- **Função renal normal:** Dose habitual
+- **Função renal moderada/grave:** **AUMENTAR monitorização; possível redução de dose (risco de hipoglicemia)**
+- **Recomendação:** ⚠️ **AUMENTAR 20-30% durante corticoterapia; monitorar glicemia 4/4h; possível redução se ClCr < 30 mL/min**
+
+#### **9. SALBUTAMOL INALADO 100mcg**
+- **Função renal:** Sem ajuste necessário
+- **Recomendação:** ✓ **Manter 4-6/6h ou contínuo conforme necessidade**
+
+#### **10. BROMETO DE IPRATRÓPIO 40mcg**
+- **Função renal:** Sem ajuste necessário (absorção mínima)
+- **Recomendação:** ✓ **Manter 6/6h**
+
+#### **11. NORADRENALINA IV**
+- **Função renal:** Sem ajuste de dose (titulação conforme PA)
+- **Recomendação:** ✓ **Titular conforme resposta hemodinâmica; monitorar glicemia**
+
+---
+
+### **B. FUNÇÃO HEPÁTICA (Dado crítico ausente — SOLICITAR AST/ALT/BILIRRUBINA)**
+
+**Pressupostos:**
+- Paciente sem história de hepatopatia mencionada
+- Sepse pode causar disfunção hepática aguda
+- **Assumir função hepática normal até confirmação**
+
+#### **Medicamentos com metabolismo hepático significativo:**
+
+| Medicamento | Ajuste se disfunção hepática | Recomendação |
+|-------------|------------------------------|--------------|
+| **Azitromicina** | Evitar se bilirrubina > 3 mg/dL | ⚠️ Já contraindicada (ver acima) |
+| **Levofloxacino** | Sem ajuste necessário | ✓ Seguro |
+| **Ciprofloxacino** | Sem ajuste necessário | ✓ Seguro |
+| **Prednisona** | Usar com cautela se cirrose | ✓ Monitorar |
+| **Insulina glargina** | Sem ajuste necessário | ✓ Seguro |
+
+---
+
+### **C. IDADE AVANÇADA (55 anos — Não é idoso, mas próximo)**
+
+**Considerações:**
+- Paciente 55 anos (não é idoso, mas com comorbidades)
+- DPOC, diabetes, tabagismo = envelhecimento acelerado
+- Sepse em curso = risco aumentado de complicações
+
+#### **Ajustes recomendados:**
+- ✓ **Ceftriaxona:** Sem ajuste por idade
+- ✓ **Fluoroquinolonas:** Usar com cautela (risco de tendinite aumentado)
+- ✓ **Prednisona:** Dose mínima necessária
+- ⚠️ **Insulina:** Monitorar hipoglicemia (risco aumentado em sepse)
+
+---
+
+## 4. RECOMENDAÇÃO FINAL
+
+### **RESUMO EXECUTIVO — REVISÃO FARMACÊUTICA:**
+
+**Medicamentos em uso:** Tiotrópio inalatório e insulina glargina — **MANTER**.
+
+**Medicamentos propostos — RECOMENDAÇÃO FINAL:**
+
+1. **Antibiótico de primeira linha:** **Ceftriaxona 2g IV 12/12h** (cobertura ampla para PAC em DPOC; evita duplicidade)
+   - ✓ **DESCONTINUAR azitromicina** (duplicidade, risco de QT prolongado)
+   - ✓ **Alternativa se alergia a beta-lactâmicos:** Levofloxacino 750mg IV/VO 1x/dia
+
+2. **Broncodilatadores:** **Salbutamol 100mcg 4-6/6h + brometo de ipratrópio 40mcg 6/6h** — MANTER tiotrópio
+   - ✓ Combinação apropriada e sinérgica
+
+3. **Corticosteroide:** **Prednisona 40mg VO 1x/dia por 5-7 dias**
+   - ⚠️ **AUMENTAR insulina glargina em 20-30% durante corticoterapia**
+   - ⚠️ **Monitorar glicemia 4/4h** (risco de hiperglicemia descompensada)
+
+4. **Suporte hemodinâmico:** Cristaloide IV + noradrenalina conforme necessário
+   - ⚠️ **Monitorar glicemia 2/2h se em vasopressor**
+
+5. **Ajustes de dose:** **SOLICITAR URGENTEMENTE creatinina, clearance de creatinina e função hepática** para otimizar doses de antibióticos e insulina.
+
+**Interações críticas:** Prednisona + insulina glargina (risco de hiperglicemia); azitromicina + insulina (risco de hipoglicemia — evitar azitromicina).

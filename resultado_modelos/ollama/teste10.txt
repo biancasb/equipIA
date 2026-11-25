@@ -1,0 +1,133 @@
+numero_teste: 10
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4798
+tokens_saida: 1809
+custo_brl: 0.0000
+tempo_total_s: 68.5
+tempo_processamento_s: 40.6
+tempo_legivel: 41s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? simm
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? sim
+Fuma? simm
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? 1dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa, associada a náusea e sudorese.
+- Piora da dor ao respirar fundo.
+- Antecedentes de diabetes, hipertensão e tabagismo.
+- Histórico de infarto ou doença nas artérias do coração (angina, cateterismo ou stent).
+- Pressão alta.
+- Colesterol alto.
+- Fuma.
+- Família com histórico de infarto antes dos 55 anos.
+
+Síndrome clínica principal:
+A dor torácica central intensa e a história de infarto ou doença nas artérias do coração sugerem uma síndrome coronariana aguda, possivelmente com angina inestável ou infarto agudo do miocárdio.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda**: Dor torácica central intensa, náusea e sudorese, piora da dor ao respirar fundo, antecedentes de diabetes, hipertensão e tabagismo.
+2. **Angina Inestável**: Dor torácica central intensa, náusea e sudorese, piora da dor ao respirar fundo, antecedentes de diabetes, hipertensão e tabagismo.
+3. **Infarto Agudo do Miocárdio**: Dor torácica central intensa, náusea e sudorese, piora da dor ao respirar fundo, antecedentes de diabetes, hipertensão e tabagismo.
+
+Dados críticos ausentes:
+
+- Nível de troponina.
+- ECG.
+- Pressão arterial.
+- Frequência cardíaca.
+- SpO2.
+
+Exames prioritários:
+- ECG para avaliar a estabilidade do miocárdio e detectar sinais de infarto.
+- Troponina para confirmar o diagnóstico de infarto agudo do miocárdio ou angina inestável.
+- Pressão arterial e frequência cardíaca para avaliar a hemodinâmica do paciente.
+
+Urgência e disposição:
+**Emergência**. A dor torácica central intensa e a história de infarto ou doença nas artérias do coração exigem uma atenção imediata e urgente.
+
+Especialistas necessários:
+- **Cardiologista**: para avaliar o diagnóstico e desenvolver um plano de tratamento.
+- **Anestesista**: para administrar medicamentos e procedimentos anestésicos, se necessário.
+- **Radiologista**: para realizar exames de imagem complementares, como angiografia cardíaca.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos, com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem história de infarto ou doença nas artérias do coração, como angina, cateterismo ou stent, pressão alta, diabetes, colesterol alto e fuma.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG. No entanto, é importante considerar a presença de sinais de angina incompatível (como dor torácica central intensa associada a náusea e sudorese) que podem indicar uma condição cardíaca grave.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Síndrome coronariana aguda** (STEMI): A dor torácica central intensa, associada à náusea e sudorese, pode ser um sinal de infarto do miocárdio.
+2. **Infeção pulmonar**: A dor torácica pode ser um sintoma de infeção pulmonar, especialmente em pacientes com antecedentes de diabetes e hipertensão.
+3. **Arterite coronária**: A dor torácica pode ser um sinal de arterite coronária, especialmente em pacientes com antecedentes de doença cardíaca.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular, pois falta dado sobre a duração da dor e o tempo até tratamento.
+* HEART Score (dor torácica não diagnóstica): não é possível calcular, pois falta dado sobre a história do paciente e os exames cardíacos realizados.
+
+Estratificação de risco:
+
+O paciente apresenta um alto risco de complicações cardiovasculares devido à sua história de diabetes, hipertensão e tabagismo. A dor torácica central intensa associada a náusea e sudorese sugere uma condição cardíaca grave.
+
+Conduta cardiológica proposta:
+
+* **Medicamentos**: O paciente deve receber aspirina não selectiva (dose de 81mg/dia) e um antiagregante plaquetário (como clopidogrel ou prasugrel).
+* **Monitorização**: O paciente deve ser monitorado em clínica cardíaca com frequência para avaliar a evolução da dor torácica e ajustar o tratamento conforme necessário.
+* **Procedimentos**: O paciente pode precisar de procedimentos como cateterismo ou stent, dependendo da natureza da doença coronária.
+* **Internação**: O paciente deve ser internado em clínica cardíaca para monitoramento contínuo e ajuste do tratamento.
+
+É importante notar que a conduta cardiológica proposta é baseada nas informações disponíveis e pode precisar ser ajustada com base nos resultados dos exames cardíacos e a evolução da dor torácica.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está tomando:
+
+* Aspirina não selectiva (dose de 81mg/dia)
+* Antiagregante plaquetário (como clopidogrel ou prasugrel)
+
+Propostos:
+
+* Continuação da aspirina não selectiva (dose de 81mg/dia) e antiagregante plaquetário (como clopidogrel ou prasugrel)
+* Adição de medicamentos para reduzir a pressão arterial e melhorar a função cardíaca
+* Monitoramento contínuo da dor torácica e ajuste do tratamento conforme necessário
+
+**Interações e contraindicações identificadas**
+
+* Interferência com o antiagregante plaquetário (como clopidogrel ou prasugrel) com outros medicamentos cardiovasculares
+* Contraindicação para a administração de aspirina não selectiva em pacientes com alergia ao medicamento
+
+**Ajustes de dose recomendados**
+
+* Ajuste da dose de aspirina não selectiva (dose de 81mg/dia) de acordo com a função renal e hepática do paciente
+* Monitoramento contínuo da pressão arterial e ajuste da dose de antiagregante plaquetário conforme necessário
+
+**Recomendação final**
+
+O paciente deve ser monitorado em clínica cardíaca com frequência para avaliar a evolução da dor torácica e ajustar o tratamento conforme necessário. É importante notar que a conduta cardiológica proposta é baseada nas informações disponíveis e pode precisar ser ajustada com base nos resultados dos exames cardíacos e a evolução da dor torácica.

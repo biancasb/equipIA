@@ -1,0 +1,27 @@
+#Chaves de API e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+#Ambiente virtual do Python
+venv/
+.venv/
+env/
+
+#Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+analise/
+resultado_modelos_backup/
+
+# Configurações de editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs temporários
+*.log

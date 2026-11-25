@@ -1,0 +1,161 @@
+numero_teste: 38
+provider: ollama
+modelo: llama3.2
+sindrome: tromboembolismo_pulmonar
+especialistas: Clínico Geral, Cardiologista, Pneumologista
+tokens_entrada: 6145
+tokens_saida: 2628
+custo_brl: 0.0000
+tempo_total_s: 57.3
+tempo_processamento_s: 57.3
+tempo_legivel: 57s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+**Red flags identificados**
+
+- **Presentes**: falta de ar, tosse produtiva, DPOC (doença pulmonar obstructiva crônica) com exacerbações frequentes, febre, pressão baixa e frequência cardíaca elevada.
+- **Ausentes**: não há informações sobre dor torácica ou sintomas de síndrome coronariana aguda.
+
+**Síndrome clínica principal**
+A síndrome clínica principal é a **insuficiência respiratória aguda**, com base nos sintomas de falta de ar, tosse produtiva e DPOC. A presença de febre e pressão baixa sugere uma possível infecção pulmonar.
+
+**Diagnóstico diferencial**
+Ordenado por probabilidade (alta/média/baixa), com evidências a favor e contra de cada hipótese:
+
+1. **Insuficiência respiratória aguda**: alta probabilidade, com evidências a favor da falta de ar, tosse produtiva e DPOC.
+2. **Pneumonia**: alta probabilidade, com evidências a favor da febre e pressão baixa.
+3. **Síndrome coronariana aguda**: baixa probabilidade, sem sintomas de dor torácica ou angina.
+4. **Outras causas**: baixa probabilidade, sem informações sobre outras possíveis causas.
+
+**Dados críticos ausentes**
+O que falta pra decidir com segurança:
+
+- **ECG**: para avaliar a frequência cardíaca e pressão arterial.
+- **Artefato de oxigênio**: para monitorar a saturação de oxigênio no sangue.
+- **Exame físico detalhado**: para avaliar a gravidade da insuficiência respiratória.
+
+**Exames prioritários**
+Quais, por quê, o que se espera encontrar:
+
+1. **ECG**: para avaliar a frequência cardíaca e pressão arterial.
+2. **Artefato de oxigênio**: para monitorar a saturação de oxigênio no sangue.
+3. **Exame físico detalhado**: para avaliar a gravidade da insuficiência respiratória.
+
+**Urgência e disposição**
+Emergência, urgência ou eletivo:
+
+- **Emergência**: devido à presença de falta de ar e pressão baixa.
+- **Urgência**: devido à febre e DPOC com exacerbações frequentes.
+
+**Especialistas necessários**
+Quais, e o motivo específico de cada indicação:
+
+1. **Respiratório**: para avaliar a insuficiência respiratória aguda e desenvolver um plano de tratamento.
+2. **Cardiologia**: para avaliar a frequência cardíaca e pressão arterial e desenvolver um plano de tratamento para possíveis complicações cardiovasculares.
+3. **Pneumologia**: para avaliar a pneumonia e desenvolver um plano de tratamento.
+
+[Cardiologista]
+Avaliação cardiológica
+Síntese do componente cardiovascular do caso.
+
+O paciente apresenta sintomas de tosse produtiva e falta de ar, que podem ser indicativos de uma doença pulmonar, como a bronquite crônica (DPOC) com exacerbações frequentes. Além disso, o histórico de tabagismo e diabetes tipo 2 aumentam o risco cardiovascular.
+
+Interpretação do ECG e exames cardíacos
+A ausência de informações sobre o ECG não permite uma interpretação precisa. No entanto, é importante notar que a presença de falta de ar e tosse produtiva pode ser associada a uma condição cardíaca, como insuficiência cardíaca ou arritmia.
+
+Diagnóstico diferencial cardiológico
+Cada hipótese com probabilidade (alta/média/baixa), critérios presentes e ausentes:
+
+* Insuficiência cardíaca: falta de ar, tosse produtiva, pressão baixa e frequência cardíaca elevada podem ser indicativos de insuficiência cardíaca.
+* Arritmia: a presença de falta de ar e tosse produtiva pode ser associada a uma arritmia cardíaca.
+* Bronquite crônica: o histórico de DPOC com exacerbações frequentes é compatível com bronquite crônica.
+
+Escores aplicados
+Calcule com os dados disponíveis:
+
+* TIMI Risk Score para STEMI: dado ausente — impossível calcular; solicitar ECG e outros exames cardíacos.
+* GRACE Score (IAMSST): dado ausente — impossível calcular; solicitar ECG e outros exames cardíacos.
+* HEART Score (dor torácica não diagnóstica): dado ausente — impossível calcular; solicitar ECG e outros exames cardíacos.
+
+Estratificação de risco
+Baixo / intermediário / alto / muito alto:
+Devido à falta de informações sobre o ECG e outros exames cardíacos, é difícil estratificar o risco. No entanto, a presença de sintomas como falta de ar e tosse produtiva sugere um risco moderado.
+
+Conduta cardiológica proposta
+Medicamentos (nome genérico, dose, via, frequência), monitorização, procedimentos, necessidade de internação:
+
+* Monitoramento cardíaco e pulmonar para avaliar a gravidade dos sintomas.
+* Medicamentos para aliviar os sintomas, como broncodilatadores e anti-inflamatórios não esteroides (AINEs).
+* Avaliação da necessidade de hospitalização para monitoramento e tratamento.
+
+É importante notar que a ausência de informações sobre o ECG e outros exames cardíacos limita a proposta de conduta cardiológica. É necessário solicitar esses exames para uma avaliação mais precisa do paciente.
+
+[Pneumologista]
+**Avaliação Respiratória**
+
+O paciente apresenta sintomas respiratórios graves, incluindo tosse produtiva, falta de ar e febre, o que sugere uma condição pulmonar aguda. Além disso, a presença de DPOC com exacerbações frequentes e histórico de tabagismo aumentam o risco de complicações respiratórias.
+
+**Padrão Fisiopatológico Identificado**
+
+O padrão fisiopatológico mais provável é um **obstrutivo**, devido à presença de tosse produtiva, falta de ar e febre. A história de DPOC com exacerbações frequentes sugere uma resposta inflamatória crônica do sistema respiratório.
+
+**Dados de Oxigenação e Ventilação**
+
+- SpO₂: desconhecido (não disponível)
+- Relação PaO2/FiO2: desconhecida (não disponível)
+- Sinais de esforço respiratório: uso de musculatura acessória, tiragem, batimento de asa de nariz
+
+Devido à ausência de dados sobre SpO₂ e oxigenoterapia, solicitar os seguintes exames:
+
+*   Ar puro (PaO2, PaCO2)
+*   Dados de oximetria (SpO2)
+
+Esses dados são importantes para avaliar a saturação de oxigênio e a relação entre oxigênio e dióxido de carbono no sangue.
+
+**Diagnóstico Diferencial Pulmonar**
+
+1.  **Pneumonia**: A presença de febre, tosse produtiva e falta de ar sugere uma infecção pulmonar.
+2.  **DPOC Exacerbada**: A história de DPOC com exacerbações frequentes aumenta o risco de complicações respiratórias.
+3.  **Pneumotórax**: Embora não seja um diagnóstico provável, a presença de falta de ar e tosse produtiva deve ser considerada.
+
+**Escores Aplicados**
+
+*   Wells para TEP: com base nos sintomas apresentados, é provável que o paciente tenha uma alta probabilidade de ter tromboembolismo pulmonar.
+*   CURB-65: com base na presença de febre e falta de ar, o paciente tem um escore elevado.
+
+**Risco de Recorrência ou Progressão**
+
+O risco de recorrência ou progressão é alto devido à presença de DPOC com exacerbações frequentes e histórico de tabagismo. A probabilidade de novo episódio de pneumotórax também é alta.
+
+**Conduta Pneumológica**
+
+1.  **Oxigenoterapia**: Se disponível, oxigenoterapia com fluxo adequado deve ser iniciada para melhorar a saturação de oxigênio.
+2.  **Broncodilatadores**: Medicamentos broncodilatadores devem ser prescritos para ajudar na ventilação e reduzir os sintomas respiratórios.
+3.  **Antibióticos**: Se houver suspeita de pneumonia, antibióticos devem ser prescritos com base nos resultados dos exames de laboratório.
+4.  **Drenagem Pleural**: Se for necessário, drenagem pleural deve ser realizada para aliviar a pressão e melhorar os sintomas respiratórios.
+
+É importante monitorar o paciente de perto e ajustar a conduta pneumológica conforme necessário.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está utilizando medicamentos para aliviar os sintomas respiratórios, como broncodilatadores e anti-inflamatórios não esteroides (AINEs). No entanto, é importante ajustar a dose e o tipo de medicamento com base nos resultados dos exames de laboratório e na conduta pneumológica proposta.
+
+**Interações e contraindicações identificadas**
+
+*   Interferência com os antibióticos: O uso de broncodilatadores pode interferir com a eficácia dos antibióticos.
+*   Contraindicação com medicamentos cardiovasculares: O uso de AINEs pode ser contraindicado com medicamentos cardiovasculares, como anti-hipertensivos.
+
+**Ajustes de dose recomendados**
+
+*   Dose ajustada do broncodilatador: Devido à presença de falta de ar e tosse produtiva, a dose do broncodilatador deve ser ajustada para garantir a eficácia.
+*   Monitoramento da pressão arterial: O uso de AINEs pode afetar a pressão arterial. É importante monitorar a pressão arterial regularmente.
+
+**Recomendação final**
+
+O paciente deve ser monitorado de perto e a conduta pneumológica ajustada conforme necessário. É importante evitar o uso de broncodilatadores que possam interferir com os antibióticos e ajustar a dose do medicamento com base nos resultados dos exames de laboratório. Além disso, é fundamental monitorar a pressão arterial regularmente para evitar complicações cardiovasculares.

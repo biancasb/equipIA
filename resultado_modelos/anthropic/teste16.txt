@@ -1,0 +1,577 @@
+numero_teste: 16
+provider: anthropic
+modelo: claude-haiku-4-5-20251001
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 12239
+tokens_saida: 13048
+custo_brl: 0.4166
+tempo_total_s: 166.6
+tempo_processamento_s: 145.4
+tempo_legivel: 2min25s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? sim
+A dor irradia para o braço, a mandíbula ou as costas? braco
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Tem colesterol alto? sim
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+# ANÁLISE ESTRUTURADA — PRONTO-SOCORRO
+
+---
+
+## 🚨 RED FLAGS IDENTIFICADOS
+
+### **PRESENTES:**
+- ✅ Dor torácica central **intensa durante esforço** (gatilho isquêmico clássico)
+- ✅ **Irradiação para braço** (padrão de síndrome coronariana aguda)
+- ✅ Sintomas **vegetativos** (náusea, sudorese) — sugestivos de isquemia miocárdica
+- ✅ **Antecedente de doença coronariana** (infarto/angina/stent prévio)
+- ✅ **Múltiplos fatores de risco**: diabetes, hipertensão, tabagismo, colesterol alto, idade 62 anos
+- ✅ **História familiar positiva** de infarto precoce
+- ✅ **3 episódios em 24h** — padrão de angina instável
+- ✅ **Ainda sintomático** à chegada
+
+### **AUSENTES (mas críticos):**
+- ❌ Sinais vitais não informados (PA, FC, FR, SpO2, temperatura)
+- ❌ ECG não mencionado
+- ❌ Troponina não dosada
+- ❌ Características da dor ao respirar fundo (pleurítica vs. coincidência)
+
+---
+
+## 📋 SÍNDROME CLÍNICA PRINCIPAL
+
+### **SÍNDROME CORONARIANA AGUDA (SCA) — Angina Instável ou Infarto Agudo do Miocárdio (IAM)**
+
+**Por quê:**
+- Dor torácica central **desencadeada por esforço** = isquemia miocárdica até prova em contrário
+- **Irradiação para braço** = padrão típico de dor coronariana
+- Sintomas vegetativos (sudorese, náusea) = ativação simpática por isquemia
+- **Antecedente de doença coronariana** = risco muito elevado de recorrência
+- **Múltiplos episódios em 24h** = mudança no padrão de angina (instabilização)
+- Perfil de risco extremamente alto (diabetes + HAS + tabagismo + dislipidemia + história familiar)
+
+**Nota:** A piora ao respirar fundo é um achado secundário que **não exclui** SCA; pode coexistir com componente pleurítico ou ser coincidência.
+
+---
+
+## 🔍 DIAGNÓSTICO DIFERENCIAL
+
+| **Diagnóstico** | **Probabilidade** | **Evidências A FAVOR** | **Evidências CONTRA** |
+|---|---|---|---|
+| **Síndrome Coronariana Aguda (Angina Instável/IAM)** | **MUITO ALTA** | Dor central ao esforço, irradiação para braço, sudorese, náusea, antecedente de doença coronariana, múltiplos fatores de risco, 3 episódios em 24h, ainda sintomático | Piora ao respirar fundo (mas não exclui) |
+| **Pericardite/Miocardite** | **MÉDIA** | Dor pleurítica (piora ao respirar), pode ter sudorese | Desencadeamento por esforço é menos típico; irradiação para braço é rara; antecedente de doença coronariana favorece SCA |
+| **Embolia Pulmonar** | **MÉDIA-BAIXA** | Dor torácica, sudorese, náusea possível | Sem menção a dispneia, imobilização ou fatores de risco trombótico; desencadeamento por esforço não é típico |
+| **Dissecção Aórtica** | **BAIXA-MÉDIA** | Dor intensa, irradiação para costas (não mencionada), sudorese | Sem menção a irradiação para costas; hipertensão não mencionada como descontrolada; menos provável que SCA neste contexto |
+| **Espasmo Esofágico/DRGE** | **BAIXA** | Dor torácica central | Desencadeamento por esforço é atípico; irradiação para braço não é característica; sintomas vegetativos não se explicam |
+| **Pneumonia/Pleurite** | **BAIXA** | Piora ao respirar fundo | Sem febre, tosse ou sintomas respiratórios mencionados; desencadeamento por esforço não é típico |
+
+---
+
+## ⚠️ DADOS CRÍTICOS AUSENTES
+
+| **Dado** | **Por quê é crítico** | **Impacto na decisão** |
+|---|---|---|
+| **Sinais vitais completos** (PA, FC, FR, SpO2, T) | Definem estabilidade hemodinâmica e necessidade de suporte imediato | Se hipotensão/choque → emergência máxima; se taquicardia → sugestivo de isquemia |
+| **ECG de 12 derivações** | Identifica supradesnivelamento (IAMCSST) vs. infradesnivelamento/onda T (IAMSSST/angina instável) | IAMCSST = cateterismo emergencial; IAMSSST/angina = estratificação de risco |
+| **Troponina (serial)** | Marcador de necrose miocárdica; define IAM vs. angina instável | Positiva = IAM; negativa + clínica = angina instável (ainda requer internação) |
+| **Hemoglobina/Hematócrito** | Anemia pode precipitar isquemia em coronariano | Anemia grave = fator agravante |
+| **Glicemia** | Diabetes descompensada pode mimetizar ou agravar SCA | Hiperglicemia aguda = fator de risco adicional |
+| **Radiografia de tórax** | Descarta pneumonia, pneumotórax, edema pulmonar | Edema pulmonar = sugestivo de IAM com disfunção ventricular |
+
+---
+
+## 🔬 EXAMES PRIORITÁRIOS
+
+### **IMEDIATOS (< 10 minutos):**
+
+1. **ECG de 12 derivações**
+   - **Por quê:** Diferencia IAMCSST (supradesnivelamento) de IAMSSST/angina instável
+   - **O que esperar:** Supradesnivelamento ST em parede anterior/inferior/posterior (IAMCSST) → cateterismo emergencial; infradesnivelamento ou onda T negativa (IAMSSST) → estratificação; normal (angina instável) → ainda requer internação
+   - **Tempo:** < 10 minutos da chegada
+
+2. **Troponina de alta sensibilidade (serial)**
+   - **Por quê:** Marcador de necrose miocárdica; diferencia IAM de angina instável
+   - **O que esperar:** Elevada (IAM) vs. normal (angina instável); repetir em 3h se primeira negativa
+   - **Tempo:** Colher imediatamente; resultado em 30-60 min
+
+3. **Sinais vitais completos + SpO2**
+   - **Por quê:** Definem estabilidade e necessidade de suporte
+   - **O que esperar:** Taquicardia, possível hipertensão (resposta ao estresse); SpO2 < 90% sugere complicação
+
+4. **Acesso venoso + coleta de sangue**
+   - Troponina, hemoglobina, glicemia, eletrólitos, função renal, coagulação
+
+### **URGENTES (< 1 hora):**
+
+5. **Radiografia de tórax**
+   - Descarta pneumonia, pneumotórax, edema pulmonar
+   - Edema pulmonar = complicação de IAM
+
+6. **Ecocardiograma (se disponível rapidamente)**
+   - Avalia contratilidade segmentar, derrame pericárdico, complicações mecânicas
+
+---
+
+## 🚑 URGÊNCIA E DISPOSIÇÃO
+
+### **CLASSIFICAÇÃO: EMERGÊNCIA MÁXIMA (Código Vermelho)**
+
+**Critérios que embasam:**
+- Dor torácica central ao esforço + irradiação para braço + sudorese + náusea = **síndrome coronariana aguda até prova em contrário**
+- Antecedente de doença coronariana = risco muito elevado de IAM
+- Múltiplos episódios em 24h = instabilização de angina
+- Ainda sintomático à chegada = isquemia ativa
+
+**Ação imediata:**
+- ✅ Monitorização contínua (ECG, PA, SpO2, FC)
+- ✅ Oxigênio se SpO2 < 90%
+- ✅ Acesso venoso periférico (2 acessos)
+- ✅ ECG dentro de 10 minutos
+- ✅ Aspirina 300-500 mg (se não contraindicado e não usou nos últimos 7 dias — **PODE USAR**)
+- ✅ Clopidogrel 600 mg (se SCA confirmada)
+- ✅ Nitroglicerina sublingual (se PA sistólica > 90 mmHg)
+- ✅ Analgesia (morfina se necessário)
+- ✅ Ativar protocolo de SCA/IAM
+
+---
+
+## 👨‍⚕️ ESPECIALISTAS NECESSÁRIOS
+
+| **Especialista** | **Motivo Específico** | **Timing** |
+|---|---|---|
+| **Cardiologista** | Diagnóstico e manejo de SCA; decisão sobre cateterismo emergencial vs. estratégia conservadora; avaliação de complicações | **IMEDIATO** — avaliar assim que ECG + troponina inicial disponíveis |
+| **Intensivista** | Se IAM com choque cardiogênico, edema pulmonar ou arritmias graves | **Conforme necessário** — se instabilidade hemodinâmica |
+| **Cirurgião Cardiovascular** | Se dissecção aórtica confirmada (raro, mas possível) | **Conforme necessário** — se TC aórtica positiva |
+| **Radiologista** | Interpretação de TC aórtica (se dissecção suspeita) ou ecocardiograma | **Conforme necessário** |
+
+---
+
+## 📌 RESUMO EXECUTIVO
+
+**Paciente de 62 anos com síndrome coronariana aguda até prova em contrário:**
+- Dor torácica central ao esforço + irradiação para braço + sudorese + náusea
+- Antecedente de doença coronariana + múltiplos fatores de risco
+- 3 episódios em 24h = angina instável
+- **Ação:** ECG + troponina + monitorização + aspirina + cardiologista IMEDIATO
+- **Disposição:** Internação em unidade coronariana (se IAM) ou observação (se angina instável)
+- **Prognóstico:** Depende de confirmação de IAM vs. angina instável e presença de complicações
+
+[Cardiologista]
+# AVALIAÇÃO CARDIOLÓGICA
+
+## Síntese do Componente Cardiovascular
+
+Paciente de 62 anos com **síndrome coronariana aguda (SCA) de alta probabilidade** apresentando:
+- Dor torácica central intensa **durante esforço** (gatilho isquêmico clássico)
+- Sintomas acompanhantes: náusea, sudorese (ativação simpática)
+- **Irradiação para braço** (padrão típico de isquemia miocárdica)
+- Piora com respiração profunda (sugestivo de componente pericárdico concomitante ou apenas dor pleurítica associada)
+- **Antecedentes de doença coronariana** (infarto ou angina prévios)
+- **Múltiplos fatores de risco**: diabetes, hipertensão, tabagismo, dislipidemia, história familiar positiva
+- **3 episódios de dor nas últimas 24h** (padrão de angina instável)
+- Ainda sintomático à chegada
+
+**Impressão clínica**: Compatível com **NSTEMI (infarto sem supra de ST) ou angina instável com alto risco de progressão para infarto**.
+
+---
+
+## Interpretação do ECG e Exames Cardíacos
+
+### Dados Ausentes — Essenciais para Diagnóstico:
+
+| Exame | Status | Justificativa |
+|-------|--------|---------------|
+| **ECG de 12 derivações** | ❌ NÃO FORNECIDO | **CRÍTICO**: Diferencia STEMI (supra ≥1mm em ≥2 derivações contíguas) de NSTEMI; localiza território isquêmico; detecta BRE novo (equivalente de STEMI); identifica padrões de Wellens ou De Winter |
+| **Troponina de alta sensibilidade** | ❌ NÃO FORNECIDO | **CRÍTICO**: Confirma necrose miocárdica; negativa seriada (0-3h) afasta IAM; essencial para TIMI e GRACE |
+| **BNP/NT-proBNP** | ❌ NÃO FORNECIDO | Avalia disfunção ventricular concomitante; prognosticador independente |
+| **Ecocardiograma** | ❌ NÃO FORNECIDO | Avalia FE, cinética segmentar, complicações mecânicas pós-IAM |
+| **Radiografia de tórax** | ❌ NÃO FORNECIDO | Afasta pneumotórax, pericardite com derrame, ICC |
+
+### O que se Espera Encontrar:
+
+**ECG esperado em NSTEMI/angina instável:**
+- Infradesnível de ST (≥0,5mm) em derivações do território afetado
+- Inversão de onda T (simétrica, profunda)
+- Possível padrão de Wellens (inversão bifásica em V2-V3 = oclusão crítica DA proximal)
+- Possível BRE novo (equivalente de STEMI)
+
+**Troponina esperada:**
+- Elevada (acima do percentil 99) se NSTEMI
+- Negativa se angina instável pura (mas risco persiste)
+
+---
+
+## Diagnóstico Diferencial Cardiológico
+
+| Diagnóstico | Probabilidade | Critérios Presentes | Critérios Ausentes | Observações |
+|-------------|---------------|-------------------|-------------------|-------------|
+| **NSTEMI (Infarto sem supra de ST)** | **ALTA** | Dor torácica típica durante esforço; irradiação para braço; sudorese/náusea; antecedente de CAD; múltiplos fatores de risco; 3 episódios/24h; ainda sintomático | ECG (esperado: infra de ST ou inversão T); troponina (esperada: elevada) | **Diagnóstico mais provável**; requer ECG + troponina para confirmação |
+| **Angina Instável** | **ALTA** | Mesmos critérios acima; padrão de 3 episódios/24h | Troponina (esperada: negativa); ECG (esperado: mudanças dinâmicas ou normal) | Diferencia-se de NSTEMI apenas pela ausência de necrose (troponina negativa) |
+| **STEMI (Infarto com supra de ST)** | **MÉDIA** | Dor típica; irradiação; sudorese; fatores de risco | ECG (esperado: supra ≥1mm em ≥2 derivações contíguas) | Possível se ECG mostrar supra; requer ativação de protocolo de reperfusão urgente |
+| **Pericardite aguda** | **BAIXA** | Piora com respiração profunda | Dor não é pleurítica pura; irradiação para braço (atípica); gatilho por esforço (atípico); ausência de febre/pródromo viral relatado | Pode coexistir com SCA; ECG esperado: supra difuso côncavo, infra em aVR, depressão de PR |
+| **Dissecção aórtica** | **BAIXA** | Dor intensa; irradiação para costas (não mencionada explicitamente) | Sem menção a déficit neurológico, assimetria de pulsos, diferença de PA entre membros | Deve ser considerada se houver irradiação para costas ou sinais de malperfusão |
+| **Embolia pulmonar** | **BAIXA** | Dor torácica; sudorese | Sem dispneia, taquicardia, hipoxemia, fatores de risco trombótico explícitos; padrão S1Q3T3 não mencionado | Menos provável; considerar se ECG mostrar padrão sugestivo |
+| **Espasmo coronariano (Prinzmetal)** | **BAIXA** | Dor durante esforço (atípico para Prinzmetal, que é em repouso) | Padrão noturno/madrugada não mencionado | Improvável; SCA aterosclerótica mais provável |
+
+---
+
+## Escores Aplicados
+
+### 1. **TIMI Risk Score para NSTEMI/Angina Instável** (0-7 pontos)
+
+| Critério | Presente? | Pontos |
+|----------|-----------|--------|
+| Idade ≥ 65 anos | Não (62 anos) | 0 |
+| ≥ 3 fatores de risco coronariano | **SIM** (DM, HAS, tabagismo, dislipidemia, idade, história familiar) | 1 |
+| Estenose coronariana conhecida ≥ 50% | **SIM** (antecedente de infarto/angina/cateterismo) | 1 |
+| Infradesnível de ST | **Desconhecido** (ECG não fornecido) | ? |
+| ≥ 2 episódios anginosos nas últimas 24h | **SIM** (3 episódios) | 1 |
+| Uso de AAS nos últimos 7 dias | Não | 0 |
+| Marcadores de necrose elevados | **Desconhecido** (troponina não fornecida) | ? |
+| **TOTAL (dados disponíveis)** | — | **≥ 3** |
+
+**Interpretação**: **ALTO RISCO** (≥3 pontos). Taxa de MACE (morte, infarto, revascularização urgente) em 14 dias: **~26%** com ≥3 pontos.
+
+---
+
+### 2. **GRACE Score** (Estratificação de Risco Hospitalar e em 6 Meses)
+
+**Dados disponíveis:**
+- Idade: 62 anos → ~50 pontos
+- Frequência cardíaca: **NÃO FORNECIDA** (essencial)
+- Pressão arterial sistólica: **NÃO FORNECIDA** (essencial)
+- Creatinina sérica: **NÃO FORNECIDA** (essencial)
+- Classe Killip: **NÃO FORNECIDA** (presumivelmente I, sem ICC)
+- PCR: **NÃO FORNECIDA**
+- Troponina: **NÃO FORNECIDA** (essencial)
+- Supradesnivelamento de ST: Não (NSTEMI/angina instável)
+
+**Status**: **Impossível calcular sem FC, PAS, creatinina e troponina.**
+
+**Ação**: Solicitar sinais vitais completos, função renal e troponina para cálculo completo.
+
+---
+
+### 3. **HEART Score** (Dor Torácica Não Diagnóstica)
+
+| Componente | Achado | Pontos |
+|-----------|--------|--------|
+| **H**istória | Dor típica, durante esforço, irradiação para braço, antecedente de CAD | 2 |
+| **E**CG | **NÃO FORNECIDO** | ? |
+| **A**ge | 62 anos | 1 |
+| **R**isk factors | ≥3 (DM, HAS, tabagismo, dislipidemia, história familiar) | 2 |
+| **T**roponina | **NÃO FORNECIDA** | ? |
+| **TOTAL (dados disponíveis)** | — | **≥ 5** |
+
+**Interpretação**: Com dados disponíveis, **≥5 pontos = RISCO INTERMEDIÁRIO-ALTO** (MACE 12-65% dependendo do total final). Necessário ECG e troponina para estratificação precisa.
+
+---
+
+### 4. **CHA₂DS₂-VASc** (se houver fibrilação atrial)
+
+**Não aplicável** — sem menção a FA no caso.
+
+---
+
+## Estratificação de Risco
+
+### **Classificação: RISCO MUITO ALTO**
+
+**Justificativa objetiva:**
+
+| Fator | Peso |
+|-------|------|
+| **Dor torácica típica durante esforço** | Critério maior |
+| **Irradiação para braço** | Critério maior (padrão isquêmico clássico) |
+| **Antecedente de doença coronariana** | Critério maior (risco de reinfarto) |
+| **Múltiplos fatores de risco** | Critério maior (DM, HAS, tabagismo, dislipidemia, história familiar) |
+| **3 episódios de dor em 24h** | Critério maior (angina instável) |
+| **Ainda sintomático à chegada** | Critério maior (isquemia ativa) |
+| **TIMI ≥ 3** | Risco de MACE 14 dias ~26% |
+| **Ausência de troponina negativa** | Impossível descartar necrose |
+
+**Risco de eventos adversos (morte, infarto, revascularização urgente):**
+- **Hospitalar**: 5-10% (estimado, sem GRACE completo)
+- **30 dias**: 10-15%
+- **6 meses**: 15-20%
+
+---
+
+## Conduta Cardiológica Proposta
+
+### **AÇÕES IMEDIATAS (Primeiros 10-15 minutos)**
+
+#### 1. **Diagnóstico Confirmador**
+- ✅ **ECG de 12 derivações** — IMEDIATAMENTE (< 10 min)
+  - Diferencia STEMI de NSTEMI
+  - Localiza território isquêmico
+  - Detecta equivalentes de STEMI (BRE novo, Wellens, De Winter)
+  
+- ✅ **Troponina de alta sensibilidade** — IMEDIATAMENTE
+  - Coleta seriada: 0h, 3h (ou protocolo de 0-1h se disponível)
+  - Confirma necrose miocárdica
+  
+- ✅ **Radiografia de tórax** — STAT
+  - Afasta pneumotórax, pericardite com derrame, ICC
+  
+- ✅ **Ecocardiograma transtorácico** — Nas primeiras 24h
+  - Avalia FE, cinética segmentar, complicações mecânicas
+
+#### 2. **Monitorização**
+- ✅ **Monitorização cardíaca contínua** (telemetria)
+- ✅ **Oximetria de pulso**
+- ✅ **Pressão arterial não-invasiva a cada 15 min** (primeiras 2h)
+- ✅ **Acesso venoso periférico** (2 acessos de grosso calibre)
+
+#### 3. **Medicações Imediatas**
+
+| Medicamento | Dose | Via | Frequência | Justificativa |
+|-------------|------|-----|-----------|---------------|
+| **Ácido acetilsalicílico (AAS)** | 300-500 mg | VO (mastigado) | Dose única | Antiagregante; não usou nos últimos 7 dias |
+| **Clopidogrel (Plavix)** | 600 mg | VO | Dose única | Antiagregante duplo; padrão em SCA |
+| **Enoxaparina** | 0,5 mg/kg IV | IV | Bolus + infusão | Anticoagulante; preferido em NSTEMI (vs. UFH) |
+| **Metoprolol** | 25-50 mg | VO | 2-3x/dia | Betabloqueador; reduz FC, consumo O₂; contraindicado se Killip ≥ II ou choque |
+| **Nitroglicerina** | 0,3-0,6 mg | SL | A cada 5 min (máx 3 doses) | Vasodilatador; alívio de dor; contraindicado se PAS < 90 mmHg ou suspeita de RVD |
+| **Morfina** | 2-4 mg | IV | A cada 5-15 min | Analgésico; reduz ansiedade e pré-carga; se dor não controlada com nitrato |
+| **Atorvastatina** | 80 mg | VO | 1x/dia | Estatina de alta intensidade; reduz eventos cardiovasculares |
+| **IECA (ex: Lisinopril)** | 5-10 mg | VO | 1x/dia | Cardiooprotetor; indicado em SCA com FE reduzida (iniciar após estabilização) |
+
+#### 4. **Procedimentos**
+- ✅ **Cateterismo cardíaco com angiografia coronariana** — **URGENTE** (< 2h se STEMI; < 24h se NSTEMI de alto risco)
+  - Indicação: NSTEMI/angina instável de alto risco (TIMI ≥ 3)
+  - Objetivo: Identificar lesão culpada e realizar revascularização (angioplastia + stent ou cirurgia)
+  - Estratégia: Angiografia diagnóstica seguida de intervenção se lesão significativa (≥70% em artéria epicárdica)
+
+#### 5. **Internação**
+- ✅ **Internação em Unidade de Terapia Intensiva (UTI) ou Unidade Coronariana (UCO)**
+  - Indicação: SCA de alto risco, ainda sintomático, risco de complicações arrítmicas
+  - Duração: Mínimo 48-72h (até estabilização clínica e confirmação de troponina)
+
+---
+
+### **AÇÕES SUBSEQUENTES (Primeiras 24-48 horas)**
+
+#### 6. **Ajustes Terapêuticos Conforme Resultados**
+
+**Se STEMI confirmado (supra de ST):**
+- Ativar protocolo de reperfusão urgente
+- Angioplastia primária (preferido) vs. fibrinólise se angioplastia indisponível
+- Tempo porta-balão: < 90 min
+
+**Se NSTEMI confirmado (troponina elevada + infra de ST/inversão T):**
+- Manter dupla antiagregação (AAS + clopidogrel) por 12 meses
+- Anticoagulação com enoxaparina até alta ou transição para fondaparinux
+- Cateterismo eletivo em 24-72h (estratégia invasiva precoce)
+
+**Se Angina Instável (troponina negativa, ECG sem mudanças dinâmicas):**
+- Manter dupla antiagregação
+- Considerar cateterismo se sintomas recorrem ou troponina seriada positiva
+- Alternativa: Teste de isquemia não-invasivo (teste ergométrico, cintilografia, ressonância) se baixo risco
+
+#### 7. **Medicações de Longo Prazo (Após Estabilização)**
+
+| Medicamento | Dose | Frequência | Duração | Justificativa |
+|-------------|------|-----------|---------|---------------|
+| **AAS** | 100 mg | 1x/dia | Indefinida | Prevenção secundária |
+| **Clopidogrel** | 75 mg | 1x/dia | 12 meses | Dupla antiagregação pós-stent |
+| **Betabloqueador** (ex: Metoprolol) | 50-100 mg | 2x/dia | Indefinida | Reduz mortalidade pós-IAM |
+| **IECA** (ex: Lisinopril) | 10 mg | 1x/dia | Indefinida | Cardiooproteção; se FE < 40% |
+| **Antagonista de aldosterona** (ex: Espironolactona) | 25-50 mg | 1x/dia | Indefinida | Se FE < 40% e K+ normal |
+| **Estatina** (ex: Atorvastatina) | 80 mg | 1x/dia | Indefinida | Reduz LDL < 70 mg/dL |
+| **Inibidor de SGLT2** (ex: Dapagliflozina) | 10 mg | 1x/dia | Indefinida | Se FE reduzida; benefício em IC |
+
+#### 8. **Monitorização Contínua**
+- Telemetria até alta
+- Ecocardiograma em 48-72h (avalia FE, complicações)
+- Troponina seriada (0h, 3h, 6h se protocolo de 0-1h; ou 0h, 3h se protocolo padrão)
+- Função renal e eletrólitos (K+, Na+) a cada 24h
+- Hemograma (anemia, trombocitopenia)
+
+#### 9. **Reabilitação Cardíaca**
+- Encaminhamento para programa de reabilitação cardíaca (exercício supervisionado, educação, suporte psicológico)
+- Início: Após alta hospitalar (1-2 semanas)
+
+---
+
+### **CRITÉRIOS DE ALTA HOSPITALAR**
+
+- ✅ Troponina negativa seriada (se angina instável)
+- ✅ Ausência de dor torácica por ≥ 24h
+- ✅ Estabilidade hemodinâmica
+- ✅ Sem arritmias malignas
+- ✅ Cateterismo realizado com revascularização completa (se NSTEMI/STEMI)
+- ✅ Tolerância a medicações orais
+- ✅ Educação do paciente sobre fatores de risco e adesão terapêutica
+
+---
+
+### **RESUMO EXECUTIVO**
+
+| Aspecto | Recomendação |
+|--------|--------------|
+| **Diagnóstico** | NSTEMI/Angina Instável de ALTO RISCO (TIMI ≥ 3) |
+| **Internação** | **SIM** — UTI/UCO |
+| **Monitorização** | Telemetria contínua, sinais vitais a cada 15 min |
+| **Medicações Imediatas** | AAS 500 mg + Clopidogrel 600 mg + Enoxaparina 0,5 mg/kg + Nitroglicerina SL + Metoprolol 25-50 mg |
+| **Procedimento Urgente** | Cateterismo cardíaco com angiografia (< 24h) |
+| **Tempo até Cateterismo** | < 2h se STEMI; < 24h se NSTEMI alto risco |
+| **Dupla Antiagregação** | 12 meses (AAS + Clopidogrel) |
+| **Seguimento** | Cardiologia em 1-2 semanas; reabilitação cardíaca |
+
+---
+
+**⚠️ AÇÃO CRÍTICA IMEDIATA**: Realizar **ECG de 12 derivações** e **troponina de alta sensibilidade** AGORA para confirmar diagnóstico e definir estratégia de reperfusão (STEMI vs. NSTEMI).
+
+[Farmacêutico Clínico]
+# REVISÃO FARMACÊUTICA CLÍNICA
+
+## 1. MEDICAMENTOS EM USO E PROPOSTOS
+
+### **Medicamentos Propostos pelos Especialistas:**
+
+| Medicamento | Dose | Via | Frequência | Indicação |
+|-------------|------|-----|-----------|-----------|
+| **Ácido acetilsalicílico (AAS)** | 300-500 mg | VO (mastigado) | Dose única | Antiagregante plaquetário |
+| **Clopidogrel (Plavix)** | 600 mg | VO | Dose única | Antiagregante duplo |
+| **Enoxaparina** | 0,5 mg/kg | IV | Bolus + infusão | Anticoagulante |
+| **Metoprolol** | 25-50 mg | VO | 2-3x/dia | Betabloqueador |
+| **Nitroglicerina** | 0,3-0,6 mg | SL | A cada 5 min | Vasodilatador |
+| **Morfina** | 2-4 mg | IV | A cada 5-15 min | Analgésico |
+| **Atorvastatina** | 80 mg | VO | 1x/dia | Estatina |
+| **IECA (Lisinopril)** | 5-10 mg | VO | 1x/dia | Cardiooprotetor |
+
+**Medicamentos em uso do paciente:** Não informados no caso.
+
+---
+
+## 2. INTERAÇÕES E CONTRAINDICAÇÕES IDENTIFICADAS
+
+### **A. INTERAÇÕES MEDICAMENTOSAS RELEVANTES**
+
+| Interação | Medicamentos | Gravidade | Mecanismo | Recomendação |
+|-----------|--------------|-----------|-----------|--------------|
+| **Potencialização de efeito antiagregante** | AAS + Clopidogrel | **MODERADA** (esperada e desejada) | Dupla antiagregação sinérgica | ✅ **INDICADA** — padrão em SCA; monitorar sangramento |
+| **Aumento de risco hemorrágico** | AAS + Clopidogrel + Enoxaparina | **ALTA** | Tripla anticoagulação/antiagregação | ⚠️ **MONITORAR** — risco de sangramento; avaliar relação risco-benefício; considerar profilaxia com IBP |
+| **Redução de efeito do clopidogrel** | Clopidogrel + Omeprazol (se usado) | **MODERADA** | Inibição de CYP3A4 (metabolização do clopidogrel) | ⚠️ **EVITAR** — se necessário IBP, preferir pantoprazol ou ranitidina |
+| **Hipotensão aditiva** | Nitroglicerina + Metoprolol + IECA | **MODERADA** | Efeito vasodilatador/redutor de FC sinérgico | ✅ **ESPERADO** — monitorar PA; titular doses conforme resposta |
+| **Hipercalemia** | IECA + Espironolactona (se adicionada) | **MODERADA-ALTA** | Redução de excreção renal de K+ | ⚠️ **MONITORAR** — dosar K+ e creatinina antes de iniciar IECA; repetir em 1 semana |
+| **Bradicardia excessiva** | Metoprolol + Diltiazem/Verapamil (se adicionados) | **MODERADA** | Efeito cronotrópico negativo sinérgico | ⚠️ **EVITAR** — não combinar betabloqueador com bloqueador de canal de cálcio não-diidropiridínico |
+| **Redução de absorção de AAS** | AAS + Antiácidos (se usados) | **LEVE** | Aumento de pH gástrico | ✅ **ACEITÁVEL** — separar administração por 2h |
+
+---
+
+### **B. CONTRAINDICAÇÕES E PRECAUÇÕES**
+
+| Medicamento | Contraindicação/Precaução | Status do Paciente | Ação |
+|-------------|--------------------------|-------------------|------|
+| **Nitroglicerina** | PAS < 90 mmHg; suspeita de infarto de VD | **NÃO INFORMADO** (sinais vitais ausentes) | ⚠️ **VERIFICAR PA antes de administrar**; se PAS < 90, CONTRAINDICADO |
+| **Nitroglicerina** | Uso concomitante de inibidores de fosfodiesterase (sildenafila, tadalafila) | **NÃO INFORMADO** | ⚠️ **QUESTIONAR paciente** — risco de hipotensão grave |
+| **Morfina** | Insuficiência respiratória, DPOC grave | **NÃO INFORMADO** | ⚠️ **USAR COM CAUTELA** — monitorar SpO2 e FR |
+| **Metoprolol** | Bradicardia (FC < 50 bpm), bloqueio AV de alto grau, choque cardiogênico | **NÃO INFORMADO** (FC não fornecida) | ⚠️ **VERIFICAR FC antes de administrar**; se FC < 50 ou sinais de choque, CONTRAINDICADO |
+| **IECA (Lisinopril)** | Hipercalemia (K+ > 5,5 mEq/L), creatinina > 3 mg/dL, angioedema prévio | **NÃO INFORMADO** (função renal desconhecida) | ⚠️ **DOSAR K+ e creatinina ANTES de iniciar**; se K+ > 5,5 ou Cr > 3, CONTRAINDICADO |
+| **Enoxaparina** | Insuficiência renal grave (ClCr < 30 mL/min), trombocitopenia < 100.000 | **NÃO INFORMADO** (função renal desconhecida) | ⚠️ **DOSAR CREATININA E PLAQUETAS**; se ClCr < 30, reduzir dose para 1 mg/kg 1x/dia |
+| **Atorvastatina** | Miopatia ativa, elevação de transaminases > 3x LSN | **NÃO INFORMADO** | ⚠️ **DOSAR AST/ALT e CK basais**; monitorar sintomas de miosite |
+| **AAS** | Alergia/intolerância, úlcera péptica ativa, hemorragia ativa | **NÃO INFORMADO** | ⚠️ **QUESTIONAR alergias e história de úlcera**; se contraindicado, considerar alternativa |
+| **Clopidogrel** | Sangramento ativo, trombocitopenia < 100.000 | **NÃO INFORMADO** | ⚠️ **VERIFICAR hemograma**; se sangramento ativo, CONTRAINDICADO |
+
+---
+
+### **C. DUPLICIDADE TERAPÊUTICA**
+
+**Nenhuma duplicidade identificada** — medicamentos propostos têm indicações complementares e sinérgicas em SCA.
+
+---
+
+## 3. AJUSTES DE DOSE RECOMENDADOS
+
+### **A. FUNÇÃO RENAL (CRÍTICO — NÃO INFORMADA)**
+
+**Status:** Creatinina sérica e clearance de creatinina **NÃO FORNECIDOS** — essencial para ajuste de múltiplos fármacos.
+
+| Medicamento | Ajuste Renal Necessário | Recomendação |
+|-------------|------------------------|--------------|
+| **Enoxaparina** | **SIM** — reduzir se ClCr < 30 mL/min | ⚠️ **DOSAR CREATININA IMEDIATAMENTE**; se ClCr 30-50: manter 0,5 mg/kg 1x/dia; se ClCr < 30: 1 mg/kg 1x/dia |
+| **IECA (Lisinopril)** | **SIM** — reduzir se ClCr < 30 mL/min | ⚠️ **DOSAR CREATININA**; se ClCr 30-60: iniciar 2,5-5 mg 1x/dia; se ClCr < 30: 2,5 mg 1x/dia |
+| **Atorvastatina** | **NÃO** — sem ajuste renal necessário | ✅ Manter 80 mg 1x/dia |
+| **Metoprolol** | **LEVE** — reduzir se ClCr < 30 mL/min | ⚠️ **DOSAR CREATININA**; se ClCr < 30: reduzir para 25-50 mg 2x/dia |
+| **AAS** | **NÃO** — sem ajuste renal necessário | ✅ Manter 300-500 mg dose única |
+| **Clopidogrel** | **NÃO** — sem ajuste renal necessário | ✅ Manter 600 mg dose única |
+| **Nitroglicerina** | **NÃO** — sem ajuste renal necessário | ✅ Manter 0,3-0,6 mg SL |
+| **Morfina** | **SIM** — reduzir se ClCr < 30 mL/min | ⚠️ **DOSAR CREATININA**; se ClCr < 30: reduzir dose e aumentar intervalo (ex: 1-2 mg IV a cada 10-15 min) |
+
+---
+
+### **B. FUNÇÃO HEPÁTICA (NÃO INFORMADA)**
+
+**Status:** AST, ALT, bilirrubina **NÃO FORNECIDAS** — importante para atorvastatina e morfina.
+
+| Medicamento | Ajuste Hepático Necessário | Recomendação |
+|-------------|---------------------------|--------------|
+| **Atorvastatina** | **SIM** — contraindicada se cirrose ativa | ⚠️ **DOSAR AST/ALT/bilirrubina**; se AST/ALT > 3x LSN, SUSPENDER; se cirrose, CONTRAINDICADO |
+| **Morfina** | **SIM** — reduzir se insuficiência hepática grave | ⚠️ **AVALIAR função hepática**; se cirrose, reduzir dose e aumentar intervalo |
+| **Metoprolol** | **LEVE** — reduzir se cirrose | ⚠️ **AVALIAR função hepática**; se cirrose, reduzir para 25-50 mg 1x/dia |
+| **Outros** | **NÃO** — sem ajuste hepático necessário | ✅ Manter doses propostas |
+
+---
+
+### **C. IDADE AVANÇADA (62 anos — não é idoso, mas próximo)**
+
+**Status:** Paciente tem 62 anos — não é idoso (≥65), mas próximo. Recomendações gerais:
+
+| Medicamento | Consideração Geriátrica | Recomendação |
+|-------------|------------------------|--------------|
+| **Metoprolol** | Risco de bradicardia, hipotensão | ✅ Iniciar com dose baixa (25 mg 2x/dia); titular conforme tolerância |
+| **IECA (Lisinopril)** | Risco de hipercalemia, hipotensão | ✅ Iniciar com dose baixa (5 mg 1x/dia); monitorar K+ e PA |
+| **Morfina** | Risco de depressão respiratória, confusão | ✅ Usar com cautela; doses menores se necessário |
+| **Enoxaparina** | Risco de sangramento aumentado | ✅ Monitorar sinais de sangramento; considerar profilaxia com IBP |
+| **Outros** | Sem considerações especiais | ✅ Manter doses propostas |
+
+---
+
+### **D. DIABETES (PACIENTE DIABÉTICO)**
+
+**Status:** Paciente tem diabetes — importante para interações e efeitos metabólicos.
+
+| Medicamento | Efeito em Diabetes | Recomendação |
+|-------------|-------------------|--------------|
+| **Betabloqueador (Metoprolol)** | Pode mascarar hipoglicemia; reduz sensibilidade à insulina | ⚠️ **MONITORAR glicemia**; preferir betabloqueador cardioseletivo (metoprolol é cardioseletivo — OK); educar paciente sobre sintomas de hipoglicemia |
+| **Nitroglicerina** | Sem efeito direto em glicemia | ✅ Seguro |
+| **IECA (Lisinopril)** | Melhora sensibilidade à insulina; reduz proteinúria | ✅ **BENÉFICO** em diabético; monitorar K+ |
+| **Estatina (Atorvastatina)** | Pode aumentar glicemia levemente | ⚠️ **MONITORAR glicemia**; benefício cardiovascular supera risco |
+| **AAS + Clopidogrel** | Sem efeito em glicemia | ✅ Seguro |
+| **Morfina** | Pode aumentar glicemia (hiperglicemia de estresse) | ⚠️ **MONITORAR glicemia**; usar menor dose possível |
+| **Enoxaparina** | Sem efeito direto em glicemia | ✅ Seguro |
+
+---
+
+### **E. RESUMO DE DOSAGENS PROPOSTAS (CONFIRMADAS)**
+
+| Medicamento | Dose Proposta | Ajuste Necessário? | Dose Final Recomendada |
+|-------------|---------------|-------------------|----------------------|
+| **AAS** | 300-500 mg VO | ❌ NÃO | **500 mg VO dose única** (mastigado) |
+| **Clopidogrel** | 600 mg VO | ❌ NÃO | **600 mg VO dose única** |
+| **Enoxaparina** | 0,5 mg/kg IV | ✅ **SIM** (se ClCr < 30) | **0,5 mg/kg IV bolus + infusão** (reduzir se ClCr < 30) |
+| **Metoprolol** | 25-50 mg VO | ✅ **SIM** (se FC < 50 ou PAS < 90) | **25-50 mg VO 2-3x/dia** (verificar FC/PA antes) |
+| **Nitroglicerina** | 0,3-0,6 mg SL | ✅ **SIM** (se PAS < 90) | **0,3-0,6 mg SL a cada 5 min** (máx 3 doses; verificar PA) |
+| **Morfina** | 2-4 mg IV | ✅ **SIM** (se ClCr < 30 ou insuf. resp.) | **2-4 mg IV a cada 5-15 min** (reduzir se ClCr < 30) |
+| **Atorvastatina** | 80 mg VO | ✅ **SIM** (se AST/ALT > 3x LSN) | **80 mg VO 1x/dia** (verificar função hepática) |
+| **Lisinopril** | 5-10 mg VO | ✅ **SIM** (se ClCr < 30 ou K+ > 5,5) | **5-10 mg VO 1x/dia** (iniciar 5 mg; verificar K+ e Cr) |
+
+---
+
+## 4. RECOMENDAÇÃO FINAL
+
+### **PARECER FARMACÊUTICO CLÍNICO**
+
+**Medicamentos propostos são apropriados para síndrome coronariana aguda de alto risco, seguindo diretrizes internacionais (ACC/AHA, ESC).** Porém, **exames laboratoriais críticos estão ausentes** (creatinina, K+, hemograma, função hepática, troponina, ECG) — **imperativamente necessários antes de iniciar terapia** para evitar contraindicações e ajustar doses adequadamente. Recomenda-se: (1) **coleta imediata de sangue** (creatinina, K+, hemograma, AST/ALT, troponina); (2) **verificação de sinais vitais** (PA, FC) antes de nitroglicerina e metoprolol; (3) **questionar alergias e uso de sildenafila** antes de nitroglicerina; (4) **monitorar sangramento** durante dupla/tripla anticoagulação; (5) **considerar profilaxia com inibidor de bomba de prótons** (omeprazol 20 mg 1x/dia ou pantoprazol 40 mg 1x/dia) para reduzir risco de sangramento GI.

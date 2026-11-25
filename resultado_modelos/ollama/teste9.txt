@@ -1,0 +1,127 @@
+numero_teste: 9
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4816
+tokens_saida: 1838
+custo_brl: 0.0000
+tempo_total_s: 75.9
+tempo_processamento_s: 41.3
+tempo_legivel: 41s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? simm
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? sim
+Fuma? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? um dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa, associada à náusea e sudorese.
+- Piora da dor ao respirar fundo.
+- Antecedentes de diabetes, hipertensão e tabagismo.
+- Histórico de infarto ou doença nas artérias do coração.
+- Pressão alta.
+- Colesterol alto.
+- Fumante.
+
+Síndrome clínica principal:
+A dor torácica central intensa, associada à náusea e sudorese, sugere uma síndrome coronariana aguda (SCA), também conhecida como infarto do miocárdio. A piora da dor ao respirar fundo é um sinal alarmante que indica a possibilidade de insuficiência cardíaca.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda (SCA)**: Dor torácica central intensa, náusea e sudorese, com histórico de infarto ou doença nas artérias do coração.
+2. **Infarto do Miocárdio**: Dor torácica central intensa, náusea e sudorese, com histórico de infarto ou doença nas artérias do coração.
+3. **Angina Inestável**: Dor torácica central intensa, náusea e sudorese, com histórico de angina estável.
+
+Dados críticos ausentes:
+
+- Nível de troponina no sangue (um marker de danos ao miocárdio).
+- ECG (electrocardiograma) para avaliar a atividade cardíaca.
+- Pressão arterial para avaliar a hemodinâmica.
+
+Exames prioritários:
+
+1. **ECG**: Para avaliar a atividade cardíaca e identificar sinais de infarto do miocárdio.
+2. **Troponina no sangue**: Para avaliar o nível de danos ao miocárdio.
+3. **Pressão arterial**: Para avaliar a hemodinâmica.
+
+Urgência e disposição:
+**Emergência**. A dor torácica central intensa, associada à náusea e sudorese, sugere uma condição médica grave que requer atenção imediata.
+
+Especialistas necessários:
+
+1. **Cardiologista**: Para avaliar a atividade cardíaca e identificar sinais de infarto do miocárdio.
+2. **Anestesista**: Para administrar medicamentos para aliviar a dor e estabilizar o paciente.
+3. **Radiologista**: Para realizar exames de imagem, como um tomografia computadorizada (TC) ou uma ressonância magnética (RM), se necessário.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem história de infarto ou doença nas artérias do coração, como angina, cateterismo ou stent, pressão alta, colesterol alto e fuma.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG. No entanto, é importante considerar a presença de sinais de angina incompatível (como dor torácica central intensa associada a náusea e sudorese) que podem indicar uma condição cardíaca grave.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Síndrome coronariana aguda** (STEMI): A dor torácica central intensa, associada a náusea e sudorese, pode ser um sinal de infarto do miocárdio.
+2. **Infeção pulmonar**: A dor torácica pode ser um sintoma de infeção pulmonar, especialmente em pacientes com antecedentes de doença cardíaca ou imunocomprometidos.
+3. **Asma**: A dor torácica pode ser um sintoma de asma, especialmente se o paciente apresentar outros sintomas como dificuldade respiratória.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular, pois falta dado sobre a duração da dor e a presença de sinais de angina incompatível.
+* HEART Score (dor torácica não diagnóstica): não é possível calcular, pois falta dado sobre a história do paciente e os exames cardíacos.
+
+Estratificação de risco:
+
+* Baixo risco: não há informações disponíveis para estratificar o risco do paciente.
+* Intermediário risco: A dor torácica central intensa associada a náusea e sudorese sugere uma condição cardíaca grave, mas não é possível calcular o risco com os dados disponíveis.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização**: O paciente deve ser monitorado de perto para avaliar a gravidade da dor torácica.
+2. **Testes complementares**: Devem ser realizados testes complementares, como ECG e exames cardíacos, para avaliar a condição cardíaca do paciente.
+3. **Medicamentos**: O paciente pode receber medicamentos para aliviar a dor e reduzir o risco de complicações cardíacas.
+4. **Internação**: O paciente deve ser internado para monitoramento contínuo e avaliação da gravidade da condição.
+
+É importante notar que a conduta cardiológica proposta é baseada em hipóteses e não é uma conclusão definitiva. É fundamental realizar testes complementares e avaliar a condição cardíaca do paciente para determinar o diagnóstico e a conduta adequados.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está sendo tratado com medicamentos para aliviar a dor, mas não há informações disponíveis sobre os medicamentos específicos utilizados.
+
+* **Proposta**: O cardiologista sugere o uso de medicamentos anti-anginais, como nitratos ou beta-bloqueadores, para aliviar a dor e reduzir o risco de complicações cardíacas.
+* **Medicamentos em uso**: Não há informações disponíveis sobre os medicamentos específicos utilizados pelo paciente.
+
+**Interações e contraindicações identificadas**
+
+* **Interferência com outros medicamentos**: O uso de nitratos pode interferir com a eficácia dos beta-bloqueadores.
+* **Contraindicação**: O uso de beta-bloqueadores é contraindicado em pacientes com insuficiência cardíaca grave ou hipotensão severa.
+
+**Ajustes de dose recomendados**
+
+* **Dose de nitratos**: A dose de nitratos deve ser ajustada com base na resposta do paciente à terapia.
+* **Dose de beta-bloqueadores**: A dose de beta-bloqueadores deve ser ajustada com base na resposta do paciente à terapia e na presença de outros medicamentos que possam interferir com a eficácia dos beta-bloqueadores.
+
+**Recomendação final**
+
+O paciente deve ser monitorado de perto para avaliar a gravidade da dor torácica e ajustar a terapia conforme necessário. É fundamental realizar testes complementares, como ECG e exames cardíacos, para avaliar a condição cardíaca do paciente e determinar o diagnóstico e a conduta adequados.

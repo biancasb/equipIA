@@ -1,0 +1,155 @@
+numero_teste: 32
+provider: ollama
+modelo: llama3.2
+sindrome: tromboembolismo_pulmonar
+especialistas: Clínico Geral, Cardiologista, Pneumologista
+tokens_entrada: 6361
+tokens_saida: 2576
+custo_brl: 0.0000
+tempo_total_s: 74.4
+tempo_processamento_s: 56.8
+tempo_legivel: 57s
+
+=== CASO ===
+Homem, 55 anos, com tosse produtiva e falta de ar há 3 dias. Tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2. Chega febril, com pressão baixa e frequência cardíaca elevada.
+Informações complementares:
+Fez cirurgia nas últimas 4 semanas? nao
+Informações complementares:
+Está com falta de ar de início súbito? Não. A falta de ar vem piorando há 3 dias, junto com a tosse produtiva.
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+**Red flags identificados**
+
+* Presença de febre (indica infecção ou inflamação)
+* Baixa pressão arterial (indicativa de instabilidade hemodinâmica)
+* Frequência cardíaca elevada (pode indicar resposta a estresse ou doença cardíaca)
+* Tose produtiva e falta de ar que pioraram nos últimos 3 dias (sinais de possível pneumonia ou infecção pulmonar)
+
+**Síndrome clínica principal**
+
+A síndrome clínica principal é a **pneumonia**, considerando a tosse produtiva, falta de ar e febre. A presença de DPOC (doença pulmonar obstructiva crônica) e histórico de tabagismo aumenta o risco de pneumonia.
+
+**Diagnóstico diferencial**
+
+1. **Pneumonia**: Evidências a favor - tosse produtiva, falta de ar, febre; Contra - ausência de sintomas específicos de pneumonia aguda.
+2. **Infecção pulmonar secundária**: Evidências a favor - tosse produtiva, falta de ar, febre; Contra - ausência de sintomas específicos de infecção pulmonar secundária.
+3. **Doença cardíaca coronariana aguda**: Evidências a favor - frequência cardíaca elevada; Contra - ausência de sintomas específicos de doença cardíaca coronariana aguda.
+
+**Dados críticos ausentes**
+
+* Nível de oxigênio (SpO2)
+* Troponina
+* ECG
+
+**Exames prioritários**
+
+1. **ECG**: para avaliar a função cardíaca e detectar possíveis alterações elétricas.
+2. **Troponina**: para detectar dano muscular cardíaco.
+3. **Imagem de tomografia computadorizada (CT) do peito**: para avaliar a extensão da pneumonia ou infecção pulmonar.
+
+**Urgência e disposição**
+
+* Emergência: devido à presença de febre, falta de ar e baixa pressão arterial, que indicam instabilidade hemodinâmica.
+* Urgência: devido à necessidade de avaliar a função cardíaca e detectar possíveis alterações elétricas.
+
+**Especialistas necessários**
+
+1. **Cardiologista**: para avaliar a função cardíaca e detectar possíveis alterações elétricas.
+2. **Pneumologista**: para avaliar a pneumonia ou infecção pulmonar e desenvolver um plano de tratamento adequado.
+
+É importante notar que, devido à presença de DPOC e histórico de tabagismo, é necessário considerar o risco de doença cardíaca coronariana aguda e realizar exames adicionais para avaliar a função cardíaca. Além disso, é fundamental monitorar os sinais vitais do paciente e ajustar a classificação de urgência conforme necessário.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente apresenta sintomas respiratórios (tosse produtiva e falta de ar) e cardiovasculares (falta de pressão e frequência cardíaca elevada), com histórico de DPOC (doença pulmonar obstructiva crônica) e diabetes tipo 2. A presença de febre sugere uma infecção, mas a falta de ar não é de início súbito, o que pode sugerir uma condição cardíaca subjacente.
+
+Interpretação do ECG e exames cardíacos:
+
+A ausência de informações sobre o resultado do ECG ou outros exames cardíacos não permite uma interpretação detalhada. No entanto, é importante considerar a possibilidade de arritmias ou doenças cardíacas subjacentes que podem estar contribuindo para os sintomas respiratórios.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Insuficiência cardíaca**: A falta de pressão e frequência cardíaca elevada podem ser indicativos de insuficiência cardíaca, especialmente considerando a história de diabetes tipo 2.
+2. **Arritmias**: A febre e a falta de ar podem ser sintomas de arritmias, como ventrículos fibrilados ou supraventriculares.
+3. **Coronaria aguda**: A tosse produtiva e a falta de ar podem ser sintomas de coronária aguda, especialmente considerando a história de DPOC e diabetes tipo 2.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* TIMI Risk Score para NSTEMI/AI: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* GRACE Score (IAMSST): não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* HEART Score: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+
+Estratificação de risco:
+
+Devido à falta de informações sobre o resultado do ECG e outros exames cardíacos, não é possível estratificar o risco com precisão. No entanto, a presença de sintomas respiratórios e cardiovasculares sugere um risco moderado a alto.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização**: O paciente deve ser monitorizado em uma unidade de cuidados intensivos para avaliar a gravidade dos sintomas.
+2. **Medicamentos**: O paciente pode receber medicamentos para aliviar os sintomas respiratórios, como broncodilatadores e anti-inflamatórios não esteroides.
+3. **Testes cardíacos**: Devem ser realizados testes cardíacos adicionais, incluindo um ECG e exames de função cardíaca, para avaliar a condição cardíaca do paciente.
+4. **Internação**: O paciente deve ser internado para monitoramento e tratamento.
+
+É importante notar que essa é uma avaliação inicial e que mais informações são necessárias para determinar o diagnóstico e a conduta cardiológica adequada.
+
+[Pneumologista]
+**Avaliação respiratória**
+
+O paciente apresenta sintomas respiratórios graves, incluindo tosse produtiva e falta de ar que está piorando há 3 dias. Além disso, tem DPOC com exacerbações frequentes, o que sugere uma condição crônica pulmonar. A presença de febre, pressão baixa e frequência cardíaca elevada indica uma resposta inflamatória aguda.
+
+**Padrão fisiopatológico identificado**
+
+O padrão fisiopatológico mais provável é um **DPOC exacerbado**, considerando a história de DPOC com exacerbações frequentes, sintomas respiratórios graves e presença de febre. A falta de ar que está piorando há 3 dias sugere uma obstrução parcial ou total do trato respiratório.
+
+**Dados de oxigenação e ventilação**
+
+Não há dados disponíveis sobre SpO₂ ou gasometria, o que é importante para avaliar a gravidade da condição. Se solicitarmos esses dados, seria necessário para determinar a necessidade de oxigenoterapia e monitoramento dos parâmetros respiratórios.
+
+**Diagnóstico diferencial pulmonar**
+
+Considerando os sintomas e histórico do paciente, o diagnóstico diferencial inclui:
+
+*   **DPOC exacerbado**: com base na história de DPOC com exacerbações frequentes e sintomas respiratórios graves.
+*   **Pneumonia**: considerando a presença de febre e tosse produtiva.
+*   **Tromboembolismo pulmonar**: embora não haja sinais de trombose, o paciente tem fatores de risco para TEP (diabetes tipo 2 e tabagismo).
+*   **Pneumotórax**: não há sinais de pneumotórax no histórico do paciente.
+
+**Escores aplicados**
+
+*   **Wells**: com base nos critérios, o paciente tem uma probabilidade de tromboembolismo pulmonar alta (≥ 4).
+*   **CURB-65**: o paciente não se enquadra na categoria ambulatorial, pois apresenta sintomas graves que requerem internação.
+*   **PESI**: não há dados disponíveis para calcular o escore.
+
+**Risco de recorrência ou progressão**
+
+O paciente tem um histórico de DPOC com exacerbações frequentes e sintomas respiratórios graves, o que aumenta o risco de recorrência. Além disso, a presença de febre e pressão baixa sugere uma resposta inflamatória aguda.
+
+**Conduta pneumológica**
+
+*   **Oxigenoterapia**: é importante monitorar os parâmetros respiratórios do paciente e ajustar a oxigenoterapia conforme necessário.
+*   **Broncodilatadores**: podem ser utilizados para aliviar a obstrução do trato respiratório, mas devem ser usados com cautela devido à presença de DPOC.
+*   **Antibióticos**: se houver suspeita de pneumonia, os antibióticos devem ser prescritos com base nos critérios de diagnóstico.
+*   **Drenagem pleural**: não há sinais de pneumotórax no histórico do paciente, mas pode ser necessário em casos de DPOC exacerbado.
+
+É importante monitorar o paciente de perto e ajustar a conduta pneumológica conforme necessário.
+
+[Farmacêutico Clínico]
+Medicamentos em uso e propostos
+O paciente está com tosse produtiva e falta de ar que pioraram nos últimos 3 dias, junto com febre. Ele também tem DPOC com exacerbações frequentes, é tabagista e diabético tipo 2.
+
+Interações e contraindicações identificadas
+- **Broncodilatadores**: podem ser utilizados para aliviar a obstrução do trato respiratório, mas devem ser usados com cautela devido à presença de DPOC.
+- **Antibióticos**: se houver suspeita de pneumonia, os antibióticos devem ser prescritos com base nos critérios de diagnóstico.
+
+Ajustes de dose recomendados
+- **Broncodilatadores**: a dose deve ser ajustada conforme necessário para evitar efeitos colaterais.
+- **Antibióticos**: a dose deve ser ajustada conforme necessário para garantir eficácia e minimizar efeitos colaterais.
+
+Recomendação final
+O paciente deve ser monitorado de perto e os medicamentos devem ser ajustados conforme necessário. É importante realizar exames adicionais, como ECG, troponina e imagem de tomografia computadorizada (CT) do peito, para avaliar a condição cardíaca e pulmonar do paciente.

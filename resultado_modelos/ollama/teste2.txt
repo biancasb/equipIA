@@ -1,0 +1,118 @@
+numero_teste: 2
+provider: ollama
+modelo: llama3.2
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4753
+tokens_saida: 1788
+custo_brl: 0.0000
+tempo_total_s: 69.6
+tempo_processamento_s: 40.0
+tempo_legivel: 40s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? sim
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem pressão alta? sim
+Tem diabetes? sim
+Tem colesterol alto? sim
+Fuma? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+Há quanto tempo a dor começou? 1 dia
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados:
+
+- Dor torácica central intensa, piorando ao respirar fundo.
+- Sintomas de angina (dor no peito durante esforço).
+- Antecedentes de doenças cardiovasculares (infarto, cateterismo ou stent).
+- Fatores de risco para doença cardíaca (hipertensão, diabetes, colesterol alto, tabagismo).
+
+Síndrome clínica principal:
+A dor torácica central intensa e a história de antecedentes de doenças cardiovasculares levam a suspeita de síndrome coronariana aguda.
+
+Diagnóstico diferencial:
+
+1. **Síndrome Coronariana Aguda**: Dor no peito durante esforço, piorando ao respirar fundo, com antecedentes de doenças cardiovasculares.
+2. **Infarto do Miocárdio**: Dor no peito radiante, piorando ao respirar fundo, com antecedentes de doenças cardiovasculares.
+3. **Angina Estável**: Dor no peito durante esforço, piorando ao respirar fundo, com antecedentes de doenças cardiovasculares.
+
+Dados críticos ausentes:
+
+- Nível de troponina (um biomarco importante para diagnóstico e monitoramento do infarto do miocárdio).
+- ECG (electrocardiograma) para avaliar a estabilidade do paciente e identificar sinais de infarto.
+
+Exames prioritários:
+- ECG: para avaliar a estabilidade do paciente e identificar sinais de infarto.
+- Troponina: para confirmar o diagnóstico de infarto do miocárdio ou rejeitar a hipótese de síndrome coronariana aguda.
+
+Urgência e disposição:
+**Emergência**: O paciente apresenta sintomas graves de dor no peito, piorando ao respirar fundo, com antecedentes de doenças cardiovasculares. A urgência é necessária para avaliar a estabilidade do paciente e tomar medidas para prevenir complicações.
+
+Especialistas necessários:
+- **Cardiologista**: para avaliar a estabilidade do paciente e identificar sinais de infarto.
+- **Anestesista**: para preparar o paciente para possível intervenção cardíaca.
+- **Radiologista**: para realizar exames de imagem (ECG, troponina) e avaliar a extensão da doença.
+
+[Cardiologista]
+Avaliação cardiológica
+
+Síntese do componente cardiovascular do caso:
+
+O paciente é um homem de 62 anos com antecedentes de diabetes, hipertensão e tabagismo. Ele apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, que piorou ao respirar fundo. Além disso, ele tem história de infarto ou doença nas artérias do coração, como angina, cateterismo ou stent, pressão alta, diabetes, colesterol alto e fuma.
+
+Interpretação do ECG e exames cardíacos:
+
+Infelizmente, não há informações disponíveis sobre o resultado do ECG. No entanto, é importante considerar a presença de sinais de angina incompatível (como dor torácica central intensa associada a náusea e sudorese) que podem indicar uma condição cardíaca grave.
+
+Diagnóstico diferencial cardiológico:
+
+1. **Síndrome coronariana aguda** (STEMI): A dor torácica central intensa, associada à náusea e sudorese, pode ser um sinal de infarto do miocárdio.
+2. **Inferior miocardite**: A dor torácica central intensa pode ser indicativa de infecção ou inflamação da parede inferior do coração.
+3. **Arritmia cardíaca**: A dor torácica central intensa pode ser um sinal de arritmia cardíaca, como a fibrilação ventricular.
+
+Escores aplicados:
+
+* TIMI Risk Score para STEMI: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* HEART Score: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+* CRUSADE Score: não é possível calcular (dado ausente — impossível calcular; solicitar X)
+
+Estratificação de risco:
+
+O paciente apresenta sintomas graves e antecedentes de doenças cardíacas, o que sugere um alto risco de complicações.
+
+Conduta cardiológica proposta:
+
+1. **Monitorização intensiva**: O paciente deve ser monitorado em uma unidade de terapia intensiva para avaliar a gravidade da condição e realizar exames cardíacos regulares.
+2. **Medicamentos anti-arríticos**: O paciente pode receber medicamentos anti-arríticos, como beta-bloqueadores e anti-arríticos, para controlar a dor torácica central intensa.
+3. **Testes de imagem**: O paciente deve realizar exames cardíacos regulares, incluindo ECG, ecocardiograma e tomografia computadorizada do coração, para avaliar a extensão da doença cardíaca.
+4. **Consideração de procedimentos cardíacos**: Se os sintomas persistirem ou piorarem, o paciente pode precisar de procedimentos cardíacos, como cateterismo ou cirurgia cardíaca.
+
+É importante notar que essa é uma avaliação inicial e que mais informações são necessárias para determinar a causa exata da dor torácica central intensa do paciente.
+
+[Farmacêutico Clínico]
+**Medicamentos em uso e propostos**
+
+O paciente está sendo considerado com sintomas de síndrome coronariana aguda (STEMI) ou infarto do miocárdio, devido à dor torácica central intensa associada à náusea e sudorese. Além disso, ele tem antecedentes de doenças cardiovasculares, como hipertensão, diabetes e colesterol alto.
+
+**Interações e contraindicações identificadas**
+
+* O paciente está fumando, o que pode aumentar o risco de complicações cardíacas.
+* Ele não tem uso de aspirina nos últimos 7 dias, o que é importante considerar para evitar a interação com outros medicamentos anti-arríticos.
+* A presença de diabetes e hipertensão pode aumentar o risco de complicações cardíacas.
+
+**Ajustes de dose recomendados**
+
+* Devido à função renal do paciente, é importante ajustar a dose dos medicamentos anti-arríticos para evitar a acumulação tóxica.
+* A função hepática do paciente também deve ser considerada ao prescrever medicamentos que afetam a função hepática.
+
+**Recomendação final**
+
+O paciente deve ser monitorado em uma unidade de terapia intensiva e receber medicamentos anti-arríticos para controlar a dor torácica central intensa. Além disso, é importante realizar exames cardíacos regulares, incluindo ECG, ecocardiograma e tomografia computadorizada do coração, para avaliar a extensão da doença cardíaca. O paciente também deve ser considerado para procedimentos cardíacos, como cateterismo ou cirurgia cardíaca, se os sintomas persistirem ou piorarem.

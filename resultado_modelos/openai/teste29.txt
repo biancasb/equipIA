@@ -1,0 +1,115 @@
+numero_teste: 29
+provider: openai
+modelo: gpt-4o-mini
+sindrome: sindrome_coronariana
+especialistas: Clínico Geral, Cardiologista
+tokens_entrada: 4272
+tokens_saida: 1678
+custo_brl: 0.0089
+tempo_total_s: 36.4
+tempo_processamento_s: 19.8
+tempo_legivel: 20s
+
+=== CASO ===
+Homem, 62 anos, com dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese. Antecedentes de diabetes, hipertensão e tabagismo. Chega ao serviço ainda sintomático.
+Informações complementares:
+A dor piora ao respirar fundo? sim
+A dor irradia para o braço, a mandíbula ou as costas? braco
+Já teve infarto ou doença nas artérias do coração, como angina, cateterismo ou stent? sim
+Tem colesterol alto? sim
+Algum parente próximo teve infarto antes dos 55 anos (se homem) ou 65 anos (se mulher)? sim
+Usou aspirina nos últimos 7 dias? nao
+Teve dois ou mais episódios de dor no peito nas últimas 24 horas? 3
+Informações complementares:
+A dor piora com esforço físico? sim
+
+=== OPINIÕES ===
+
+[Clínico Geral]
+Red flags identificados
+- Dor torácica central intensa iniciada durante esforço.
+- Irradiação da dor para o braço.
+- Antecedentes de doença arterial coronariana (infarto prévio, angina).
+- Fatores de risco cardiovascular: diabetes, hipertensão, tabagismo, hipercolesterolemia.
+- História familiar de infarto precoce.
+- Sudorese e náusea associadas à dor torácica.
+
+Síndrome clínica principal
+Síndrome coronariana aguda (SCA), devido à dor torácica típica associada a esforço, irradiação para o braço, e múltiplos fatores de risco cardiovascular.
+
+Diagnóstico diferencial
+- Alta probabilidade: Infarto agudo do miocárdio (IAM). Evidências a favor: dor torácica típica, irradiação, fatores de risco, história de doença coronariana.
+- Média probabilidade: Embolia pulmonar. Evidências a favor: dor que piora ao respirar fundo; contra: ausência de sinais de TVP, sem relato de imobilização recente.
+- Baixa probabilidade: Dissecção aórtica. Evidências contra: ausência de dor súbita com irradiação para as costas, sem sinais de insuficiência aórtica ou diferença de pressão entre os braços.
+
+Dados críticos ausentes
+- ECG para identificar alterações isquêmicas ou de infarto.
+- Troponina para confirmar necrose miocárdica.
+- Sinais vitais completos para avaliar estabilidade hemodinâmica.
+- Saturação de oxigênio para avaliar comprometimento respiratório.
+
+Exames prioritários
+- ECG: para identificar alterações sugestivas de infarto agudo do miocárdio.
+- Dosagem de troponina: para confirmar ou descartar necrose miocárdica.
+- Raio-X de tórax: para avaliar outras causas de dor torácica e descartar complicações pulmonares.
+- Hemograma e perfil metabólico: para avaliar estado geral e possíveis complicações.
+
+Urgência e disposição
+Emergência. Critério: suspeita de síndrome coronariana aguda com risco de infarto agudo do miocárdio.
+
+Especialistas necessários
+- Cardiologia: para avaliação e manejo de possível infarto agudo do miocárdio, incluindo decisão sobre terapia de reperfusão.
+- Emergencista: para estabilização inicial e coordenação do atendimento no pronto-socorro.
+
+[Cardiologista]
+Avaliação cardiológica
+O paciente apresenta dor torácica central intensa iniciada durante esforço, associada a náusea e sudorese, com irradiação para o braço. Ele possui múltiplos fatores de risco cardiovascular, incluindo diabetes, hipertensão, tabagismo, dislipidemia e história familiar de doença arterial coronariana precoce. A dor piora com a respiração profunda e com esforço físico, o que pode sugerir uma componente pleurítica, mas a apresentação é altamente sugestiva de síndrome coronariana aguda (SCA).
+
+Interpretação do ECG e exames cardíacos
+Os achados do ECG não foram fornecidos. É essencial realizar um ECG imediatamente para avaliar a presença de alterações isquêmicas, como supradesnivelamento do segmento ST, que indicaria um infarto agudo do miocárdio com supradesnivelamento do ST (STEMI), ou outras alterações como infradesnivelamento do ST ou inversão de onda T, que poderiam indicar um infarto sem supradesnivelamento do ST (NSTEMI) ou angina instável.
+
+Diagnóstico diferencial cardiológico
+1. Síndrome coronariana aguda (alta probabilidade): A dor torácica típica, fatores de risco e história de doença arterial coronariana suportam fortemente essa hipótese.
+2. Embolia pulmonar (média probabilidade): A dor pleurítica e a dispneia podem sugerir essa condição, mas a apresentação clássica de SCA é mais proeminente.
+3. Dissecção aórtica (baixa probabilidade): A dor torácica intensa com irradiação poderia sugerir, mas a ausência de outros sinais como diferença de pulso ou sopro diastólico diminui a probabilidade.
+
+Escores aplicados
+- TIMI Risk Score para NSTEMI/AI: idade ≥ 65 (não), ≥ 3 fatores de risco coronariano (sim), estenose conhecida ≥ 50% (sim), infradesnível de ST (dado ausente), ≥ 2 episódios anginosos/24h (sim), uso de AAS nos últimos 7 dias (não), marcadores elevados (dado ausente). Pontuação preliminar: 4 (alto risco).
+- HEART Score: história (2), ECG (dado ausente), idade (1), fatores de risco (2), troponina (dado ausente). Pontuação preliminar: 5 (intermediário a alto risco).
+
+Estratificação de risco
+Alto risco para eventos cardiovasculares adversos maiores (MACE), dado o quadro clínico sugestivo de SCA e múltiplos fatores de risco.
+
+Conduta cardiológica proposta
+1. Realizar ECG imediatamente para avaliação de alterações isquêmicas.
+2. Dosar troponina para confirmar dano miocárdico.
+3. Iniciar tratamento para SCA: 
+   - Aspirina 300 mg via oral, dose de ataque.
+   - Clopidogrel 300 mg via oral, dose de ataque (ou ticagrelor/prasugrel se indicado).
+   - Anticoagulação com enoxaparina 1 mg/kg via subcutânea a cada 12 horas ou heparina não fracionada se indicado.
+   - Nitroglicerina sublingual para alívio da dor, se não contraindicado.
+   - Beta-bloqueador (metoprolol 25-50 mg via oral, se não houver contraindicações).
+4. Monitorização contínua em unidade de terapia intensiva ou unidade coronariana.
+5. Considerar angiografia coronariana urgente se STEMI confirmado ou NSTEMI de alto risco.
+6. Controle rigoroso de glicemia e pressão arterial.
+
+[Farmacêutico Clínico]
+Medicamentos em uso e propostos:
+- Aspirina 300 mg (dose de ataque)
+- Clopidogrel 300 mg (dose de ataque) ou ticagrelor/prasugrel
+- Enoxaparina 1 mg/kg a cada 12 horas ou heparina não fracionada
+- Nitroglicerina sublingual
+- Metoprolol 25-50 mg
+- Controle de glicemia e pressão arterial
+
+Interações e contraindicações identificadas:
+- Aspirina e clopidogrel/ticagrelor/prasugrel: risco aumentado de sangramento, mas necessário para manejo de SCA.
+- Enoxaparina/heparina com aspirina e clopidogrel/ticagrelor/prasugrel: risco aumentado de sangramento, mas necessário para manejo de SCA.
+- Metoprolol: deve ser usado com cautela em pacientes com bradicardia ou insuficiência cardíaca descompensada.
+
+Ajustes de dose recomendados:
+- Enoxaparina: ajuste de dose pode ser necessário em caso de insuficiência renal (clearance de creatinina < 30 mL/min).
+- Metoprolol: iniciar com dose mais baixa se houver bradicardia ou hipotensão.
+
+Recomendação final:
+Iniciar tratamento para síndrome coronariana aguda conforme proposto, com monitoramento cuidadoso para sinais de sangramento e ajuste de doses conforme necessário para função renal e hemodinâmica.
