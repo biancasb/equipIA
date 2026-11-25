@@ -58,12 +58,6 @@ python main.py
 
 A avaliação usou dois casos clínicos adaptados do livro *100 Cases in Emergency Medicine and Critical Care*, um de dor torácica e outro de pneumonia com sinais de sepse. Cada caso foi executado dez vezes com cada um dos três modelos, somando 60 execuções. Foram medidos o acerto da triagem, a cobertura de um checklist clínico, o custo e o tempo de resposta. Os resultados completos estão no artigo do TCC.
 
-## Publicações
-
-- Bernardi, B. S. e Franco, M. F. Arquitetura Multiagente de IA para Apoio à Decisão Clínica: Uma Abordagem baseada em Especialidades Médicas. ERAMIA 2026.
-- Bernardi, B. S. e Franco, M. F. EquipIA: Arquitetura Multiagente de IA para Apoio à Decisão Clínica. Submetido à REIC.
-
-
 ## Autora
 
 Bianca Siega Bernardi, Informática Biomédica, UFCSPA.
